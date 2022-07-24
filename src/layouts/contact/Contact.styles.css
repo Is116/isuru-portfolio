@@ -1,0 +1,11 @@
+.contact-plane{
+    font-size: 450px;
+}
+.btn-primary{
+    background-color: #3df2f2;
+}
+
+.btn-primary:hover{
+    background-color: white;
+    color: black;
+}

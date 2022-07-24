@@ -1,0 +1,14 @@
+.tech-monkey-logo{
+    height: 60px !important;
+    width: 60px !important;
+}
+.nav-logo-text{
+    font-size: 2rem;
+}
+.nav-item{
+    font-size: 20px ;
+}
+.nav-link:hover, .nav-logo-text:hover{
+    color: #3df2f2 !important;
+  }
+  
