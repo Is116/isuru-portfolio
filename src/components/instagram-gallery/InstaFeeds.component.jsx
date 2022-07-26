@@ -3,7 +3,8 @@ import axios from 'axios'
 import Feed from './InstagramGallery.component'
 import './InstaFeeds.styles.css'
 
-const InstaFeeds = ({token, ...props}) => {
+const InstaFeeds = ({...props}) => {
+    const token="IGQVJVYm5aOTFtOFgxZAVpuWTZAnUVE5MVZApTTE0ankwWWZA6MTRQNXNYOWVaYXhtVS1hUWtiNW5fNW5VZATZACdElOdWFBMU1VZA1lSRGFWeU5IcWxUS081ZA3gxWm4yMGRUX3V2TkFUa3hIbGhteWR0eUEzagZDZD";
     const [feeds, setFeedsData] = useState([])
     const tokenProp = useRef(token);
     tokenProp.current = token;
@@ -14,7 +15,7 @@ const InstaFeeds = ({token, ...props}) => {
         async function fetchInstagramPost () {
           try{
             axios
-                .get(`https://graph.instagram.com/me/media?fields=id,media_type,media_url,caption&limit=${props.limit}&access_token=${props.token}`)
+                .get(`https://graph.instagram.com/me/media?fields=id,media_type,media_url,caption&limit=${props.limit}&access_token=${token}`)
                 .then((resp) => {
                     setFeedsData(resp.data.data)
                 })
