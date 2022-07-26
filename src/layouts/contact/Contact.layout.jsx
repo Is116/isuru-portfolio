@@ -27,7 +27,7 @@ export default function Contact() {
                 <i className="fa-solid fa-paper-plane contact-plane align-middle"></i>
          </div>
          <div className="col-lg-6 col-sm-12 text-start">
-         <form className='mb-5 p-5' ref={form} onSubmit={sendEmail}>
+         <form className='mb-5 p-4 mt-3' ref={form} onSubmit={sendEmail}>
                  <div className="mb-3">
                      <label htmlFor="name" className="form-label">Your Name</label>
                      <input className="form-control" type="text" name='user_name' required/>
