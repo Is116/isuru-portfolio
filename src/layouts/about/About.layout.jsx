@@ -18,11 +18,11 @@ const About = () => {
                 <h2 className='mt-4'>Personal Life</h2>
                 <hr/>
                 <p className='p-1'>Isuru Pathirathna was born on 29 June 2002 in Colombo, Sri Lanka as the first child
-                    in the family. He and his family lived in Homagama, Sri Lanka since his birth. His father is
-                    Chulan Abeywardhana Pathirathna  and mother is Inoka Priyanthi Kumari. Isuru completed his 
-                    primary education from Army School Panagoda and studied O/L and passed with stunning grades
-                    at Mahinda Rajapaksha College, Homagama. After that, he started following a degree program 
-                    at NSBM Green University. He will be graduated in 2023 with a B.Sc. in Software Engineering 
+                    in the family. He and his family lived in Homagama, Sri Lanka since his birth. He is a guitarist
+                    and a swimmer His father is Chulan Abeywardhana Pathirathna  and mother is Inoka Priyanthi Kumari.
+                    Isuru completed his primary education from Army School Panagoda and studied O/L and passed with 
+                    stunning grades at Mahinda Rajapaksha College, Homagama. After that, he started following a degree
+                    program at NSBM Green University. He will be graduated in 2023 with a B.Sc. in Software Engineering 
                     offered by Plymouth University, United Kingdom.</p>
 
                 <h2 className='mt-4'>Professional Life</h2>

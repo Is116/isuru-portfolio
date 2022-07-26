@@ -24,7 +24,7 @@ const Footer = () => {
             
         </div>
             <div className="text-center p-2 pb-5" >
-                © 2022 Copyright | Isuru Pathirathna | All Rights Reserved
+                © 2022 Copyright | Made With ❤️ By Isuru Pathirathna | All Rights Reserved
             </div>
         </footer>
   )
