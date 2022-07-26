@@ -5,12 +5,10 @@ import './InstaFeeds.styles.css'
 
 const InstaFeeds = ({token, ...props}) => {
     const [feeds, setFeedsData] = useState([])
-    //use useRef to store the latest value of the prop without firing the effect
     const tokenProp = useRef(token);
     tokenProp.current = token;
 
     useEffect(() => {
-        // this is to avoid memory leaks
         const abortController = new AbortController();
 
         async function fetchInstagramPost () {
@@ -25,11 +23,9 @@ const InstaFeeds = ({token, ...props}) => {
           }
         }
         
-        // manually call the fecth function 
         fetchInstagramPost();
   
         return () => {
-            // cancel pending fetch request on component unmount
             abortController.abort(); 
         };
     }, [props.limit])
