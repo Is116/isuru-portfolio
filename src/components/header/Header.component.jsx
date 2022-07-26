@@ -7,7 +7,7 @@ const Header = () => {
     <>
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-            <a className="navbar-brand nav-logo" href="/"><img src="https://i.ibb.co/6ZbsB1s/techmonkey.png" alt="tech monkey" className="tech-monkey-logo me-3"></img><span className="nav-logo-text">Isuru Pathirathna</span></a>
+            <a className="navbar-brand nav-logo" href="/"><img src="https://i.ibb.co/6ZbsB1s/techmonkey.png" alt="tech monkey" className="tech-monkey-logo me-3"></img><span className="nav-logo-text align-middle">Isuru Pathirathna</span></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
