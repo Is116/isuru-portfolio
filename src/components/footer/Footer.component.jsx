@@ -9,7 +9,7 @@ const Footer = () => {
                 <ContactBar/>
             </section>
             <div className="mx-auto my-auto mb-4">
-                <div className='logo-text d-flex mt-5'><img src="https://i.ibb.co/CWkq2K4/techmonkey-no-background.png" alt="tech monkey"className="tech-monkey-logo me-3"></img> Tech Monkey</div>
+                <div className='logo-text d-flex mt-5'><img src="https://i.ibb.co/CWkq2K4/techmonkey-no-background.png" alt="tech monkey" className="mt-3 tech-monkey-logo me-3 "></img> Tech Monkey</div>
             </div>
             <div className="text-center my-auto" >
                 <div className="col-md-12 col-lg-12 col-sm-12 mx-auto mb-md-0 mb-4">
