@@ -1,40 +1,51 @@
 import './Contact.styles.css'
+import React, {useRef} from 'react';
+import emailjs from 'emailjs-com';
 
-const Contact = () => {
+export default function Contact() {
+    const form = useRef();
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_76klrfs', 'template_8df9w4h', form.current, 'yMt0kfWlxIRn555es')
+      .then((result) => {
+          console.log('Message Sent Successfully');
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+  }
+
   return (
     <div className="row p-lg-5 p-sm-0">
-        <div className="col-lg-6 col-sm-12 my-auto">
-        <i class="fa-solid fa-paper-plane contact-plane"></i>
-        </div>
-        <div className="col-lg-6 col-sm-12 text-start">
-        <form className='mb-5 p-5'>
-                <div className='mb-5'>
-                    <h2>Contact Me</h2>
-                    <hr/>
-                </div>
-                <div className="mb-3">
-                    <label for="name" className="form-label">Your Name</label>
-                    <input type="text" className="form-control"/>
-                </div>
-                <div className="mb-3">
-                    <label for="email" className="form-label">Your Email</label>
-                    <input type="email" className="form-control" id="email"/>
-                </div>
-                <div className="mb-3">
-                    <label for="subject" className="form-label">Your Subject</label>
-                    <input type="text" className="form-control" id="subject"/>
-                </div>
-                <div className="mb-3">
-                    <label for="subject" className="form-label">Your Message</label>
-                    <textarea rows="5"className="form-control">
+         <div className="col-lg-6 col-sm-12 my-auto">
+         <i className="fa-solid fa-paper-plane contact-plane"></i>
+         </div>
+         <div className="col-lg-6 col-sm-12 text-start">
+         <form className='mb-5 p-5' ref={form} onSubmit={sendEmail}>
+                 <div className='mb-5 text-center'>
+                     <h2>CONTACT</h2>
+                     <hr/>
+                 </div>
+                 <div className="mb-3">
+                     <label htmlFor="name" className="form-label">Your Name</label>
+                     <input className="form-control" type="text" name='user_name' required/>
+                 </div>
+                 <div className="mb-3">
+                     <label htmlFor="email" className="form-label">Your Email</label>
+                     <input className="form-control" type="email" name='user_email' required/>
+                 </div>
+                 <div className="mb-3">
+                     <label htmlFor="subject" className="form-label">Your Message</label>
+                     <textarea name="message" rows="5"className="form-control" required>
 
-                    </textarea>
-                </div>
-                <button type="submit" className="btn btn-outline-light mt-4 w-100"><i class="fa-solid fa-paper-plane me-4"></i>Send</button>
-            </form>
-        </div>
-    </div>
-  )
+                     </textarea>
+                 </div>
+                 <button type="submit" value="Send" className="btn btn-outline-light mt-4 w-100"><i className="fa-solid fa-paper-plane me-4"></i>Send</button>
+             </form>
+         </div>
+     </div>
+    
+  );
 }
-
-export default Contact

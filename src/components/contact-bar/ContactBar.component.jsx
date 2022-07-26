@@ -17,7 +17,7 @@ const ContactBar = () => {
 
         <a className="btn btn-outline-light m-1 me-3" href="https://github.com/Is116" role="button">
             <i className="fab fa-github"></i></a>
-        <a className=' btn btn-outline-light m-1' href="tel:071 217 5228"><i class="fa-solid fa-phone me-2"></i>(+94) 71 217 5228</a>
+        <a className=' btn btn-outline-light m-1' href="tel:071 217 5228"><i className="fa-solid fa-phone me-2"></i>(+94) 71 217 5228</a>
     </>
   )
 }

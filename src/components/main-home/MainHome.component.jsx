@@ -4,15 +4,21 @@ const MainHome = () => {
   return (
     <div className='row m-lg-5 m-sm-1'>
         <div className='col-lg-6 col-sm-12 mt-5 mb-lg-5 mb-sm-3 mr-3'>
-            <img className='img-fluid p-2 w-50' src="https://i.ibb.co/CWkq2K4/techmonkey-no-background.png" alt="isuru pathirathna"/>
+            <img className='monkey-img img-fluid p-2 w-50' src="https://i.ibb.co/CWkq2K4/techmonkey-no-background.png" alt="isuru pathirathna"/>
         </div>
         <div className='col-lg-6 col-sm-10 mt-lg-5 mt-sm-0 mb-5'>
             <div className='row justify-content-center ml-sm-0 ml-lg-3 mr-sm-0 mr-lg-3 mt-3 mb-3 p-4'>
                 <h1 className='name'>Isuru Pathirathna</h1>
                 <h2>(Tech Monkey)</h2>
-                <h4 className='mb-4 mt-5'>Software Developer, Guitarist, Swimmer</h4>
+                <h4 className='mb-4 mt-5'>
+                  <div className="message">
+                    <div className="word1">Software Developer</div>
+                    <div className="word2">Guitarist</div>
+                    <div className="word3">Swimmer</div>
+                  </div>
+                </h4>
                 <div className="row justify-content-center mb-3">
-                        <i class="fa-solid fa-code col-lg-4 icon-brand mb-sm-3 p-5"></i><i class="fa-solid fa-guitar col-lg-4 icon-brand p-5"></i><i class="fa-solid fa-person-swimming col-lg-4 icon-brand p-5"></i>
+                        <i className="fa-solid fa-code col-lg-4 icon-brand mb-sm-3 p-5"></i><i className="fa-solid fa-guitar col-lg-4 icon-brand p-5"></i><i className="fa-solid fa-person-swimming col-lg-4 icon-brand p-5"></i>
                     </div>
             </div>
         </div>
