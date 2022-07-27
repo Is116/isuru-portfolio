@@ -7,8 +7,8 @@ const About = () => {
         <div className='col-lg-6 col-sm-12 col-md-12 mt-2 mb-lg-5 mb-sm-3 '>
             <img className='about-img img-fluid p-4 rounded w-75' src="https://i.ibb.co/BBdLXxq/177877859-1197085884082551-5807271651355511687-n-3.jpg" alt="isuru pathirathna"/>
         </div>
-        <div className='col-lg-6 col-sm-10 col-md-12 mt-lg-5 mt-sm-0 mb-5 '>
-            <div className='scroll row justify-content-center ml-sm-0 ml-lg-3 mr-sm-0 mr-lg-3 mt-3 p-4 mt-3'>
+        <div className='col-lg-6 col-sm-12 col-md-12 mt-lg-5 mt-sm-0 mb-5 '>
+            <div className='scroll row justify-content-center ml-sm-0 ml-lg-3 mr-sm-0 mr-lg-3 mt-3 p-5 mt-3'>
                 <h4 className='mb-5 mt-3'>Software Developer, Guitarist, Swimmer</h4>
                 <p className='p-1'>Isuru Abhiman Abeywardhana Pathirathnaborn 29 June, 
                     is a pioneer personality in Western Province, Sri Lanka. He is a recognized
