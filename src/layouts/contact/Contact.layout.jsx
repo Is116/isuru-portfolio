@@ -23,10 +23,12 @@ export default function Contact() {
                      <h2>CONTACT</h2>
                      <hr/>
                  </div>
-         <div className="col-lg-6 col-sm-6 my-auto">
-                <i className="fa-solid fa-paper-plane contact-plane align-middle"></i>
+         <div className="col-lg-6 col-sm-12 col-md-6">
+            <div className="row justify-content-center mt-4">
+                <i className="fa-solid fa-paper-plane contact-plane mt-5"></i>
+            </div>
          </div>
-         <div className="col-lg-6 col-sm-12 text-start">
+         <div className="col-lg-6 col-sm-12 col-md-6 text-start">
          <form className='mb-5 p-4 mt-3' ref={form} onSubmit={sendEmail}>
                  <div className="mb-3">
                      <label htmlFor="name" className="form-label">Your Name</label>
