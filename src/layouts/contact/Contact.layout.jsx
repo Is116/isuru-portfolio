@@ -18,7 +18,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="row p-lg-5 p-sm-0 mt-5">
+    <div className="row p-lg-5 p-sm-0 mt-3">
         <div className='mb-2 text-center'>
                      <h2>CONTACT</h2>
                      <hr/>
