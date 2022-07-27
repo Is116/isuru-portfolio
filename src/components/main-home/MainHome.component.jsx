@@ -6,7 +6,7 @@ const MainHome = () => {
         <div className='col-lg-6 col-sm-12 mt-5 mb-lg-5 mb-sm-3 mr-3'>
             <img className='monkey-img img-fluid p-2 w-50 mt-4' src="https://i.ibb.co/CWkq2K4/techmonkey-no-background.png" alt="isuru pathirathna"/>
         </div>
-        <div className='col-lg-6 col-sm-10 mt-lg-5 mt-sm-0 mb-5'>
+        <div className='col-lg-6 col-sm-12 mt-lg-5 mt-sm-0 mb-5'>
             <div className='row justify-content-center ml-sm-0  mt-4 mb-3 p-4'>
                 <h1 className='name'>Isuru <span className='last-name'>Pathirathna.</span></h1>
                 <h2>(Tech Monkey)</h2>
