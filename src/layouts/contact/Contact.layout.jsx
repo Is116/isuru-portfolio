@@ -29,7 +29,7 @@ export default function Contact() {
             </div>
          </div>
          <div className="col-lg-6 col-sm-12 col-md-6 text-start">
-         <form className='mb-5 p-4 mt-3' ref={form} onSubmit={sendEmail}>
+         <form className='mb-5 p-4 mt-4' ref={form} onSubmit={sendEmail}>
                  <div className="mb-3">
                      <label htmlFor="name" className="form-label">Your Name</label>
                      <input className="form-control" type="text" name='user_name' required/>
