@@ -10,17 +10,17 @@ const About = () => {
         <div className='col-lg-6 col-sm-12 col-md-12 mt-lg-5 mt-sm-0 mb-5 '>
             <div className='scroll row justify-content-center ml-sm-0 ml-lg-3 mr-sm-0 mr-lg-3 mt-3 p-5 mt-3'>
                 <h4 className='mb-5 mt-3'>Software Developer, Guitarist, Swimmer</h4>
-                <p className='p-1'>Isuru Abhiman Abeywardhana Pathirathnaborn 29 June, 
-                    is a pioneer personality in Western Province, Sri Lanka. He is a recognized
-                    Software Developer, Swimmer, Guitarist in Sri Lanka. He started his path as an Software Developer in 2021,
-                    following a Software Engineering degree program by Plymouth University, United Kingdom.</p>
+                <p className='p-1'>Isuru Abhiman Abeywardhana Pathirathna
+                    is a pioneering personality in Western Province, Sri Lanka. He is a recognized
+                    Software Developer, Swimmer, Guitarist in Sri Lanka. He started his path as a Software Developer in 2021,
+                    currently following a Software Engineering degree program at Plymouth University, United Kingdom.</p>
 
                 <h2 className='mt-4'>Personal Life</h2>
                 <hr/>
                 <p className='p-1'>Isuru Pathirathna was born on 29 June 2002 in Colombo, Sri Lanka as the first child
                     in the family. He and his family lived in Homagama, Sri Lanka since his birth. He is a guitarist
-                    and a swimmer His father is Chulan Abeywardhana Pathirathna  and mother is Inoka Priyanthi Kumari.
-                    Isuru completed his primary education from Army School Panagoda and studied O/L and passed with 
+                    and a swimmer His father is Chulan Abeywardhana Pathirathna and his mother is Inoka Priyanthi Kumari.
+                    Isuru completed his primary education at Army School Panagoda and studied O/L and passed with 
                     stunning grades at Mahinda Rajapaksha College, Homagama. After that, he started following a degree
                     program at NSBM Green University. He will be graduated in 2023 with a B.Sc. in Software Engineering 
                     offered by Plymouth University, United Kingdom.</p>
@@ -29,7 +29,7 @@ const About = () => {
                 <hr/>
                 <p className='p-1'>Software Developer with good communication skills with the
                     ability to work hard and always interested in getting hands-on
-                    experience on new technologies and application design
+                    experience in new technologies and application design
                     paradigms. Has good knowledge of Laravel programming with
                     experience in developing web applications. hands-on
                     experience in Laravel, MySQL, HTML5, AJAX, jQuery, React and
