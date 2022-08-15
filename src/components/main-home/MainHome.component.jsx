@@ -8,7 +8,7 @@ const MainHome = () => {
         </div>
         <div className='col-lg-6 col-sm-12 mt-lg-5 mt-sm-0 mb-5'>
             <div className='row justify-content-center ml-sm-0  mt-4 mb-3 p-4'>
-                <h1 className='name mt-lg-4'>Isuru <span className='last-name'>Pathirathna.</span></h1>
+                <h1 className='name mt-lg-5'>Isuru <span className='last-name'>Pathirathna.</span></h1>
                 <h3 className='main-text mb-4 mt-5'>
                   Software Developer
                 </h3>
