@@ -5,8 +5,7 @@ import { FiDownload, FiMail, FiPhone, FiMapPin, FiGithub, FiLinkedin, FiGlobe, F
 import { useState } from 'react'
 
 const BusinessCard = () => {
-  const [nfcStatus, setNfcStatus] = useState<string>('')
-  const [isNfcSupported, setIsNfcSupported] = useState(true)
+  const [shareStatus, setShareStatus] = useState<string>('')
 
   const downloadVCard = () => {
     const vCardData = `BEGIN:VCARD
@@ -32,48 +31,33 @@ END:VCARD`
     window.URL.revokeObjectURL(url)
   }
 
-  const shareViaNFC = async () => {
+  const shareWhatsApp = async () => {
     try {
-      // Try Web Share API first (works on all mobile browsers)
+      const whatsappUrl = 'https://wa.me/358413671742'
+      
       if (navigator.share) {
         await navigator.share({
-          title: 'Isuru Pathirathna - Contact',
-          text: 'Full Stack Developer | Web, Mobile & AI Development Specialist\n\nEmail: isuru2002@gmail.com\nPhone: +358 41 367 1742\nLocation: Finland',
-          url: 'https://isurupathirathna.dev'
+          title: 'Chat with Isuru on WhatsApp',
+          text: 'Connect with me on WhatsApp for quick communication',
+          url: whatsappUrl
         })
-        setNfcStatus('✅ Shared successfully!')
-        setTimeout(() => setNfcStatus(''), 3000)
-        return
+        setShareStatus('✅ Shared successfully!')
+        setTimeout(() => setShareStatus(''), 3000)
+      } else {
+        // Fallback: open WhatsApp directly
+        window.open(whatsappUrl, '_blank')
+        setShareStatus('✅ Opening WhatsApp...')
+        setTimeout(() => setShareStatus(''), 3000)
       }
-
-      // Fallback to NFC (only works on HTTPS or localhost)
-      if (!('NDEFReader' in window)) {
-        setNfcStatus('ℹ️ NFC requires HTTPS. Access via localhost or deploy to use NFC.')
-        setTimeout(() => setNfcStatus(''), 4000)
-        return
-      }
-
-      const ndef = new (window as any).NDEFReader()
-      setNfcStatus('📱 Tap to NFC tag...')
-
-      await ndef.write({
-        records: [
-          { recordType: "url", data: "https://isurupathirathna.dev" }
-        ]
-      })
-
-      setNfcStatus('✅ Written to NFC!')
-      setTimeout(() => setNfcStatus(''), 3000)
     } catch (error: any) {
       console.error('Share Error:', error)
       if (error.name === 'AbortError') {
-        setNfcStatus('⚠️ Sharing cancelled')
-      } else if (error.name === 'NotAllowedError') {
-        setNfcStatus('❌ Permission denied')
+        setShareStatus('⚠️ Sharing cancelled')
       } else {
-        setNfcStatus('ℹ️ Share not available. Try downloading vCard instead.')
+        setShareStatus('ℹ️ Opening WhatsApp directly...')
+        window.open('https://wa.me/358413671742', '_blank')
       }
-      setTimeout(() => setNfcStatus(''), 4000)
+      setTimeout(() => setShareStatus(''), 3000)
     }
   }
 
@@ -232,22 +216,20 @@ END:VCARD`
                       <span>Download vCard</span>
                     </button>
                     
-                    {isNfcSupported && (
-                      <button onClick={shareViaNFC} className="btn-secondary flex-1 group justify-center gap-2">
-                        <FiRadio className="w-5 h-5 group-hover:animate-pulse" />
-                        <span>Share Contact</span>
-                      </button>
-                    )}
+                    <button onClick={shareWhatsApp} className="btn-secondary flex-1 group justify-center gap-2">
+                      <FiRadio className="w-5 h-5 group-hover:animate-pulse" />
+                      <span>Chat on WhatsApp</span>
+                    </button>
                   </div>
                   
-                  {nfcStatus && (
+                  {shareStatus && (
                     <motion.p 
                       className="mt-3 text-sm text-center text-gray-600 dark:text-gray-400"
                       initial={{ opacity: 0, y: -10 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0 }}
                     >
-                      {nfcStatus}
+                      {shareStatus}
                     </motion.p>
                   )}
                 </div>

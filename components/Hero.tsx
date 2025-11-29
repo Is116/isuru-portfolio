@@ -6,31 +6,35 @@ import { FiRadio } from 'react-icons/fi'
 import { useState } from 'react'
 
 const Hero = () => {
-  const [nfcStatus, setNfcStatus] = useState<string>('')
+  const [shareStatus, setShareStatus] = useState<string>('')
 
-  const shareViaNFC = async () => {
+  const shareWhatsApp = async () => {
     try {
-      // Use Web Share API (works on all mobile browsers)
+      const whatsappUrl = 'https://wa.me/358413671742'
+      
       if (navigator.share) {
         await navigator.share({
-          title: 'Chat with Isuru',
-          text: 'Connect with me on WhatsApp',
-          url: 'https://wa.me/qr/OCY4T7QELQEFB1'
+          title: 'Chat with Isuru on WhatsApp',
+          text: 'Connect with me on WhatsApp for quick communication',
+          url: whatsappUrl
         })
-        setNfcStatus('✅ Shared!')
-        setTimeout(() => setNfcStatus(''), 2000)
-        return
+        setShareStatus('✅ Shared!')
+        setTimeout(() => setShareStatus(''), 2000)
+      } else {
+        // Fallback: open WhatsApp directly
+        window.open(whatsappUrl, '_blank')
+        setShareStatus('✅ Opening WhatsApp...')
+        setTimeout(() => setShareStatus(''), 2000)
       }
-
-      // Fallback message
-      setNfcStatus('ℹ️ Share not available')
-      setTimeout(() => setNfcStatus(''), 2500)
     } catch (error: any) {
-      if (error.name !== 'AbortError') {
-        console.error('Share Error:', error)
-        setNfcStatus('⚠️ Cancelled')
-        setTimeout(() => setNfcStatus(''), 2000)
+      console.error('Share Error:', error)
+      if (error.name === 'AbortError') {
+        setShareStatus('⚠️ Cancelled')
+      } else {
+        setShareStatus('ℹ️ Opening WhatsApp...')
+        window.open(whatsappUrl, '_blank')
       }
+      setTimeout(() => setShareStatus(''), 2000)
     }
   }
 
@@ -188,22 +192,22 @@ const Hero = () => {
                   <p className="text-xs">on WhatsApp</p>
                 </div>
                 
-                {/* NFC Share Button */}
+                {/* WhatsApp Share Button */}
                 <button 
-                  onClick={shareViaNFC}
+                  onClick={shareWhatsApp}
                   className="btn-secondary w-full group text-sm gap-2"
                 >
                   <FiRadio className="w-4 h-4 group-hover:animate-pulse" />
-                  <span>Share WhatsApp</span>
+                  <span>Chat on WhatsApp</span>
                 </button>
                 
-                {nfcStatus && (
+                {shareStatus && (
                   <motion.p 
                     className="text-xs text-gray-600 dark:text-gray-400"
                     initial={{ opacity: 0, y: -5 }}
                     animate={{ opacity: 1, y: 0 }}
                   >
-                    {nfcStatus}
+                    {shareStatus}
                   </motion.p>
                 )}
               </div>
