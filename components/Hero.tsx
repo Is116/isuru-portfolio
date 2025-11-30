@@ -9,9 +9,9 @@ const Hero = () => {
   const [shareStatus, setShareStatus] = useState<string>('')
 
   const shareWhatsApp = async () => {
+    const whatsappUrl = 'https://wa.me/358413671742'
+    
     try {
-      const whatsappUrl = 'https://wa.me/358413671742'
-      
       if (navigator.share) {
         await navigator.share({
           title: 'Chat with Isuru on WhatsApp',
