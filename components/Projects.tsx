@@ -69,6 +69,7 @@ const Projects = () => {
                           src={img}
                           alt={`${project.title} screenshot ${imgIdx + 1}`}
                           fill
+                          sizes="(max-width: 768px) 33vw, (max-width: 1024px) 20vw, 15vw"
                           className="object-cover group-hover:scale-105 transition-transform duration-300"
                         />
                       </div>
