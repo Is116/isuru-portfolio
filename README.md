@@ -38,142 +38,182 @@ A modern, responsive portfolio website built with Next.js 14, TypeScript, and Ta
 npm install
 ```
 
-3. **Run the development server**
-```bash
-npm run dev
-```
+<!--
+  Regenerated README — consolidated portfolio documentation
+  Includes projects, screenshots, AI integration notes and development instructions.
+  Last updated: 2025-11-30
+-->
 
-4. **Open your browser**
-Navigate to [http://localhost:3000](http://localhost:3000)
+# Isuru Pathirathna — Developer Portfolio
 
-## 🎨 Customization
+This repository contains the source for Isuru's portfolio website built with Next.js (App Router), TypeScript and Tailwind CSS. It highlights selected projects, experience, and contact options including a digital business card and AI-related projects.
 
-### Update Personal Information
+Live site: https://isurupathirathna.dev
 
-1. **Hero Section** (`components/Hero.tsx`)
-   - Update your name and title
-   - Modify the introduction text
-   - Add your social media links
+## Table of contents
 
-2. **About Section** (`components/About.tsx`)
-   - Replace placeholder image/emoji with your photo
-   - Update personal description
-   - Modify core values
+- [Projects](#projects)
+- [AI Integration](#ai-integration)
+- [Screenshots](#screenshots)
+- [Local development](#local-development)
+- [Build & Deploy](#build--deploy)
+- [How to add projects or screenshots](#how-to-add-projects-or-screenshots)
+- [Contributing](#contributing)
+- [License](#license)
 
-3. **Skills Section** (`components/Skills.tsx`)
-   - Update skill levels and categories
-   - Add/remove technologies
+## Projects
 
-4. **Projects Section** (`components/Projects.tsx`)
-   - Add your actual projects
-   - Update project images, descriptions, and links
-   - Modify tags to match your tech stack
+### 1) NFC Business Card
 
-5. **Experience Section** (`components/Experience.tsx`)
-   - Update work experience
-   - Add your education details
-   - Include certifications
+- Repo: https://github.com/Is116/portfolio-flutter-app
+- Summary: Flutter mobile app that shares contact data using NFC and QR codes. Supports vCard, direct WhatsApp links, quick contact and full vCard sharing. Settings persist locally using SharedPreferences.
+- Tech: Flutter, Dart, HCE (Android NFC), Kotlin
 
-6. **Contact Section** (`components/Contact.tsx`)
-   - Update contact information
-   - Configure form submission (e.g., EmailJS, Formspree)
+Screenshots:
 
-### Customize Colors
-
-Edit `tailwind.config.js` to change the color scheme:
-
-```javascript
-colors: {
-  primary: {
-    // Update these values for your brand colors
-    400: '#38bdf8',
-    500: '#0ea5e9',
-    600: '#0284c7',
-    700: '#0369a1',
-  },
-}
-```
-
-### Update Metadata
-
-Edit `app/layout.tsx` to update SEO information:
-
-```typescript
-export const metadata: Metadata = {
-  title: 'Your Name - Portfolio',
-  description: 'Your custom description',
-  keywords: ['your', 'keywords'],
-}
-```
-
-## 📝 Form Integration
-
-To make the contact form functional, integrate with a service:
-
-### Option 1: EmailJS
-```bash
-npm install @emailjs/browser
-```
-
-### Option 2: Formspree
-Add your Formspree endpoint to the form action.
-
-### Option 3: Custom API Route
-Create `app/api/contact/route.ts` for server-side handling.
-
-## 🖼️ Adding Images
-
-1. Place images in the `public` folder
-2. Reference them in components:
-```tsx
-<Image src="/your-image.jpg" alt="Description" width={600} height={400} />
-```
-
-## 🚀 Deployment
-
-### Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Connect your repository to [Vercel](https://vercel.com)
-3. Deploy with one click
-
-### Netlify
-
-1. Build your project: `npm run build`
-2. Deploy the `.next` folder to Netlify
-
-### Other Platforms
-
-Build the project and deploy the output:
-```bash
-npm run build
-npm start
-```
-
-## 📱 Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
-## 🤝 Contributing
-
-Feel free to fork this project and customize it for your own use!
-
-## 📄 License
-
-This project is open source and available under the MIT License.
-
-## 🙏 Acknowledgments
-
-- Inspired by the Developer X Webflow Template by BRIX Templates
-- Built with modern web technologies and best practices
-
-## 📧 Contact
-
-For questions or suggestions, please open an issue or reach out through the contact form.
+![NFC Share](public/projects/portfolio/nfc_share.jpeg)
+![QR Codes](public/projects/portfolio/qr_codes.jpeg)
+![Settings](public/projects/portfolio/settings.jpeg)
 
 ---
 
-**Made with ❤️ using Next.js and Tailwind CSS**
+### 2) Thé Party
+
+- Repo: https://github.com/Is116/the-party-web
+- Demo: https://the-party-web.vercel.app/
+- Summary: Landing website for a music social platform showcasing brand identity, community features, and a download section. Built with performance and accessibility in mind.
+- Tech: Next.js, TypeScript, Tailwind CSS, Framer Motion
+
+Screenshot:
+
+![Thé Party](public/projects/the_party-app/the_party.png)
+
+---
+
+### 3) AI Chat — Fin Stories
+
+- Repo: https://github.com/Is116/ai-chat-fin-stories
+- Summary: AI-powered chat assistant for Finnish short stories and finance-oriented conversational examples. Demonstrates integrating a chat backend with LLM providers and a simple frontend UI.
+- Tech: TypeScript, Next.js, AI/LLM integrations (see repo for provider details)
+
+Screenshot:
+
+![AI Chat](public/projects/ai_chat/ai_chat.jpeg)
+
+## AI Integration
+
+The portfolio references projects that integrate AI and LLMs. If you'd like to enable AI demos locally or in deployment:
+
+- Create a secure API route to proxy requests to the model provider (OpenAI, Azure, or a self-hosted model).
+- Store keys in environment variables (`.env.local`) and never commit them.
+- Implement usage limits and request validation for public demos.
+
+Example environment vars (not included in repo):
+
+```
+OPENAI_API_KEY=sk-... (or provider-specific key)
+```
+
+### Gemini AI (example config)
+
+If you plan to demo or integrate Google's Gemini (or a Gemini-compatible provider), add provider credentials and the model name to your environment. Below is a safe, example configuration and a minimal server-side example for Next.js. Replace provider endpoints and request bodies according to the provider's API documentation.
+
+Environment variables (example):
+
+```
+GEMINI_API_KEY=your_gemini_api_key_here
+GEMINI_MODEL=gemini-pro-1
+```
+
+Server-side Next.js API example (TypeScript):
+
+```ts
+// app/api/gemini/route.ts
+import { NextResponse } from 'next/server'
+
+export async function POST(request: Request) {
+  const body = await request.json()
+  // server-side only: read API key from env
+  const apiKey = process.env.GEMINI_API_KEY
+  const model = process.env.GEMINI_MODEL || 'gemini-pro-1'
+
+  if (!apiKey) {
+    return NextResponse.json({ error: 'Missing GEMINI_API_KEY' }, { status: 500 })
+  }
+
+  // Example fetch: replace URL & payload with your provider's required format
+  const res = await fetch(`https://generativelanguage.googleapis.com/v1/models/${model}:generate?key=${apiKey}`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      // provider-specific payload
+      prompt: body.prompt,
+      // options: temperature, maxOutputTokens, etc.
+    })
+  })
+
+  const data = await res.json()
+  return NextResponse.json(data)
+}
+```
+
+Notes:
+- Keep API keys server-side (do not expose in client bundles).
+- Use request validation, rate limits and quotas for any public demo.
+- Check provider docs for exact endpoint, auth method, and request schema (the example above uses a generative language endpoint as illustration).
+
+## Screenshots
+
+All screenshots used in project cards live under `public/projects/` and are embedded above. Add new screenshot files to a folder under `public/projects/<project>/` and then update `components/Projects.tsx`.
+
+## Local development
+
+Prerequisites:
+
+- Node.js 18+ or Bun
+- npm, yarn or bun
+
+Install & run (Bun recommended):
+
+```bash
+bun install
+bun dev --hostname 0.0.0.0
+```
+
+Or with npm:
+
+```bash
+npm install
+npm run dev -- --hostname 0.0.0.0
+```
+
+Open `http://localhost:3000` or access from your local network if started with `--hostname 0.0.0.0`.
+
+## Build & Deploy
+
+```bash
+npm run build
+npm run start
+```
+
+Deploy to Vercel for HTTPS and automatic builds (recommended).
+
+## How to add projects or screenshots
+
+1. Add screenshot files to `public/projects/<project-name>/`
+2. Edit `components/Projects.tsx` and add an entry in the `projects` array with keys: `title`, `description`, `tags`, `github`, `demo`, `images` (array of image paths)
+3. Run `npm run build` to verify type safety and compilation
+
+## Contributing
+
+Contributions are welcome. Open an issue or PR with improvements.
+
+## License
+
+All rights reserved © 2025 Isuru Pathirathna
+
+---
+
+_README regenerated by assistant to consolidate project docs and include screenshots._

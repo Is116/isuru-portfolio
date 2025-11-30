@@ -18,6 +18,26 @@ const Projects = () => {
         '/projects/portfolio/settings.jpeg'
       ]
     },
+    {
+      title: 'Thé Party',
+      description: 'Modern landing page for a music social networking platform. Features responsive design, smooth animations, and comprehensive sections showcasing community forums, event ticketing, and music streaming.',
+      tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+      github: 'https://github.com/Is116/the-party-web',
+      demo: 'https://the-party-web.vercel.app/',
+      images: [
+        '/projects/the_party-app/the_party.png'
+      ]
+    },
+    {
+      title: 'Literary Chat — AI Book Character Conversations',
+      description: 'A full-stack AI web application for dynamic conversations with literary characters. Users upload PDF books; the system uses Google Gemini AI for automatic character and metadata extraction, leveraging RAG for context-aware, multilingual chats with detailed, opinionated character personas.',
+      tags: ['Gemini AI', 'Chat', 'React', 'Node.js', 'Express', 'SQLite', 'Tailwind CSS'],
+      github: 'https://github.com/Is116/ai-chat-fin-stories',
+      // demo: 'https://ai-chat-fin-stories.vercel.app',
+      images: [
+        '/projects/ai_chat/ai_chat.jpeg'
+      ]
+    }
   ]
 
   return (
@@ -59,17 +79,19 @@ const Projects = () => {
               {/* Project Images */}
               {project.images && project.images.length > 0 && (
                 <div className="mb-4 -mt-2">
-                  <div className="grid grid-cols-3 gap-2">
+                  <div className={`flex gap-2 ${project.images.length > 1 ? 'overflow-x-auto scrollbar-hide' : ''} snap-x snap-mandatory`}>
                     {project.images.map((img, imgIdx) => (
                       <div 
                         key={imgIdx}
-                        className="relative aspect-[9/16] rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700"
+                        className={`relative rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 flex-shrink-0 snap-center ${
+                          project.images.length === 3 ? 'w-[120px] aspect-[9/16]' : 'w-full aspect-[16/9]'
+                        }`}
                       >
                         <Image
                           src={img}
                           alt={`${project.title} screenshot ${imgIdx + 1}`}
                           fill
-                          sizes="(max-width: 768px) 33vw, (max-width: 1024px) 20vw, 15vw"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                           className="object-cover group-hover:scale-105 transition-transform duration-300"
                         />
                       </div>

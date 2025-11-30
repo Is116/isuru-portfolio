@@ -239,4 +239,14 @@
   .hover-glow {
     @apply transition-shadow duration-300 hover:shadow-lg hover:shadow-accent-500/20;
   }
+  
+  /* Hide scrollbar */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 }
