@@ -1,33 +1,22 @@
 'use client'
 
-import { ExternalLink, Star, GitFork, Code2 } from 'lucide-react'
+import { ExternalLink, Code2 } from 'lucide-react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const Projects = () => {
   const projects = [
     {
-      title: 'React Native E-Commerce',
-      description: 'Full-featured mobile shopping app with cart management, payment integration, and real-time order tracking. Built with modern React Native architecture.',
-      tags: ['React Native', 'TypeScript', 'Redux', 'Firebase'],
+      title: 'NFC Business Card',
+      description: 'Flutter mobile app for instant contact sharing using NFC and QR codes. Share portfolio, WhatsApp link, contact info, and full vCard with customizable settings and local data storage.',
+      tags: ['Flutter', 'Dart', 'NFC', 'HCE', 'Kotlin'],
+      github: 'https://github.com/Is116/portfolio-flutter-app',
       demo: null,
-      stars: 142,
-      forks: 28,
-    },
-    {
-      title: 'Open Task Manager',
-      description: 'Collaborative task management platform with team workspaces, real-time sync, and Kanban boards. Fully open-source and self-hostable.',
-      tags: ['Next.js', 'Node.js', 'PostgreSQL', 'Socket.io'],
-      demo: 'https://demo.com',
-      stars: 89,
-      forks: 15,
-    },
-    {
-      title: 'DevTools CLI',
-      description: 'Command-line productivity toolkit for developers. Includes code generators, Git helpers, and deployment automation scripts.',
-      tags: ['Node.js', 'TypeScript', 'Commander', 'Chalk'],
-      demo: null,
-      stars: 67,
-      forks: 12,
+      images: [
+        '/projects/portfolio/nfc_share.jpeg',
+        '/projects/portfolio/qr_codes.jpeg',
+        '/projects/portfolio/settings.jpeg'
+      ]
     },
   ]
 
@@ -67,20 +56,31 @@ const Projects = () => {
                 transition: { duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }
               }}
             >
-              {/* Project Header */}
-              <div className="flex items-start justify-between mb-4">
-                <div className="p-2 bg-accent-50 dark:bg-accent-900/20 rounded-lg">
-                  <Code2 size={20} className="text-accent-600 dark:text-accent-400" />
+              {/* Project Images */}
+              {project.images && project.images.length > 0 && (
+                <div className="mb-4 -mt-2">
+                  <div className="grid grid-cols-3 gap-2">
+                    {project.images.map((img, imgIdx) => (
+                      <div 
+                        key={imgIdx}
+                        className="relative aspect-[9/16] rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700"
+                      >
+                        <Image
+                          src={img}
+                          alt={`${project.title} screenshot ${imgIdx + 1}`}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    ))}
+                  </div>
                 </div>
-                <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
-                  <div className="flex items-center gap-1">
-                    <Star size={14} />
-                    <span className="font-mono text-xs">{project.stars}</span>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <GitFork size={14} />
-                    <span className="font-mono text-xs">{project.forks}</span>
-                  </div>
+              )}
+
+              {/* Project Header */}
+              <div className="mb-4">
+                <div className="p-2 bg-accent-50 dark:bg-accent-900/20 rounded-lg inline-block">
+                  <Code2 size={20} className="text-accent-600 dark:text-accent-400" />
                 </div>
               </div>
 
@@ -105,9 +105,20 @@ const Projects = () => {
                   ))}
                 </div>
 
-                {/* Demo Link */}
-                {project.demo && (
-                  <div className="pt-3 mt-auto">
+                {/* Links */}
+                <div className="pt-3 mt-auto flex items-center gap-3">
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-sm text-accent-600 dark:text-accent-400 hover:text-accent-700 dark:hover:text-accent-300 font-medium transition-colors"
+                    >
+                      <Code2 size={16} />
+                      View Code
+                    </a>
+                  )}
+                  {project.demo && (
                     <a
                       href={project.demo}
                       target="_blank"
@@ -117,8 +128,8 @@ const Projects = () => {
                       <ExternalLink size={16} />
                       View Demo
                     </a>
-                  </div>
-                )}
+                  )}
+                </div>
               </div>
             </motion.div>
           ))}
