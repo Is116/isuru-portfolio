@@ -44,13 +44,33 @@ const About = () => {
           </p>
         </motion.div>
 
-        <motion.div 
-          className="max-w-4xl space-y-6"
-          variants={container}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-        >
+        <div className="grid lg:grid-cols-[300px,1fr] gap-8 lg:gap-12 max-w-6xl">
+          {/* Profile Image */}
+          <motion.div
+            className="flex justify-center lg:justify-start"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
+          >
+            <div className="relative w-64 h-64 lg:w-full lg:h-auto lg:aspect-square rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src="/priofile_img.png" 
+                alt="Isuru Pathirathna"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-accent-600/20 to-transparent"></div>
+            </div>
+          </motion.div>
+
+          {/* About Content */}
+          <motion.div 
+            className="space-y-6"
+            variants={container}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          >
           <motion.div variants={item} className="card">
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
               Hey there! I'm <span className="font-semibold text-gray-900 dark:text-white">Isuru Pathirathna</span>, 
@@ -82,7 +102,8 @@ const About = () => {
               real impact.
             </p>
           </motion.div>
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
     </section>
   )
