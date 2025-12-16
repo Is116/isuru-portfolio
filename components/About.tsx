@@ -74,7 +74,7 @@ const About = () => {
           <motion.div variants={item} className="card">
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
               Hey there! I'm <span className="font-semibold text-gray-900 dark:text-white">Isuru Pathirathna</span>, 
-              a web and mobile developer who believes code should be open, accessible, and maybe a little fun. 
+              a Sri Lankan web and mobile developer based in Finland who believes code should be open, accessible, and maybe a little fun. 
               I've been coding for over 3 years, diving into everything from React Native and Flutter apps to full-stack web platforms.
             </p>
           </motion.div>

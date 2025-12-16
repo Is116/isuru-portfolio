@@ -89,7 +89,7 @@ const Hero = () => {
               </motion.h1>
               
               <motion.p variants={item} className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed">
-                AI and embedded system enthusiast building web & mobile apps. Breaking things to understand them, then building them better.
+                A Sri Lankan AI and embedded system enthusiast building web & mobile apps. Breaking things to understand them, then building them better.
               </motion.p>
             </div>
 
