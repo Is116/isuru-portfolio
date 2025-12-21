@@ -1506,7 +1506,7 @@ export default function TapToPayArticle() {
           {/* Sources */}
           <motion.section variants={fadeInUp} className="mb-16">
             <div className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-800 shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Sources I actually read for this:</h3>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Sources u can get more information from:</h3>
               <ul className="grid md:grid-cols-2 gap-3 text-gray-700 dark:text-gray-300">
                 <li className="flex items-start gap-2">
                   <span className="text-accent-500 mt-1">•</span>
