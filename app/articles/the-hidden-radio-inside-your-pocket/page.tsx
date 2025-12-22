@@ -57,7 +57,7 @@ export default function RFHardwareLockdownArticle() {
           <div className="flex items-center gap-6 text-sm text-gray-600 dark:text-gray-400 mb-8">
             <div className="flex items-center gap-2">
               <Calendar size={16} />
-              <time dateTime="2024-12-01">Dec 23, 2024</time>
+              <time dateTime="2024-12-23">Dec 23, 2024</time>
             </div>
             <div className="flex items-center gap-2">
               <Clock size={16} />

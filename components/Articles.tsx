@@ -18,7 +18,7 @@ const Articles = () => {
     {
       title: "The Hidden Radio Inside Your Pocket: Why Your Phone Can't Access Its Own Hardware",
       description: 'A deep technical exploration of RF hardware lockdown, regulatory compliance, and the architecture preventing custom wireless transmission on modern smartphones.',
-      date: '2024-12-01',
+      date: '2024-12-23',
       readTime: '25 min read',
       link: '/articles/the-hidden-radio-inside-your-pocket',
       tags: ['RF', 'Security', 'Android', 'Hardware', 'Regulation'],
