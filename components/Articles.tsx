@@ -14,6 +14,15 @@ const Articles = () => {
       link: '/articles/tap-to-pay-security',
       tags: ['Payment Security', 'NFC', 'Cryptography', 'Fintech'],
       image: '/articles/NFC_article.png'
+    },
+    {
+      title: "The Hidden Radio Inside Your Pocket: Why Your Phone Can't Access Its Own Hardware",
+      description: 'A deep technical exploration of RF hardware lockdown, regulatory compliance, and the architecture preventing custom wireless transmission on modern smartphones.',
+      date: '2024-12-01',
+      readTime: '25 min read',
+      link: '/articles/the-hidden-radio-inside-your-pocket',
+      tags: ['RF', 'Security', 'Android', 'Hardware', 'Regulation'],
+      image: '/articles/radio_article.png'
     }
   ]
 
