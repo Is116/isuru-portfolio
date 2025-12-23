@@ -54,28 +54,28 @@ export default function RFHardwareLockdownArticle() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
             The Hidden Radio Inside Your Pocket: Why Your Phone Can't Access Its Own Hardware
           </h1>
-          <div className="flex items-center gap-6 text-sm text-gray-600 dark:text-gray-400 mb-8">
+            <div className="flex flex-wrap items-center gap-4 md:gap-6 text-sm text-gray-600 dark:text-gray-400 mb-8">
             <div className="flex items-center gap-2">
-              <Calendar size={16} />
+              <Calendar size={16} className="flex-shrink-0" />
               <time dateTime="2024-12-23">Dec 23, 2024</time>
             </div>
             <div className="flex items-center gap-2">
-              <Clock size={16} />
+              <Clock size={16} className="flex-shrink-0" />
               <span>25 min read</span>
             </div>
             <div className="flex items-center gap-2">
-              <Radio size={16} />
+              <Radio size={16} className="flex-shrink-0" />
               <span>RF Security</span>
             </div>
             <div className="flex items-center gap-2">
-              <Smartphone size={16} />
+              <Smartphone size={16} className="flex-shrink-0" />
               <span>Android</span>
             </div>
             <div className="flex items-center gap-2">
-              <Shield size={16} />
+              <Shield size={16} className="flex-shrink-0" />
               <span>Regulation</span>
             </div>
-          </div>
+            </div>
           {/* Featured Image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -333,28 +333,28 @@ int verify_firmware(struct firmware_header *fw) {
               {/* Regulatory Layers */}
               <div className="space-y-6 my-8">
                 {/* Layer 1 */}
-                <div className="bg-gradient-to-br from-red-50 to-orange-50 dark:from-red-900/30 dark:to-orange-900/30 rounded-xl p-6 border-2 border-red-300 dark:border-red-700 shadow-lg">
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-red-500 text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      1
+                <div className="bg-gradient-to-br from-red-50 to-orange-50 dark:from-red-900/30 dark:to-orange-900/30 rounded-xl p-4 md:p-6 border-2 border-red-300 dark:border-red-700 shadow-lg">
+                  <div className="flex items-start gap-3 md:gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-red-500 text-white rounded-full flex items-center justify-center font-bold text-base md:text-lg">
+                    1
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h4 className="text-lg md:text-xl font-bold text-red-900 dark:text-red-200 mb-2 md:mb-3">
+                    Layer 1: Hardware Registers (Non-Volatile Memory)
+                    </h4>
+                    <p className="text-sm md:text-base text-gray-800 dark:text-gray-200 mb-3 md:mb-4">
+                    Regulatory restrictions are burned into the chip at manufacturing time and cannot be modified:
+                    </p>
+                    <div className="bg-white dark:bg-gray-800 rounded-lg p-3 md:p-4 font-mono text-[10px] sm:text-xs overflow-x-auto">
+                    <pre className="text-gray-800 dark:text-gray-200">{`// Burned into chip at manufacturing
+        struct regulatory_domain {
+          char country_code[2];        // "US", "EU", "JP", etc.
+          uint32_t allowed_channels;   // Bitmask of legal channels
+          int8_t max_power_dbm[40];    // Per-channel power limits
+          uint32_t flags;              // DFS required, Indoor only, etc.
+        };`}</pre>
                     </div>
-                    <div className="flex-1">
-                      <h4 className="text-xl font-bold text-red-900 dark:text-red-200 mb-3">
-                        Layer 1: Hardware Registers (Non-Volatile Memory)
-                      </h4>
-                      <p className="text-gray-800 dark:text-gray-200 mb-4">
-                        Regulatory restrictions are burned into the chip at manufacturing time and cannot be modified:
-                      </p>
-                      <div className="bg-white dark:bg-gray-800 rounded-lg p-4 font-mono text-xs overflow-x-auto">
-                        <pre className="text-gray-800 dark:text-gray-200">{`// Burned into chip at manufacturing
-struct regulatory_domain {
-    char country_code[2];        // "US", "EU", "JP", etc.
-    uint32_t allowed_channels;   // Bitmask of legal channels
-    int8_t max_power_dbm[40];    // Per-channel power limits
-    uint32_t flags;              // DFS required, Indoor only, etc.
-};`}</pre>
-                      </div>
-                    </div>
+                  </div>
                   </div>
                 </div>
 
