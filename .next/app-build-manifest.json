@@ -15,6 +15,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/articles/the-hidden-radio-inside-your-pocket/page.js"
+    ],
+    "/articles/tap-to-pay-security/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/articles/tap-to-pay-security/page.js"
     ]
   }
 }
