@@ -5,6 +5,14 @@ export default function ArticlesPage() {
   // Add more articles here as you create them
   const articles = [
     {
+      slug: "c-language-enduring-legacy",
+      title: "The Enduring Legacy of C: Why Half a Century Later, We Still Can't Live Without It",
+      description: "From Bell Labs to your smartphone: discover how C became the invisible foundation of modern computing and why it remains indispensable after 50+ years.",
+      date: "December 2025",
+      image: "/articles/c.png",
+      tags: ["C", "Systems Programming", "History", "Architecture"]
+    },
+    {
       slug: "tap-to-pay-security",
       title: "Why Your Tap-to-Pay Card Is Way Smarter Than You Think",
       description: "A deep dive into the security and technology behind contactless payment cards.",

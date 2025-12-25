@@ -8,6 +8,15 @@ import Link from 'next/link'
 const Articles = () => {
   const articles = [
     {
+      title: 'The Enduring Legacy of C: Why Half a Century Later, We Still Can\'t Live Without It',
+      description: 'From Bell Labs in 1972 to your smartphone today—discover how C became the invisible foundation of modern computing. Explore its architecture, see why 90% of OS kernels use C, and understand why this 50-year-old language remains indispensable.',
+      date: '2025-12-25',
+      readTime: '22 min read',
+      link: '/articles/c-language-enduring-legacy',
+      tags: ['C', 'Systems Programming', 'History', 'Architecture'],
+      image: '/articles/c.png'
+    },
+    {
       title: 'Why Your Tap-to-Pay Card Is Way Smarter Than You Think',
       description: 'A deep dive into the cryptographic architecture protecting your contactless payments. From NFC power transfer to quantum-resistant algorithms, discover how tokenization, secure elements, and multi-layer encryption work together to secure every tap.',
       date: '2025-12-21',
