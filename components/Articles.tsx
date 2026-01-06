@@ -8,6 +8,15 @@ import Link from 'next/link'
 const Articles = () => {
   const articles = [
     {
+      title: 'From Coaxial to Fiber: The Evolution of Broadband Infrastructure',
+      description: 'Explore the evolution of broadband from coaxial cables to fiber optics. Dive deep into network architecture, signal processing, and the quest for better alternatives in telecommunications infrastructure.',
+      date: '2026-01-06',
+      readTime: '35 min read',
+      link: '/articles/from-coaxial-to-fiber',
+      tags: ['Network Infrastructure', 'Broadband', 'Telecommunications', 'Fiber Optics'],
+      image: '/articles/line_evolution.png'
+    },
+    {
       title: 'The Enduring Legacy of C: Why Half a Century Later, We Still Can\'t Live Without It',
       description: 'From Bell Labs in 1972 to your smartphone today—discover how C became the invisible foundation of modern computing. Explore its architecture, see why 90% of OS kernels use C, and understand why this 50-year-old language remains indispensable.',
       date: '2025-12-25',
