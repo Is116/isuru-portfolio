@@ -1,11 +1,14 @@
 'use client'
 
-import { ExternalLink, Calendar, Clock, BookOpen } from 'lucide-react'
+import { ExternalLink, Calendar, Clock, BookOpen, ChevronDown } from 'lucide-react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
 
 const Articles = () => {
+  const [showAll, setShowAll] = useState(false)
+
   const articles = [
     {
       title: 'From Coaxial to Fiber: The Evolution of Broadband Infrastructure',
@@ -64,7 +67,7 @@ const Articles = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {articles.map((article, index) => (
+          {articles.slice(0, showAll ? articles.length : 3).map((article, index) => (
             <motion.article
               key={index}
               initial={{ opacity: 0, y: 30 }}
@@ -159,6 +162,25 @@ const Articles = () => {
             </motion.article>
           ))}
         </div>
+
+        {/* Load More Button */}
+        {articles.length > 3 && !showAll && (
+          <motion.div 
+            className="flex justify-center mt-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <button
+              onClick={() => setShowAll(true)}
+              className="inline-flex items-center gap-2 px-8 py-4 bg-accent-600 hover:bg-accent-700 dark:bg-accent-500 dark:hover:bg-accent-600 text-white font-semibold rounded-xl transition-all hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              Load More Articles
+              <ChevronDown size={20} />
+            </button>
+          </motion.div>
+        )}
       </div>
     </section>
   )
