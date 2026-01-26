@@ -11,6 +11,15 @@ const Articles = () => {
 
   const articles = [
     {
+      title: 'Democratizing Brain-Machine Interfaces: What You Can Do With Affordable Devices',
+      description: 'Discover how consumer-grade brain-machine interfaces are making neurotechnology accessible to everyone. From meditation apps to creative applications, explore what\'s possible with affordable EEG devices.',
+      date: '2026-01-26',
+      readTime: '18 min read',
+      link: '/articles/democratizing-brain-machine-interfaces',
+      tags: ['Neurotechnology', 'BMI', 'EEG', 'AI', 'Consumer Tech'],
+      image: '/articles/human_brain.png'
+    },
+    {
       title: 'From Coaxial to Fiber: The Evolution of Broadband Infrastructure',
       description: 'Explore the evolution of broadband from coaxial cables to fiber optics. Dive deep into network architecture, signal processing, and the quest for better alternatives in telecommunications infrastructure.',
       date: '2026-01-06',

@@ -11,10 +11,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
-    "/articles/from-coaxial-to-fiber/page": [
+    "/articles/democratizing-brain-machine-interfaces/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/articles/from-coaxial-to-fiber/page.js"
+      "static/chunks/app/articles/democratizing-brain-machine-interfaces/page.js"
     ]
   }
 }
