@@ -10,11 +10,12 @@ const Projects = () => {
   const [showAll, setShowAll] = useState(false)
   const projects = [
     {
-      title: 'Literary Chat — AI Book Character Conversations',
+      title: 'Literary Chat AI Book Character Conversations',
       description: 'A full-stack AI web application for dynamic conversations with literary characters. Users upload PDF books; the system uses Google Gemini AI for automatic character and metadata extraction, leveraging RAG for context-aware, multilingual chats with detailed, opinionated character personas.',
       tags: ['Gemini AI', 'Chat', 'React', 'Node.js', 'Express', 'SQLite', 'Tailwind CSS'],
       github: 'https://github.com/Is116/ai-chat-fin-stories',
       demo: null,
+      link: '/projects/literary-chat',
       images: [
         '/projects/ai_chat/ai_chat.jpeg'
       ]
