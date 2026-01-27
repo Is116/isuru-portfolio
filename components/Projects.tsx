@@ -1,12 +1,37 @@
 'use client'
 
-import { ExternalLink, Code2 } from 'lucide-react'
+import { ExternalLink, Code2, ChevronDown, FileText } from 'lucide-react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import Link from 'next/link'
+import { useState } from 'react'
 
 const Projects = () => {
+  const [showAll, setShowAll] = useState(false)
   const projects = [
     {
+      title: 'Literary Chat — AI Book Character Conversations',
+      description: 'A full-stack AI web application for dynamic conversations with literary characters. Users upload PDF books; the system uses Google Gemini AI for automatic character and metadata extraction, leveraging RAG for context-aware, multilingual chats with detailed, opinionated character personas.',
+      tags: ['Gemini AI', 'Chat', 'React', 'Node.js', 'Express', 'SQLite', 'Tailwind CSS'],
+      github: 'https://github.com/Is116/ai-chat-fin-stories',
+      demo: null,
+      images: [
+        '/projects/ai_chat/ai_chat.jpeg'
+      ]
+    },
+    {
+    title: 'Gesture Works Hand Gesture Control',
+    description: 'Real-time hand gesture recognition system using machine learning to control a ball on screen. Train custom gestures (UP, DOWN, LEFT, RIGHT, FREEZE) with TensorFlow.js and MediaPipe for low-latency detection and interactive gameplay.',
+    tags: ['Next.js', 'TypeScript', 'TensorFlow.js', 'MediaPipe', 'Machine Learning'],
+    github: 'https://github.com/Is116/gesture-works',
+    demo: null,
+    link: '/projects/gesture-works',
+    images: [
+      '/projects/gesture_works/manage.jpeg',
+      '/projects/gesture_works/game.jpeg'
+    ]
+  },
+      {
       title: 'NFC Business Card',
       description: 'Flutter mobile app for instant contact sharing using NFC and QR codes. Share portfolio, WhatsApp link, contact info, and full vCard with customizable settings and local data storage.',
       tags: ['Flutter', 'Dart', 'NFC', 'HCE', 'Kotlin'],
@@ -26,16 +51,6 @@ const Projects = () => {
       demo: 'https://the-party-web.vercel.app/',
       images: [
         '/projects/the_party-app/the_party.png'
-      ]
-    },
-    {
-      title: 'Literary Chat — AI Book Character Conversations',
-      description: 'A full-stack AI web application for dynamic conversations with literary characters. Users upload PDF books; the system uses Google Gemini AI for automatic character and metadata extraction, leveraging RAG for context-aware, multilingual chats with detailed, opinionated character personas.',
-      tags: ['Gemini AI', 'Chat', 'React', 'Node.js', 'Express', 'SQLite', 'Tailwind CSS'],
-      github: 'https://github.com/Is116/ai-chat-fin-stories',
-      // demo: 'https://ai-chat-fin-stories.vercel.app',
-      images: [
-        '/projects/ai_chat/ai_chat.jpeg'
       ]
     }
   ]
@@ -59,7 +74,7 @@ const Projects = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project, index) => (
+          {projects.slice(0, showAll ? projects.length : 3).map((project, index) => (
             <motion.div
               key={index}
               className="card group hover:border-accent-300 dark:hover:border-accent-700 transition-all hover-lift"
@@ -129,7 +144,16 @@ const Projects = () => {
                 </div>
 
                 {/* Links */}
-                <div className="pt-3 mt-auto flex items-center gap-3">
+                <div className="pt-3 mt-auto flex items-center gap-3 flex-wrap">
+                  {project.link && (
+                    <Link
+                      href={project.link}
+                      className="inline-flex items-center gap-1.5 text-sm text-accent-600 dark:text-accent-400 hover:text-accent-700 dark:hover:text-accent-300 font-medium transition-colors"
+                    >
+                      <FileText size={16} />
+                      View Project
+                    </Link>
+                  )}
                   {project.github && (
                     <a
                       href={project.github}
@@ -157,6 +181,25 @@ const Projects = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* Load More Button */}
+        {projects.length > 3 && !showAll && (
+          <motion.div 
+            className="flex justify-center mt-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <button
+              onClick={() => setShowAll(true)}
+              className="inline-flex items-center gap-2 px-8 py-4 bg-accent-600 hover:bg-accent-700 dark:bg-accent-500 dark:hover:bg-accent-600 text-white font-semibold rounded-xl transition-all hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              Load More Projects
+              <ChevronDown size={20} />
+            </button>
+          </motion.div>
+        )}
       </div>
     </section>
   )
