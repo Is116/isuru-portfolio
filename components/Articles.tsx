@@ -11,6 +11,15 @@ const Articles = () => {
 
   const articles = [
     {
+      title: 'How Electromagnetic Interference Stops, Crashes, and Compromises Integrated Circuits',
+      description: 'A technical deep dive into frequency injection attacks, chip-backside vulnerabilities, timing jitter models, and real-world exploitation. Learn how EMI attacks work and how to defend against them.',
+      date: '2026-02-01',
+      readTime: '24 min read',
+      link: '/articles/electromagnetic-interference-attacks',
+      tags: ['Hardware Security', 'EMI', 'Cryptography', 'Automotive', 'IoT'],
+      image: '/articles/emi_security.png'
+    },
+    {
       title: 'Democratizing Brain-Machine Interfaces: What You Can Do With Affordable Devices',
       description: 'Discover how consumer-grade brain-machine interfaces are making neurotechnology accessible to everyone. From meditation apps to creative applications, explore what\'s possible with affordable EEG devices.',
       date: '2026-01-26',
