@@ -11,10 +11,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
-    "/articles/electromagnetic-interference-attacks/page": [
+    "/articles/searchable-legal-archive/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/articles/electromagnetic-interference-attacks/page.js"
+      "static/chunks/app/articles/searchable-legal-archive/page.js"
     ]
   }
 }

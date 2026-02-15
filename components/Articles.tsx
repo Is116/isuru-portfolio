@@ -11,6 +11,15 @@ const Articles = () => {
 
   const articles = [
     {
+      title: 'Building a Searchable Archive: How AI Processes 8,000+ Legal Documents',
+      description: 'A technical deep-dive into OCR technology, entity extraction (12,243 people, 5,709 organizations, 3,211 locations), AI deduplication systems, and the open-source Python pipeline that powers legal transparency.',
+      date: '2026-02-15',
+      readTime: '18 min read',
+      link: '/articles/searchable-legal-archive',
+      tags: ['AI', 'OCR', 'Legal Tech', 'Python', 'Open Source'],
+      image: '/articles/document_search.png'
+    },
+    {
       title: 'How Electromagnetic Interference Stops, Crashes, and Compromises Integrated Circuits',
       description: 'A technical deep dive into frequency injection attacks, chip-backside vulnerabilities, timing jitter models, and real-world exploitation. Learn how EMI attacks work and how to defend against them.',
       date: '2026-02-01',
