@@ -1,6 +1,6 @@
 'use client'
 
-import { Briefcase, GraduationCap } from 'lucide-react'
+import { Briefcase, GraduationCap, Award } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 const Experience = () => {
@@ -43,6 +43,17 @@ const Experience = () => {
         'Developed AI-powered features and mobile applications for diverse industries',
         'Implemented responsive designs with Tailwind CSS and modern frameworks',
       ],
+    },
+  ]
+
+  const certifications = [
+    {
+      title: 'Innovations in Investment Technology: Artificial Intelligence',
+      issuer: 'University of Michigan',
+      platform: 'Coursera',
+      date: 'March 2026',
+      url: 'https://www.coursera.org/account/accomplishments/verify/NLSSSEXY1N3I',
+      skills: ['AI', 'FinTech', 'Portfolio Management', 'Machine Learning', 'Investment Management'],
     },
   ]
 
@@ -131,7 +142,7 @@ const Experience = () => {
             </div>
           </motion.div>
 
-          {/* Education */}
+          {/* Education & Certifications */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -166,6 +177,47 @@ const Experience = () => {
                   </div>
                 </div>
               ))}
+            </div>
+
+            {/* Certifications */}
+            <div className="mt-10">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="p-3 bg-accent-50 dark:bg-accent-900/20 rounded-lg hover-scale">
+                  <Award className="text-accent-600 dark:text-accent-400" size={24} />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Certifications</h3>
+              </div>
+
+              <div className="space-y-4">
+                {certifications.map((cert, index) => (
+                  <a
+                    key={index}
+                    href={cert.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="card hover-lift block group"
+                  >
+                    <div className="flex items-start mb-3">
+                      <div className="flex-1">
+                        <h4 className="text-base font-bold text-gray-900 dark:text-white mb-1 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                          {cert.title}
+                        </h4>
+                        <p className="text-accent-600 dark:text-accent-400 font-medium text-sm">{cert.issuer}</p>
+                        <div className="flex items-center gap-2 mt-1">
+                          <p className="text-xs text-gray-500 dark:text-gray-400">{cert.platform}</p>
+                          <span className="text-gray-300 dark:text-gray-600">•</span>
+                          <p className="text-xs text-gray-500 dark:text-gray-400">{cert.date}</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex flex-wrap gap-1.5 mt-3">
+                      {cert.skills.map((skill, idx) => (
+                        <span key={idx} className="badge text-xs">{skill}</span>
+                      ))}
+                    </div>
+                  </a>
+                ))}
+              </div>
             </div>
           </motion.div>
         </div>
