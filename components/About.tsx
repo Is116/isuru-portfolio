@@ -74,32 +74,24 @@ const About = () => {
           <motion.div variants={item} className="card">
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
               Hey there! I'm <span className="font-semibold text-gray-900 dark:text-white">Isuru Pathirathna</span>, 
-              a Sri Lankan web and mobile developer based in Finland who believes code should be open, accessible, and maybe a little fun. 
-              I've been coding for over 3 years, diving into everything from React Native and Flutter apps to full-stack web platforms.
+              a Software Engineering graduate from NSBM with Plymouth University (UK). I'm experienced in building mobile and web 
+              applications from inception, collaborating with teams, and finding creative solutions to technical challenges.
             </p>
           </motion.div>
 
           <motion.div variants={item} className="card">
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              Here's my philosophy: <span className="italic">if it works, break it intentionally</span>. Why? Because understanding 
-              why something breaks teaches you way more than just watching it work. Then I build it back up, better and stronger. 
-              It's like being a digital mechanic, but with fewer grease stains.
+              I'm drawn to the intersection of <span className="font-semibold text-accent-600 dark:text-accent-400">fintech and psychology</span> — 
+              understanding how people think about and interact with money through technology. It's a space where human behaviour 
+              meets product design, and I find it endlessly fascinating.
             </p>
           </motion.div>
 
           <motion.div variants={item} className="card">
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              I'm all about <span className="font-semibold text-accent-600 dark:text-accent-400">open-source development</span> and 
-              writing reusable, clean code. Give me a new programming language and a couple of weeks, and I'll probably be building 
-              something with it. Currently rocking <span className="font-mono text-sm">TypeScript, React, Next.js, Node.js, React Native, Expo, Express, Tailwind CSS, Flutter, Svelte, Vue,</span> and whatever else gets the job done.
-            </p>
-          </motion.div>
-
-          <motion.div variants={item} className="card">
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              When I'm not shipping code, I'm probably tinkering with electronics, exploring the latest tech gadgets, or 
-              collaborating on open-source projects. I believe in writing code that's maintainable, scalable, and makes a 
-              real impact.
+              I'm an active <span className="font-semibold text-accent-600 dark:text-accent-400">open source contributor</span>, 
+              passionate about continuous learning and always exploring new technologies that make a real impact. 
+              Give me a new challenge and I'll dive in headfirst.
             </p>
           </motion.div>
           </motion.div>
