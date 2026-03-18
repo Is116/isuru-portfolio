@@ -68,29 +68,65 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Navigation — side drawer */}
         <AnimatePresence>
           {isMobileMenuOpen && (
-            <motion.div
-              className="md:hidden py-5 border-t border-stone-200 dark:border-stone-800"
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.25, ease: [0.25, 0.1, 0.25, 1] }}
-            >
-              <div className="flex flex-col gap-1">
-                {navItems.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="text-sm text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors py-2.5 border-b border-stone-100 dark:border-stone-800 last:border-0"
+            <>
+              {/* Backdrop */}
+              <motion.div
+                className="fixed inset-0 z-40 bg-stone-950/40 dark:bg-stone-950/60 backdrop-blur-sm md:hidden"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.2 }}
+                onClick={() => setIsMobileMenuOpen(false)}
+              />
+
+              {/* Drawer */}
+              <motion.div
+                className="fixed top-0 right-0 h-full w-64 z-50 bg-stone-50 dark:bg-stone-900 border-l border-stone-200 dark:border-stone-800 shadow-2xl md:hidden flex flex-col"
+                initial={{ x: '100%' }}
+                animate={{ x: 0 }}
+                exit={{ x: '100%' }}
+                transition={{ duration: 0.28, ease: [0.25, 0.1, 0.25, 1] }}
+              >
+                {/* Drawer header */}
+                <div className="flex items-center justify-between px-6 h-16 border-b border-stone-200 dark:border-stone-800">
+                  <span className="font-serif text-lg font-medium text-stone-900 dark:text-stone-100">IP</span>
+                  <button
                     onClick={() => setIsMobileMenuOpen(false)}
+                    className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors p-1"
+                    aria-label="Close menu"
                   >
-                    {item.name}
-                  </a>
-                ))}
-              </div>
-            </motion.div>
+                    <X size={18} />
+                  </button>
+                </div>
+
+                {/* Nav links */}
+                <nav className="flex flex-col px-6 pt-6 gap-1">
+                  {navItems.map((item, index) => (
+                    <motion.a
+                      key={item.name}
+                      href={item.href}
+                      className="text-sm text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors py-3 border-b border-stone-100 dark:border-stone-800 last:border-0 tracking-wide"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      initial={{ opacity: 0, x: 16 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: index * 0.05 + 0.1, duration: 0.2 }}
+                    >
+                      {item.name}
+                    </motion.a>
+                  ))}
+                </nav>
+
+                {/* Bottom availability note */}
+                <div className="mt-auto px-6 pb-8">
+                  <p className="text-xs font-mono text-accent-600 dark:text-accent-400 tracking-widest uppercase">
+                    · Available for opportunities
+                  </p>
+                </div>
+              </motion.div>
+            </>
           )}
         </AnimatePresence>
       </nav>
