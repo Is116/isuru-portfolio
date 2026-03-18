@@ -24,18 +24,18 @@ export default function TapToPayArticle() {
   }
 
   return (
-    <article className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-white dark:from-gray-950 dark:via-gray-900 dark:to-gray-950">
+    <article className="min-h-screen bg-stone-50 dark:bg-stone-950">
       {/* Header */}
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="bg-white dark:bg-gray-950 border-b border-gray-200 dark:border-gray-800 sticky top-0 z-50 backdrop-blur-sm bg-white/90 dark:bg-gray-950/90"
+        className="bg-stone-50 dark:bg-stone-950 border-b border-stone-200 dark:border-stone-800 sticky top-0 z-50 backdrop-blur-sm bg-white/90 dark:bg-stone-950/90"
       >
         <div className="container-custom py-6">
           <Link 
             href="/#articles" 
-            className="inline-flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 hover:text-accent-600 dark:hover:text-accent-400 transition-colors group"
+            className="inline-flex items-center gap-2 text-sm text-stone-600 dark:text-stone-400 hover:text-accent-600 dark:hover:text-accent-400 transition-colors group"
           >
             <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
             Back to Articles
@@ -49,13 +49,13 @@ export default function TapToPayArticle() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="max-w-4xl mx-auto"
+          className="w-full"
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-stone-900 dark:text-stone-100 mb-8 leading-tight">
             Why Your Tap-to-Pay Card Is Way Smarter Than You Think
           </h1>
           
-          <div className="flex items-center gap-6 text-sm text-gray-600 dark:text-gray-400 mb-8">
+          <div className="flex items-center gap-6 text-sm text-stone-600 dark:text-stone-400 mb-8">
             <div className="flex items-center gap-2">
               <Calendar size={16} />
               <time dateTime="2025-12-21">December 21, 2025</time>
@@ -71,7 +71,7 @@ export default function TapToPayArticle() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 shadow-2xl"
+            className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-stone-200 dark:border-stone-800 shadow-2xl"
           >
             <Image
               src="/articles/NFC_article.png"
@@ -90,29 +90,29 @@ export default function TapToPayArticle() {
           initial="initial"
           animate="animate"
           variants={staggerContainer}
-          className="max-w-4xl mx-auto"
+          className="w-full"
         >
           {/* Lead Paragraph */}
           <motion.div variants={fadeInUp} className="mb-12">
-            <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 leading-relaxed font-light">
+            <p className="text-xl md:text-2xl text-stone-700 dark:text-stone-300 leading-relaxed font-light">
               I was grabbing coffee last week when the person behind me asked the barista if contactless payment was "safe." The barista shrugged. The person paid with cash instead.
             </p>
           </motion.div>
 
           <motion.div variants={fadeInUp} className="mb-12">
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p className="text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               That got me thinking most of us use tap-to-pay every single day, but hardly anyone understands what's actually protecting their money. So I went down a rabbit hole, and what I found was honestly pretty mind-blowing.
             </p>
           </motion.div>
 
           {/* Section 1 */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 flex items-center gap-3">
               <span className="w-2 h-12 bg-gradient-to-b from-accent-500 to-accent-600 rounded-full"></span>
               The Question Everyone's Asking (But Nobody's Answering)
             </h2>
 
-            <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               <p>
                 Here's what people worry about: when you wave your card near a reader, you're literally broadcasting payment data through the air. Can't someone with the right equipment just... catch it? And if they record enough of these transactions, couldn't they figure out the pattern?
               </p>
@@ -125,12 +125,12 @@ export default function TapToPayArticle() {
 
           {/* Section 2 */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 flex items-center gap-3">
               <span className="w-2 h-12 bg-gradient-to-b from-accent-500 to-accent-600 rounded-full"></span>
               It's Not Encryption (And That's the Whole Point)
             </h2>
 
-            <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               <p>
                 Most people assume tap-to-pay works like this: your card number gets encrypted, sent to the terminal, then decrypted. Like putting something in a locked box.
               </p>
@@ -144,7 +144,7 @@ export default function TapToPayArticle() {
               </p>
 
               <div className="bg-accent-50 dark:bg-accent-900/20 border-l-4 border-accent-500 p-6 rounded-r-xl my-8">
-                <p className="text-lg text-gray-800 dark:text-gray-200 italic">
+                <p className="text-lg text-stone-800 dark:text-stone-200 italic">
                   Think of it like this: <strong>Encryption is locking your front door. Tokenization is having a completely different address that only the post office knows leads to your house.</strong>
                 </p>
               </div>
@@ -157,26 +157,26 @@ export default function TapToPayArticle() {
 
           {/* Section 3 */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 flex items-center gap-3">
               <span className="w-2 h-12 bg-gradient-to-b from-accent-500 to-accent-600 rounded-full"></span>
               What Actually Happens When You Tap
             </h2>
 
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+            <p className="text-lg text-stone-700 dark:text-stone-300 leading-relaxed mb-8">
               Every single time you tap your card, something interesting happens inside that little chip. Let me break down the entire architecture from start to finish, because once you see how all these pieces fit together, you'll understand why this system is so hard to break.
             </p>
 
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6 mt-12">
+            <h3 className="text-2xl md:text-3xl font-bold text-stone-900 dark:text-stone-100 mb-6 mt-12">
               The Complete Transaction Architecture
             </h3>
 
             {/* Step 1 */}
-            <div className="mb-12 bg-white dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-800 shadow-lg">
+            <div className="mb-12 bg-white dark:bg-stone-900 rounded-2xl p-8 border border-stone-200 dark:border-stone-800 shadow-lg">
               <h4 className="text-xl font-bold text-accent-600 dark:text-accent-400 mb-4">
                 Step 1: The Wake-Up (NFC Power Transfer)
               </h4>
 
-              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+              <p className="text-lg text-stone-700 dark:text-stone-300 leading-relaxed mb-6">
                 When you bring your card within about 4cm of the terminal, something cool happens the terminal is constantly broadcasting a radio frequency field (13.56 MHz). Your card literally has no battery, but that RF field induces a tiny electrical current in the card's antenna coil. This powers up the chip just enough to do its job.
               </p>
 
@@ -186,13 +186,13 @@ export default function TapToPayArticle() {
                     <div className="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">1</div>
                     <h5 className="text-lg font-bold text-blue-900 dark:text-blue-200">Terminal RF Field</h5>
                   </div>
-                  <p className="text-gray-800 dark:text-gray-200 ml-13">Broadcasting at 13.56 MHz</p>
+                  <p className="text-stone-800 dark:text-stone-200 ml-13">Broadcasting at 13.56 MHz</p>
                 </div>
 
                 <div className="flex justify-center">
                   <div className="text-blue-500 text-2xl">↓</div>
                 </div>
-                <div className="text-center text-sm text-gray-600 dark:text-gray-400 font-mono bg-blue-50 dark:bg-blue-900/20 py-2 rounded-lg">
+                <div className="text-center text-sm text-stone-600 dark:text-stone-400 font-mono bg-blue-50 dark:bg-blue-900/20 py-2 rounded-lg">
                   [Electromagnetic Induction]
                 </div>
                 <div className="flex justify-center">
@@ -204,7 +204,7 @@ export default function TapToPayArticle() {
                     <div className="w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center font-bold">2</div>
                     <h5 className="text-lg font-bold text-green-900 dark:text-green-200">Card Antenna Coil</h5>
                   </div>
-                  <p className="text-gray-800 dark:text-gray-200 ml-13">Generates ~5 microamps of current</p>
+                  <p className="text-stone-800 dark:text-stone-200 ml-13">Generates ~5 microamps of current</p>
                 </div>
 
                 <div className="flex justify-center">
@@ -216,18 +216,18 @@ export default function TapToPayArticle() {
                     <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold">3</div>
                     <h5 className="text-lg font-bold text-purple-900 dark:text-purple-200">Card Chip Powers On</h5>
                   </div>
-                  <p className="text-gray-800 dark:text-gray-200 ml-13">Ready to process transaction</p>
+                  <p className="text-stone-800 dark:text-stone-200 ml-13">Ready to process transaction</p>
                 </div>
               </div>
             </div>
 
             {/* Step 2 */}
-            <div className="mb-12 bg-white dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-800 shadow-lg">
+            <div className="mb-12 bg-white dark:bg-stone-900 rounded-2xl p-8 border border-stone-200 dark:border-stone-800 shadow-lg">
               <h4 className="text-xl font-bold text-accent-600 dark:text-accent-400 mb-4">
                 Step 2: The Handshake
               </h4>
 
-              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+              <p className="text-lg text-stone-700 dark:text-stone-300 leading-relaxed mb-6">
                 The terminal and your card have a quick conversation:
               </p>
 
@@ -235,71 +235,71 @@ export default function TapToPayArticle() {
                 <div className="flex justify-start">
                   <div className="bg-blue-100 dark:bg-blue-900/40 rounded-2xl rounded-tl-none p-4 max-w-md border-2 border-blue-300 dark:border-blue-700">
                     <div className="text-xs font-bold text-blue-700 dark:text-blue-300 mb-1">Terminal →</div>
-                    <p className="text-gray-800 dark:text-gray-200">"Hey, what payment apps do you have?"</p>
+                    <p className="text-stone-800 dark:text-stone-200">"Hey, what payment apps do you have?"</p>
                   </div>
                 </div>
 
                 <div className="flex justify-end">
                   <div className="bg-green-100 dark:bg-green-900/40 rounded-2xl rounded-tr-none p-4 max-w-md border-2 border-green-300 dark:border-green-700">
                     <div className="text-xs font-bold text-green-700 dark:text-green-300 mb-1 text-right">← Card</div>
-                    <p className="text-gray-800 dark:text-gray-200">"I've got Visa/Mastercard, here's my info"</p>
+                    <p className="text-stone-800 dark:text-stone-200">"I've got Visa/Mastercard, here's my info"</p>
                   </div>
                 </div>
 
                 <div className="flex justify-start">
                   <div className="bg-blue-100 dark:bg-blue-900/40 rounded-2xl rounded-tl-none p-4 max-w-md border-2 border-blue-300 dark:border-blue-700">
                     <div className="text-xs font-bold text-blue-700 dark:text-blue-300 mb-1">Terminal →</div>
-                    <p className="text-gray-800 dark:text-gray-200">"Cool, let's use that. Here's the transaction data"</p>
+                    <p className="text-stone-800 dark:text-stone-200">"Cool, let's use that. Here's the transaction data"</p>
                   </div>
                 </div>
               </div>
 
-              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+              <p className="text-lg text-stone-700 dark:text-stone-300 leading-relaxed mb-4">
                 This handshake includes:
               </p>
 
-              <div className="bg-white dark:bg-gray-900 rounded-xl p-6 border border-accent-200 dark:border-accent-800 shadow-lg">
+              <div className="bg-white dark:bg-stone-900 rounded-xl p-6 border border-accent-200 dark:border-accent-800 shadow-lg">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="flex items-center gap-3 p-3 bg-accent-50 dark:bg-accent-900/20 rounded-lg">
                     <DollarSign className="text-accent-500" size={24} />
                     <div>
-                      <div className="text-xs text-gray-500 dark:text-gray-400">Transaction amount</div>
-                      <div className="font-bold text-gray-900 dark:text-white">$4.50</div>
+                      <div className="text-xs text-stone-500 dark:text-stone-400">Transaction amount</div>
+                      <div className="font-bold text-stone-900 dark:text-stone-100">$4.50</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-accent-50 dark:bg-accent-900/20 rounded-lg">
                     <Store className="text-accent-500" size={24} />
                     <div>
-                      <div className="text-xs text-gray-500 dark:text-gray-400">Merchant ID</div>
-                      <div className="font-bold text-gray-900 dark:text-white text-sm">STARBUCKS_NYC_5TH_AVE</div>
+                      <div className="text-xs text-stone-500 dark:text-stone-400">Merchant ID</div>
+                      <div className="font-bold text-stone-900 dark:text-stone-100 text-sm">STARBUCKS_NYC_5TH_AVE</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-accent-50 dark:bg-accent-900/20 rounded-lg">
                     <Monitor className="text-accent-500" size={24} />
                     <div>
-                      <div className="text-xs text-gray-500 dark:text-gray-400">Terminal ID</div>
-                      <div className="font-bold text-gray-900 dark:text-white">T-847392</div>
+                      <div className="text-xs text-stone-500 dark:text-stone-400">Terminal ID</div>
+                      <div className="font-bold text-stone-900 dark:text-stone-100">T-847392</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-accent-50 dark:bg-accent-900/20 rounded-lg">
                     <Clock className="text-accent-500" size={24} />
                     <div>
-                      <div className="text-xs text-gray-500 dark:text-gray-400">Timestamp</div>
-                      <div className="font-bold text-gray-900 dark:text-white text-sm">2024-12-21 08:23:47</div>
+                      <div className="text-xs text-stone-500 dark:text-stone-400">Timestamp</div>
+                      <div className="font-bold text-stone-900 dark:text-stone-100 text-sm">2024-12-21 08:23:47</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-accent-50 dark:bg-accent-900/20 rounded-lg">
                     <Banknote className="text-accent-500" size={24} />
                     <div>
-                      <div className="text-xs text-gray-500 dark:text-gray-400">Currency code</div>
-                      <div className="font-bold text-gray-900 dark:text-white">USD (840)</div>
+                      <div className="text-xs text-stone-500 dark:text-stone-400">Currency code</div>
+                      <div className="font-bold text-stone-900 dark:text-stone-100">USD (840)</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3 p-3 bg-accent-50 dark:bg-accent-900/20 rounded-lg">
                     <Globe className="text-accent-500" size={24} />
                     <div>
-                      <div className="text-xs text-gray-500 dark:text-gray-400">Country code</div>
-                      <div className="font-bold text-gray-900 dark:text-white">USA</div>
+                      <div className="text-xs text-stone-500 dark:text-stone-400">Country code</div>
+                      <div className="font-bold text-stone-900 dark:text-stone-100">USA</div>
                     </div>
                   </div>
                 </div>
@@ -307,8 +307,8 @@ export default function TapToPayArticle() {
                   <div className="flex items-center gap-3">
                     <Dice5 className="text-purple-500" size={24} />
                     <div>
-                      <div className="text-xs text-gray-500 dark:text-gray-400">Unpredictable number (random)</div>
-                      <div className="font-bold text-gray-900 dark:text-white font-mono">A7F3B2C8</div>
+                      <div className="text-xs text-stone-500 dark:text-stone-400">Unpredictable number (random)</div>
+                      <div className="font-bold text-stone-900 dark:text-stone-100 font-mono">A7F3B2C8</div>
                     </div>
                   </div>
                 </div>
@@ -316,16 +316,16 @@ export default function TapToPayArticle() {
             </div>
 
             {/* Step 3 */}
-            <div className="mb-12 bg-white dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-800 shadow-lg">
+            <div className="mb-12 bg-white dark:bg-stone-900 rounded-2xl p-8 border border-stone-200 dark:border-stone-800 shadow-lg">
               <h4 className="text-xl font-bold text-accent-600 dark:text-accent-400 mb-4">
                 Step 3: Inside the Secure Element (The Magic Happens)
               </h4>
 
-              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+              <p className="text-lg text-stone-700 dark:text-stone-300 leading-relaxed mb-6">
                 Now here's where it gets wild. Your card's chip has a secure element think of it as a tiny vault inside the chip. According to Akter's 2017 research, this is where all the secret keys live, and they NEVER leave.
               </p>
 
-              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+              <p className="text-lg text-stone-700 dark:text-stone-300 leading-relaxed mb-4">
                 The chip now has everything it needs:
               </p>
 
@@ -381,12 +381,12 @@ export default function TapToPayArticle() {
             </div>
 
             {/* Step 4 */}
-            <div className="mb-12 bg-white dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-800 shadow-lg">
+            <div className="mb-12 bg-white dark:bg-stone-900 rounded-2xl p-8 border border-stone-200 dark:border-stone-800 shadow-lg">
               <h4 className="text-xl font-bold text-accent-600 dark:text-accent-400 mb-4">
                 Step 4: Token Generation
               </h4>
 
-              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+              <p className="text-lg text-stone-700 dark:text-stone-300 leading-relaxed mb-6">
                 Here's the first layer of protection. The chip generates a token using what's called "Format-Preserving Encryption":
               </p>
 
@@ -398,32 +398,32 @@ export default function TapToPayArticle() {
                     <h5 className="text-xl font-bold text-red-900 dark:text-red-200">INPUT</h5>
                   </div>
                   <div className="space-y-3 ml-15">
-                    <div className="flex items-center gap-3 p-3 bg-white dark:bg-gray-800 rounded-lg">
+                    <div className="flex items-center gap-3 p-3 bg-white dark:bg-stone-800 rounded-lg">
                       <CreditCard className="text-red-500" size={20} />
                       <div className="flex-1">
-                        <div className="text-xs text-gray-500 dark:text-gray-400">Real PAN</div>
-                        <div className="font-mono font-bold text-gray-900 dark:text-white">4532 1234 5678 9000</div>
+                        <div className="text-xs text-stone-500 dark:text-stone-400">Real PAN</div>
+                        <div className="font-mono font-bold text-stone-900 dark:text-stone-100">4532 1234 5678 9000</div>
                       </div>
                     </div>
-                    <div className="flex items-center gap-3 p-3 bg-white dark:bg-gray-800 rounded-lg">
+                    <div className="flex items-center gap-3 p-3 bg-white dark:bg-stone-800 rounded-lg">
                       <Key className="text-red-500" size={20} />
                       <div className="flex-1">
-                        <div className="text-xs text-gray-500 dark:text-gray-400">Master Key</div>
+                        <div className="text-xs text-stone-500 dark:text-stone-400">Master Key</div>
                         <div className="font-mono font-bold text-red-600 dark:text-red-400">[Secret Key]</div>
                       </div>
                     </div>
-                    <div className="flex items-center gap-3 p-3 bg-white dark:bg-gray-800 rounded-lg">
+                    <div className="flex items-center gap-3 p-3 bg-white dark:bg-stone-800 rounded-lg">
                       <Store className="text-red-500" size={20} />
                       <div className="flex-1">
-                        <div className="text-xs text-gray-500 dark:text-gray-400">Merchant ID</div>
-                        <div className="font-mono font-bold text-gray-900 dark:text-white text-sm">STARBUCKS_NYC_5TH_AVE</div>
+                        <div className="text-xs text-stone-500 dark:text-stone-400">Merchant ID</div>
+                        <div className="font-mono font-bold text-stone-900 dark:text-stone-100 text-sm">STARBUCKS_NYC_5TH_AVE</div>
                       </div>
                     </div>
-                    <div className="flex items-center gap-3 p-3 bg-white dark:bg-gray-800 rounded-lg">
+                    <div className="flex items-center gap-3 p-3 bg-white dark:bg-stone-800 rounded-lg">
                       <Hash className="text-red-500" size={20} />
                       <div className="flex-1">
-                        <div className="text-xs text-gray-500 dark:text-gray-400">Transaction Counter</div>
-                        <div className="font-mono font-bold text-gray-900 dark:text-white">1547</div>
+                        <div className="text-xs text-stone-500 dark:text-stone-400">Transaction Counter</div>
+                        <div className="font-mono font-bold text-stone-900 dark:text-stone-100">1547</div>
                       </div>
                     </div>
                   </div>
@@ -448,11 +448,11 @@ export default function TapToPayArticle() {
                     <div className="w-12 h-12 bg-green-500 text-white rounded-lg flex items-center justify-center font-bold text-lg">OUT</div>
                     <h5 className="text-xl font-bold text-green-900 dark:text-green-200">OUTPUT</h5>
                   </div>
-                  <div className="ml-15 p-4 bg-white dark:bg-gray-800 rounded-lg">
+                  <div className="ml-15 p-4 bg-white dark:bg-stone-800 rounded-lg">
                     <div className="flex items-center gap-3">
                       <span className="text-green-500 text-2xl">✓</span>
                       <div className="flex-1">
-                        <div className="text-xs text-gray-500 dark:text-gray-400">Token (NOT your real card number)</div>
+                        <div className="text-xs text-stone-500 dark:text-stone-400">Token (NOT your real card number)</div>
                         <div className="font-mono font-bold text-2xl text-green-600 dark:text-green-400">4111 1111 2233 4455</div>
                       </div>
                     </div>
@@ -460,18 +460,18 @@ export default function TapToPayArticle() {
                 </div>
               </div>
 
-              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+              <p className="text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
                 This token looks like a card number (16 digits, passes basic validation) but it's completely different. The algorithm is one way you can go from PAN → Token, but not Token → PAN without the master key.
               </p>
             </div>
 
             {/* Step 5 */}
-            <div className="mb-12 bg-white dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-800 shadow-lg">
+            <div className="mb-12 bg-white dark:bg-stone-900 rounded-2xl p-8 border border-stone-200 dark:border-stone-800 shadow-lg">
               <h4 className="text-xl font-bold text-accent-600 dark:text-accent-400 mb-4">
                 Step 5: Cryptogram Generation (The Unbreakable Part)
               </h4>
 
-              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+              <p className="text-lg text-stone-700 dark:text-stone-300 leading-relaxed mb-6">
                 Now comes the second layer. The chip creates what's called an ARQC (Authorization Request Cryptogram). This is where the real security magic happens.
               </p>
 
@@ -483,53 +483,53 @@ export default function TapToPayArticle() {
                     <h5 className="text-xl font-bold text-blue-900 dark:text-blue-200">INPUTS</h5>
                   </div>
                   <div className="grid md:grid-cols-2 gap-3 ml-15">
-                    <div className="flex items-start gap-2 p-3 bg-white dark:bg-gray-800 rounded-lg">
+                    <div className="flex items-start gap-2 p-3 bg-white dark:bg-stone-800 rounded-lg">
                       <span className="text-blue-500 mt-1">├─</span>
                       <div>
-                        <div className="text-xs text-gray-500 dark:text-gray-400">ATC</div>
-                        <div className="font-mono text-sm font-bold text-gray-900 dark:text-white">1547</div>
+                        <div className="text-xs text-stone-500 dark:text-stone-400">ATC</div>
+                        <div className="font-mono text-sm font-bold text-stone-900 dark:text-stone-100">1547</div>
                       </div>
                     </div>
-                    <div className="flex items-start gap-2 p-3 bg-white dark:bg-gray-800 rounded-lg">
+                    <div className="flex items-start gap-2 p-3 bg-white dark:bg-stone-800 rounded-lg">
                       <span className="text-blue-500 mt-1">├─</span>
                       <div>
-                        <div className="text-xs text-gray-500 dark:text-gray-400">Unpredictable Number</div>
-                        <div className="font-mono text-sm font-bold text-gray-900 dark:text-white">A7F3B2C8</div>
+                        <div className="text-xs text-stone-500 dark:text-stone-400">Unpredictable Number</div>
+                        <div className="font-mono text-sm font-bold text-stone-900 dark:text-stone-100">A7F3B2C8</div>
                       </div>
                     </div>
-                    <div className="flex items-start gap-2 p-3 bg-white dark:bg-gray-800 rounded-lg">
+                    <div className="flex items-start gap-2 p-3 bg-white dark:bg-stone-800 rounded-lg">
                       <span className="text-blue-500 mt-1">├─</span>
                       <div>
-                        <div className="text-xs text-gray-500 dark:text-gray-400">Transaction Amount</div>
-                        <div className="font-mono text-sm font-bold text-gray-900 dark:text-white">450 (in cents)</div>
+                        <div className="text-xs text-stone-500 dark:text-stone-400">Transaction Amount</div>
+                        <div className="font-mono text-sm font-bold text-stone-900 dark:text-stone-100">450 (in cents)</div>
                       </div>
                     </div>
-                    <div className="flex items-start gap-2 p-3 bg-white dark:bg-gray-800 rounded-lg">
+                    <div className="flex items-start gap-2 p-3 bg-white dark:bg-stone-800 rounded-lg">
                       <span className="text-blue-500 mt-1">├─</span>
                       <div>
-                        <div className="text-xs text-gray-500 dark:text-gray-400">Transaction Currency</div>
-                        <div className="font-mono text-sm font-bold text-gray-900 dark:text-white">840 (USD)</div>
+                        <div className="text-xs text-stone-500 dark:text-stone-400">Transaction Currency</div>
+                        <div className="font-mono text-sm font-bold text-stone-900 dark:text-stone-100">840 (USD)</div>
                       </div>
                     </div>
-                    <div className="flex items-start gap-2 p-3 bg-white dark:bg-gray-800 rounded-lg">
+                    <div className="flex items-start gap-2 p-3 bg-white dark:bg-stone-800 rounded-lg">
                       <span className="text-blue-500 mt-1">├─</span>
                       <div>
-                        <div className="text-xs text-gray-500 dark:text-gray-400">Transaction Date</div>
-                        <div className="font-mono text-sm font-bold text-gray-900 dark:text-white">20241221</div>
+                        <div className="text-xs text-stone-500 dark:text-stone-400">Transaction Date</div>
+                        <div className="font-mono text-sm font-bold text-stone-900 dark:text-stone-100">20241221</div>
                       </div>
                     </div>
-                    <div className="flex items-start gap-2 p-3 bg-white dark:bg-gray-800 rounded-lg">
+                    <div className="flex items-start gap-2 p-3 bg-white dark:bg-stone-800 rounded-lg">
                       <span className="text-blue-500 mt-1">├─</span>
                       <div>
-                        <div className="text-xs text-gray-500 dark:text-gray-400">Transaction Type</div>
-                        <div className="font-mono text-sm font-bold text-gray-900 dark:text-white">00 (purchase)</div>
+                        <div className="text-xs text-stone-500 dark:text-stone-400">Transaction Type</div>
+                        <div className="font-mono text-sm font-bold text-stone-900 dark:text-stone-100">00 (purchase)</div>
                       </div>
                     </div>
-                    <div className="flex items-start gap-2 p-3 bg-white dark:bg-gray-800 rounded-lg">
+                    <div className="flex items-start gap-2 p-3 bg-white dark:bg-stone-800 rounded-lg">
                       <span className="text-blue-500 mt-1">├─</span>
                       <div>
-                        <div className="text-xs text-gray-500 dark:text-gray-400">Terminal Country</div>
-                        <div className="font-mono text-sm font-bold text-gray-900 dark:text-white">840 (USA)</div>
+                        <div className="text-xs text-stone-500 dark:text-stone-400">Terminal Country</div>
+                        <div className="font-mono text-sm font-bold text-stone-900 dark:text-stone-100">840 (USA)</div>
                       </div>
                     </div>
                     <div className="flex items-start gap-2 p-3 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-800">
@@ -549,32 +549,32 @@ export default function TapToPayArticle() {
                     <h5 className="text-xl font-bold text-purple-900 dark:text-purple-200">ALGORITHM: AES-128 or Triple-DES</h5>
                   </div>
                   <div className="space-y-4 ml-15">
-                    <div className="flex gap-3 p-4 bg-white dark:bg-gray-800 rounded-lg border-l-4 border-purple-400">
+                    <div className="flex gap-3 p-4 bg-white dark:bg-stone-800 rounded-lg border-l-4 border-purple-400">
                       <div className="flex-shrink-0 w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold text-sm">1</div>
                       <div>
-                        <div className="font-bold text-gray-900 dark:text-white mb-1">Concatenate all data</div>
-                        <div className="font-mono text-xs text-gray-600 dark:text-gray-400">Data Block: 060B450084020241221A7F3B2C8...</div>
+                        <div className="font-bold text-stone-900 dark:text-stone-100 mb-1">Concatenate all data</div>
+                        <div className="font-mono text-xs text-stone-600 dark:text-stone-400">Data Block: 060B450084020241221A7F3B2C8...</div>
                       </div>
                     </div>
-                    <div className="flex gap-3 p-4 bg-white dark:bg-gray-800 rounded-lg border-l-4 border-purple-400">
+                    <div className="flex gap-3 p-4 bg-white dark:bg-stone-800 rounded-lg border-l-4 border-purple-400">
                       <div className="flex-shrink-0 w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold text-sm">2</div>
                       <div>
-                        <div className="font-bold text-gray-900 dark:text-white mb-1">Encrypt with Session Key</div>
-                        <div className="font-mono text-xs text-gray-600 dark:text-gray-400">AES-128 Encryption (128-bit key, 10 rounds)</div>
+                        <div className="font-bold text-stone-900 dark:text-stone-100 mb-1">Encrypt with Session Key</div>
+                        <div className="font-mono text-xs text-stone-600 dark:text-stone-400">AES-128 Encryption (128-bit key, 10 rounds)</div>
                       </div>
                     </div>
-                    <div className="flex gap-3 p-4 bg-white dark:bg-gray-800 rounded-lg border-l-4 border-purple-400">
+                    <div className="flex gap-3 p-4 bg-white dark:bg-stone-800 rounded-lg border-l-4 border-purple-400">
                       <div className="flex-shrink-0 w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold text-sm">3</div>
                       <div>
-                        <div className="font-bold text-gray-900 dark:text-white mb-1">Apply MAC (Message Authentication Code)</div>
-                        <div className="text-xs text-gray-600 dark:text-gray-400">Ensures data hasn't been tampered with</div>
+                        <div className="font-bold text-stone-900 dark:text-stone-100 mb-1">Apply MAC (Message Authentication Code)</div>
+                        <div className="text-xs text-stone-600 dark:text-stone-400">Ensures data hasn't been tampered with</div>
                       </div>
                     </div>
-                    <div className="flex gap-3 p-4 bg-white dark:bg-gray-800 rounded-lg border-l-4 border-purple-400">
+                    <div className="flex gap-3 p-4 bg-white dark:bg-stone-800 rounded-lg border-l-4 border-purple-400">
                       <div className="flex-shrink-0 w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold text-sm">4</div>
                       <div>
-                        <div className="font-bold text-gray-900 dark:text-white mb-1">Extract cryptogram</div>
-                        <div className="text-xs text-gray-600 dark:text-gray-400">Typically 8 bytes</div>
+                        <div className="font-bold text-stone-900 dark:text-stone-100 mb-1">Extract cryptogram</div>
+                        <div className="text-xs text-stone-600 dark:text-stone-400">Typically 8 bytes</div>
                       </div>
                     </div>
                   </div>
@@ -590,11 +590,11 @@ export default function TapToPayArticle() {
                     <div className="w-12 h-12 bg-green-500 text-white rounded-lg flex items-center justify-center font-bold text-lg">OUT</div>
                     <h5 className="text-xl font-bold text-green-900 dark:text-green-200">OUTPUT</h5>
                   </div>
-                  <div className="ml-15 p-6 bg-white dark:bg-gray-800 rounded-lg">
+                  <div className="ml-15 p-6 bg-white dark:bg-stone-800 rounded-lg">
                     <div className="flex items-center gap-3">
                       <span className="text-green-500 text-3xl">✓</span>
                       <div className="flex-1">
-                        <div className="text-sm text-gray-500 dark:text-gray-400 mb-1">ARQC (Authorization Request Cryptogram)</div>
+                        <div className="text-sm text-stone-500 dark:text-stone-400 mb-1">ARQC (Authorization Request Cryptogram)</div>
                         <div className="font-mono font-bold text-3xl text-green-600 dark:text-green-400">E7 F3 A9 82 B4 C1 D5 E6</div>
                       </div>
                     </div>
@@ -602,11 +602,11 @@ export default function TapToPayArticle() {
                 </div>
               </div>
 
-              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+              <p className="text-lg text-stone-700 dark:text-stone-300 leading-relaxed mb-4">
                 This cryptogram is unique to THIS transaction. Even if you buy another $4.50 coffee at the same Starbucks one second later, the cryptogram will be completely different because:
               </p>
 
-              <ul className="space-y-2 text-gray-700 dark:text-gray-300 ml-6">
+              <ul className="space-y-2 text-stone-700 dark:text-stone-300 ml-6">
                 <li className="flex items-start gap-2">
                   <span className="text-accent-500 mt-2">•</span>
                   <span>ATC is now 1548 (not 1547)</span>
@@ -627,12 +627,12 @@ export default function TapToPayArticle() {
             </div>
 
             {/* Step 6 */}
-            <div className="mb-12 bg-white dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-800 shadow-lg">
+            <div className="mb-12 bg-white dark:bg-stone-900 rounded-2xl p-8 border border-stone-200 dark:border-stone-800 shadow-lg">
               <h4 className="text-xl font-bold text-accent-600 dark:text-accent-400 mb-4">
                 Step 6: The Data Package
               </h4>
 
-              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+              <p className="text-lg text-stone-700 dark:text-stone-300 leading-relaxed mb-6">
                 The card sends this package wirelessly to the terminal:
               </p>
 
@@ -643,108 +643,108 @@ export default function TapToPayArticle() {
                 </div>
                 
                 <div className="grid gap-3">
-                  <div className="flex items-center gap-3 p-4 bg-white dark:bg-gray-800 rounded-lg border-2 border-green-300 dark:border-green-700">
+                  <div className="flex items-center gap-3 p-4 bg-white dark:bg-stone-800 rounded-lg border-2 border-green-300 dark:border-green-700">
                     <Hash className="text-green-500" size={20} />
                     <div className="flex-1">
-                      <div className="text-xs text-gray-500 dark:text-gray-400">Token</div>
-                      <div className="font-mono font-bold text-lg text-gray-900 dark:text-white">4111 1111 2233 4455</div>
+                      <div className="text-xs text-stone-500 dark:text-stone-400">Token</div>
+                      <div className="font-mono font-bold text-lg text-stone-900 dark:text-stone-100">4111 1111 2233 4455</div>
                     </div>
                     <span className="text-xs text-green-600 dark:text-green-400 font-semibold">← NOT your real card number</span>
                   </div>
 
-                  <div className="flex items-center gap-3 p-4 bg-white dark:bg-gray-800 rounded-lg">
+                  <div className="flex items-center gap-3 p-4 bg-white dark:bg-stone-800 rounded-lg">
                     <Calendar className="text-blue-500" size={20} />
                     <div className="flex-1">
-                      <div className="text-xs text-gray-500 dark:text-gray-400">Expiry Date</div>
-                      <div className="font-mono font-bold text-gray-900 dark:text-white">12/27</div>
+                      <div className="text-xs text-stone-500 dark:text-stone-400">Expiry Date</div>
+                      <div className="font-mono font-bold text-stone-900 dark:text-stone-100">12/27</div>
                     </div>
-                    <span className="text-xs text-gray-500 dark:text-gray-400">← Real expiry</span>
+                    <span className="text-xs text-stone-500 dark:text-stone-400">← Real expiry</span>
                   </div>
 
-                  <div className="flex items-center gap-3 p-4 bg-white dark:bg-gray-800 rounded-lg">
+                  <div className="flex items-center gap-3 p-4 bg-white dark:bg-stone-800 rounded-lg">
                     <User className="text-blue-500" size={20} />
                     <div className="flex-1">
-                      <div className="text-xs text-gray-500 dark:text-gray-400">Cardholder Name</div>
-                      <div className="font-mono font-bold text-gray-900 dark:text-white">[ENCRYPTED]</div>
+                      <div className="text-xs text-stone-500 dark:text-stone-400">Cardholder Name</div>
+                      <div className="font-mono font-bold text-stone-900 dark:text-stone-100">[ENCRYPTED]</div>
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-3 p-4 bg-white dark:bg-gray-800 rounded-lg">
+                  <div className="flex items-center gap-3 p-4 bg-white dark:bg-stone-800 rounded-lg">
                     <Tag className="text-blue-500" size={20} />
                     <div className="flex-1">
-                      <div className="text-xs text-gray-500 dark:text-gray-400">Service Code</div>
-                      <div className="font-mono font-bold text-gray-900 dark:text-white">201</div>
+                      <div className="text-xs text-stone-500 dark:text-stone-400">Service Code</div>
+                      <div className="font-mono font-bold text-stone-900 dark:text-stone-100">201</div>
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-3 p-4 bg-white dark:bg-gray-800 rounded-lg border-2 border-purple-300 dark:border-purple-700">
+                  <div className="flex items-center gap-3 p-4 bg-white dark:bg-stone-800 rounded-lg border-2 border-purple-300 dark:border-purple-700">
                     <Shield className="text-purple-500" size={20} />
                     <div className="flex-1">
-                      <div className="text-xs text-gray-500 dark:text-gray-400">ARQC</div>
-                      <div className="font-mono font-bold text-lg text-gray-900 dark:text-white">E7F3A982B4C1D5E6</div>
+                      <div className="text-xs text-stone-500 dark:text-stone-400">ARQC</div>
+                      <div className="font-mono font-bold text-lg text-stone-900 dark:text-stone-100">E7F3A982B4C1D5E6</div>
                     </div>
                     <span className="text-xs text-purple-600 dark:text-purple-400 font-semibold">← One-time cryptogram</span>
                   </div>
 
-                  <div className="flex items-center gap-3 p-4 bg-white dark:bg-gray-800 rounded-lg">
+                  <div className="flex items-center gap-3 p-4 bg-white dark:bg-stone-800 rounded-lg">
                     <Hash className="text-blue-500" size={20} />
                     <div className="flex-1">
-                      <div className="text-xs text-gray-500 dark:text-gray-400">ATC</div>
-                      <div className="font-mono font-bold text-gray-900 dark:text-white">1547</div>
+                      <div className="text-xs text-stone-500 dark:text-stone-400">ATC</div>
+                      <div className="font-mono font-bold text-stone-900 dark:text-stone-100">1547</div>
                     </div>
-                    <span className="text-xs text-gray-500 dark:text-gray-400">← Transaction counter</span>
+                    <span className="text-xs text-stone-500 dark:text-stone-400">← Transaction counter</span>
                   </div>
 
-                  <div className="flex items-center gap-3 p-4 bg-white dark:bg-gray-800 rounded-lg">
+                  <div className="flex items-center gap-3 p-4 bg-white dark:bg-stone-800 rounded-lg">
                     <Smartphone className="text-blue-500" size={20} />
                     <div className="flex-1">
-                      <div className="text-xs text-gray-500 dark:text-gray-400">Application ID</div>
-                      <div className="font-mono text-sm font-bold text-gray-900 dark:text-white">A0000000031010</div>
+                      <div className="text-xs text-stone-500 dark:text-stone-400">Application ID</div>
+                      <div className="font-mono text-sm font-bold text-stone-900 dark:text-stone-100">A0000000031010</div>
                     </div>
-                    <span className="text-xs text-gray-500 dark:text-gray-400">← Visa/Mastercard app</span>
+                    <span className="text-xs text-stone-500 dark:text-stone-400">← Visa/Mastercard app</span>
                   </div>
 
-                  <div className="flex items-center gap-3 p-4 bg-white dark:bg-gray-800 rounded-lg">
+                  <div className="flex items-center gap-3 p-4 bg-white dark:bg-stone-800 rounded-lg">
                     <Building2 className="text-blue-500" size={20} />
                     <div className="flex-1">
-                      <div className="text-xs text-gray-500 dark:text-gray-400">Issuer Application Data</div>
-                      <div className="font-mono font-bold text-gray-900 dark:text-white">[ENCRYPTED]</div>
+                      <div className="text-xs text-stone-500 dark:text-stone-400">Issuer Application Data</div>
+                      <div className="font-mono font-bold text-stone-900 dark:text-stone-100">[ENCRYPTED]</div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-8 mb-4">
+              <p className="text-lg text-stone-700 dark:text-stone-300 leading-relaxed mt-8 mb-4">
                 Notice what's NOT in there:
               </p>
 
               <div className="grid md:grid-cols-2 gap-3">
                 <div className="flex items-center gap-3 p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border-2 border-red-300 dark:border-red-700">
                   <span className="text-red-500 text-2xl">✗</span>
-                  <span className="font-semibold text-gray-900 dark:text-white">Your real card number</span>
+                  <span className="font-semibold text-stone-900 dark:text-stone-100">Your real card number</span>
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border-2 border-red-300 dark:border-red-700">
                   <span className="text-red-500 text-2xl">✗</span>
-                  <span className="font-semibold text-gray-900 dark:text-white">The CVV from the back of your card</span>
+                  <span className="font-semibold text-stone-900 dark:text-stone-100">The CVV from the back of your card</span>
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border-2 border-red-300 dark:border-red-700">
                   <span className="text-red-500 text-2xl">✗</span>
-                  <span className="font-semibold text-gray-900 dark:text-white">Any secret keys</span>
+                  <span className="font-semibold text-stone-900 dark:text-stone-100">Any secret keys</span>
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border-2 border-red-300 dark:border-red-700">
                   <span className="text-red-500 text-2xl">✗</span>
-                  <span className="font-semibold text-gray-900 dark:text-white">Anything that could be reused</span>
+                  <span className="font-semibold text-stone-900 dark:text-stone-100">Anything that could be reused</span>
                 </div>
               </div>
             </div>
 
             {/* Step 7 */}
-            <div className="mb-12 bg-white dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-800 shadow-lg">
+            <div className="mb-12 bg-white dark:bg-stone-900 rounded-2xl p-8 border border-stone-200 dark:border-stone-800 shadow-lg">
               <h4 className="text-xl font-bold text-accent-600 dark:text-accent-400 mb-4">
                 Step 7: The Journey to Your Bank
               </h4>
 
-              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+              <p className="text-lg text-stone-700 dark:text-stone-300 leading-relaxed mb-6">
                 Now this data package travels through multiple systems:
               </p>
 
@@ -754,7 +754,7 @@ export default function TapToPayArticle() {
                     <CreditCard className="text-purple-600 dark:text-purple-400" size={28} />
                     <div>
                       <div className="font-bold text-purple-900 dark:text-purple-200">YOUR CARD</div>
-                      <div className="text-xs text-gray-600 dark:text-gray-400">Generates token & cryptogram</div>
+                      <div className="text-xs text-stone-600 dark:text-stone-400">Generates token & cryptogram</div>
                     </div>
                   </div>
                 </div>
@@ -773,7 +773,7 @@ export default function TapToPayArticle() {
                     <Monitor className="text-blue-600 dark:text-blue-400" size={28} />
                     <div>
                       <div className="font-bold text-blue-900 dark:text-blue-200">PAYMENT TERMINAL</div>
-                      <div className="text-xs text-gray-600 dark:text-gray-400">Receives encrypted data</div>
+                      <div className="text-xs text-stone-600 dark:text-stone-400">Receives encrypted data</div>
                     </div>
                   </div>
                 </div>
@@ -792,7 +792,7 @@ export default function TapToPayArticle() {
                     <Store className="text-cyan-600 dark:text-cyan-400" size={28} />
                     <div>
                       <div className="font-bold text-cyan-900 dark:text-cyan-200">MERCHANT'S PAYMENT PROCESSOR</div>
-                      <div className="text-xs text-gray-600 dark:text-gray-400">Routes to card network</div>
+                      <div className="text-xs text-stone-600 dark:text-stone-400">Routes to card network</div>
                     </div>
                   </div>
                 </div>
@@ -811,14 +811,14 @@ export default function TapToPayArticle() {
                     <Network className="text-yellow-600 dark:text-yellow-400" size={28} />
                     <div>
                       <div className="font-bold text-yellow-900 dark:text-yellow-200">CARD NETWORK (Visa/Mastercard)</div>
-                      <div className="text-xs text-gray-600 dark:text-gray-400">Token vault lookup & routing</div>
+                      <div className="text-xs text-stone-600 dark:text-stone-400">Token vault lookup & routing</div>
                     </div>
                   </div>
                   <div className="ml-10 space-y-2">
-                    <div className="bg-white dark:bg-gray-800 rounded-lg p-3 border border-yellow-300 dark:border-yellow-700">
-                      <div className="text-xs text-gray-500 dark:text-gray-400 mb-1">Token Vault Lookup</div>
+                    <div className="bg-white dark:bg-stone-800 rounded-lg p-3 border border-yellow-300 dark:border-yellow-700">
+                      <div className="text-xs text-stone-500 dark:text-stone-400 mb-1">Token Vault Lookup</div>
                       <div className="flex items-center gap-2">
-                        <div className="font-mono text-sm text-gray-900 dark:text-white">Token: 4111 1111 2233 4455</div>
+                        <div className="font-mono text-sm text-stone-900 dark:text-stone-100">Token: 4111 1111 2233 4455</div>
                       </div>
                       <div className="flex items-center justify-center my-2">
                         <div className="text-yellow-500">↓ [Secure mapping]</div>
@@ -827,8 +827,8 @@ export default function TapToPayArticle() {
                         <div className="font-mono text-sm text-green-600 dark:text-green-400">Real PAN: 4532 1234 5678 9000</div>
                       </div>
                     </div>
-                    <div className="bg-white dark:bg-gray-800 rounded-lg p-3 border border-yellow-300 dark:border-yellow-700">
-                      <div className="text-xs text-gray-500 dark:text-gray-400">Routes to correct bank</div>
+                    <div className="bg-white dark:bg-stone-800 rounded-lg p-3 border border-yellow-300 dark:border-yellow-700">
+                      <div className="text-xs text-stone-500 dark:text-stone-400">Routes to correct bank</div>
                     </div>
                   </div>
                 </div>
@@ -847,7 +847,7 @@ export default function TapToPayArticle() {
                     <Building2 className="text-green-600 dark:text-green-400" size={28} />
                     <div>
                       <div className="font-bold text-green-900 dark:text-green-200">YOUR BANK</div>
-                      <div className="text-xs text-gray-600 dark:text-gray-400">Final validation & approval</div>
+                      <div className="text-xs text-stone-600 dark:text-stone-400">Final validation & approval</div>
                     </div>
                   </div>
                 </div>
@@ -855,12 +855,12 @@ export default function TapToPayArticle() {
             </div>
 
             {/* Step 8 */}
-            <div className="mb-12 bg-white dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-800 shadow-lg">
+            <div className="mb-12 bg-white dark:bg-stone-900 rounded-2xl p-8 border border-stone-200 dark:border-stone-800 shadow-lg">
               <h4 className="text-xl font-bold text-accent-600 dark:text-accent-400 mb-4">
                 Step 8: Bank Validation (The Security Check)
               </h4>
 
-              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+              <p className="text-lg text-stone-700 dark:text-stone-300 leading-relaxed mb-6">
                 Your bank now does the heavy lifting:
               </p>
 
@@ -872,24 +872,24 @@ export default function TapToPayArticle() {
                     <h5 className="text-xl font-bold text-purple-900 dark:text-purple-200">CRYPTOGRAM CHECK</h5>
                   </div>
                   <div className="space-y-3 ml-15">
-                    <div className="flex items-start gap-2 p-3 bg-white dark:bg-gray-800 rounded-lg">
+                    <div className="flex items-start gap-2 p-3 bg-white dark:bg-stone-800 rounded-lg">
                       <span className="text-purple-500 mt-1">✓</span>
-                      <span className="text-gray-800 dark:text-gray-200">Bank has the same master keys (shared during card creation)</span>
+                      <span className="text-stone-800 dark:text-stone-200">Bank has the same master keys (shared during card creation)</span>
                     </div>
-                    <div className="flex items-start gap-2 p-3 bg-white dark:bg-gray-800 rounded-lg">
+                    <div className="flex items-start gap-2 p-3 bg-white dark:bg-stone-800 rounded-lg">
                       <span className="text-purple-500 mt-1">✓</span>
-                      <span className="text-gray-800 dark:text-gray-200">Bank receives: ARQC, ATC, Transaction Data</span>
+                      <span className="text-stone-800 dark:text-stone-200">Bank receives: ARQC, ATC, Transaction Data</span>
                     </div>
                     <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-300 dark:border-blue-700">
                       <div className="text-sm text-blue-900 dark:text-blue-200 mb-2 font-semibold">Bank calculates: "What SHOULD the ARQC be?"</div>
                       <div className="ml-4 space-y-2 text-sm">
-                        <div className="text-gray-700 dark:text-gray-300">Uses same algorithm: <span className="font-mono">AES(ATC + Data + Keys)</span></div>
+                        <div className="text-stone-700 dark:text-stone-300">Uses same algorithm: <span className="font-mono">AES(ATC + Data + Keys)</span></div>
                         <div className="flex items-center gap-2">
-                          <span className="text-gray-600 dark:text-gray-400">Expected ARQC:</span>
+                          <span className="text-stone-600 dark:text-stone-400">Expected ARQC:</span>
                           <span className="font-mono font-bold text-blue-600 dark:text-blue-400">E7F3A982B4C1D5E6</span>
                         </div>
                         <div className="flex items-center gap-2">
-                          <span className="text-gray-600 dark:text-gray-400">Received ARQC:</span>
+                          <span className="text-stone-600 dark:text-stone-400">Received ARQC:</span>
                           <span className="font-mono font-bold text-blue-600 dark:text-blue-400">E7F3A982B4C1D5E6</span>
                         </div>
                       </div>
@@ -908,13 +908,13 @@ export default function TapToPayArticle() {
                     <h5 className="text-xl font-bold text-blue-900 dark:text-blue-200">COUNTER CHECK</h5>
                   </div>
                   <div className="space-y-3 ml-15">
-                    <div className="flex items-center gap-3 p-3 bg-white dark:bg-gray-800 rounded-lg">
-                      <span className="text-gray-600 dark:text-gray-400">Last ATC from this card:</span>
-                      <span className="font-mono font-bold text-gray-900 dark:text-white">1546</span>
+                    <div className="flex items-center gap-3 p-3 bg-white dark:bg-stone-800 rounded-lg">
+                      <span className="text-stone-600 dark:text-stone-400">Last ATC from this card:</span>
+                      <span className="font-mono font-bold text-stone-900 dark:text-stone-100">1546</span>
                     </div>
-                    <div className="flex items-center gap-3 p-3 bg-white dark:bg-gray-800 rounded-lg">
-                      <span className="text-gray-600 dark:text-gray-400">Current ATC:</span>
-                      <span className="font-mono font-bold text-gray-900 dark:text-white">1547</span>
+                    <div className="flex items-center gap-3 p-3 bg-white dark:bg-stone-800 rounded-lg">
+                      <span className="text-stone-600 dark:text-stone-400">Current ATC:</span>
+                      <span className="font-mono font-bold text-stone-900 dark:text-stone-100">1547</span>
                     </div>
                     <div className="flex items-center gap-2 p-3 bg-green-50 dark:bg-green-900/20 rounded-lg border-2 border-green-400 dark:border-green-600">
                       <span className="text-green-500 text-2xl">✓</span>
@@ -930,21 +930,21 @@ export default function TapToPayArticle() {
                     <h5 className="text-xl font-bold text-green-900 dark:text-green-200">ACCOUNT CHECK</h5>
                   </div>
                   <div className="grid md:grid-cols-2 gap-3 ml-15">
-                    <div className="flex items-center gap-2 p-3 bg-white dark:bg-gray-800 rounded-lg">
+                    <div className="flex items-center gap-2 p-3 bg-white dark:bg-stone-800 rounded-lg">
                       <span className="text-green-500 text-xl">✓</span>
-                      <span className="text-gray-800 dark:text-gray-200">Account active?</span>
+                      <span className="text-stone-800 dark:text-stone-200">Account active?</span>
                     </div>
-                    <div className="flex items-center gap-2 p-3 bg-white dark:bg-gray-800 rounded-lg">
+                    <div className="flex items-center gap-2 p-3 bg-white dark:bg-stone-800 rounded-lg">
                       <span className="text-green-500 text-xl">✓</span>
-                      <span className="text-gray-800 dark:text-gray-200">Sufficient funds?</span>
+                      <span className="text-stone-800 dark:text-stone-200">Sufficient funds?</span>
                     </div>
-                    <div className="flex items-center gap-2 p-3 bg-white dark:bg-gray-800 rounded-lg">
+                    <div className="flex items-center gap-2 p-3 bg-white dark:bg-stone-800 rounded-lg">
                       <span className="text-green-500 text-xl">✓</span>
-                      <span className="text-gray-800 dark:text-gray-200">Card not reported stolen?</span>
+                      <span className="text-stone-800 dark:text-stone-200">Card not reported stolen?</span>
                     </div>
-                    <div className="flex items-center gap-2 p-3 bg-white dark:bg-gray-800 rounded-lg">
+                    <div className="flex items-center gap-2 p-3 bg-white dark:bg-stone-800 rounded-lg">
                       <span className="text-green-500 text-xl">✓</span>
-                      <span className="text-gray-800 dark:text-gray-200">Transaction within normal patterns?</span>
+                      <span className="text-stone-800 dark:text-stone-200">Transaction within normal patterns?</span>
                     </div>
                   </div>
                 </div>
@@ -956,32 +956,32 @@ export default function TapToPayArticle() {
                     <h5 className="text-xl font-bold text-orange-900 dark:text-orange-200">FRAUD DETECTION (AI/ML)</h5>
                   </div>
                   <div className="grid md:grid-cols-2 gap-3 ml-15">
-                    <div className="flex items-center gap-2 p-3 bg-white dark:bg-gray-800 rounded-lg">
+                    <div className="flex items-center gap-2 p-3 bg-white dark:bg-stone-800 rounded-lg">
                       <span className="text-green-500 text-xl">✓</span>
                       <div>
-                        <div className="text-gray-800 dark:text-gray-200">Location: New York</div>
-                        <div className="text-xs text-gray-500 dark:text-gray-400">(where card is usually used)</div>
+                        <div className="text-stone-800 dark:text-stone-200">Location: New York</div>
+                        <div className="text-xs text-stone-500 dark:text-stone-400">(where card is usually used)</div>
                       </div>
                     </div>
-                    <div className="flex items-center gap-2 p-3 bg-white dark:bg-gray-800 rounded-lg">
+                    <div className="flex items-center gap-2 p-3 bg-white dark:bg-stone-800 rounded-lg">
                       <span className="text-green-500 text-xl">✓</span>
                       <div>
-                        <div className="text-gray-800 dark:text-gray-200">Merchant type: Coffee shop</div>
-                        <div className="text-xs text-gray-500 dark:text-gray-400">(normal pattern)</div>
+                        <div className="text-stone-800 dark:text-stone-200">Merchant type: Coffee shop</div>
+                        <div className="text-xs text-stone-500 dark:text-stone-400">(normal pattern)</div>
                       </div>
                     </div>
-                    <div className="flex items-center gap-2 p-3 bg-white dark:bg-gray-800 rounded-lg">
+                    <div className="flex items-center gap-2 p-3 bg-white dark:bg-stone-800 rounded-lg">
                       <span className="text-green-500 text-xl">✓</span>
                       <div>
-                        <div className="text-gray-800 dark:text-gray-200">Amount: $4.50</div>
-                        <div className="text-xs text-gray-500 dark:text-gray-400">(not suspicious)</div>
+                        <div className="text-stone-800 dark:text-stone-200">Amount: $4.50</div>
+                        <div className="text-xs text-stone-500 dark:text-stone-400">(not suspicious)</div>
                       </div>
                     </div>
-                    <div className="flex items-center gap-2 p-3 bg-white dark:bg-gray-800 rounded-lg">
+                    <div className="flex items-center gap-2 p-3 bg-white dark:bg-stone-800 rounded-lg">
                       <span className="text-green-500 text-xl">✓</span>
                       <div>
-                        <div className="text-gray-800 dark:text-gray-200">Velocity check</div>
-                        <div className="text-xs text-gray-500 dark:text-gray-400">(Not 50 transactions in 5 minutes)</div>
+                        <div className="text-stone-800 dark:text-stone-200">Velocity check</div>
+                        <div className="text-xs text-stone-500 dark:text-stone-400">(Not 50 transactions in 5 minutes)</div>
                       </div>
                     </div>
                   </div>
@@ -998,12 +998,12 @@ export default function TapToPayArticle() {
             </div>
 
             {/* Step 9 */}
-            <div className="mb-12 bg-white dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-800 shadow-lg">
+            <div className="mb-12 bg-white dark:bg-stone-900 rounded-2xl p-8 border border-stone-200 dark:border-stone-800 shadow-lg">
               <h4 className="text-xl font-bold text-accent-600 dark:text-accent-400 mb-4">
                 Step 9: The Response Journey
               </h4>
 
-              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+              <p className="text-lg text-stone-700 dark:text-stone-300 leading-relaxed mb-6">
                 Your bank sends back approval with its own cryptogram:
               </p>
 
@@ -1013,7 +1013,7 @@ export default function TapToPayArticle() {
                     <Building2 className="text-green-600 dark:text-green-400" size={28} />
                     <div>
                       <div className="font-bold text-green-900 dark:text-green-200">BANK</div>
-                      <div className="text-xs text-gray-600 dark:text-gray-400">Generates ARPC - Authorization Response Cryptogram</div>
+                      <div className="text-xs text-stone-600 dark:text-stone-400">Generates ARPC - Authorization Response Cryptogram</div>
                     </div>
                   </div>
                 </div>
@@ -1027,7 +1027,7 @@ export default function TapToPayArticle() {
                     <Network className="text-yellow-600 dark:text-yellow-400" size={28} />
                     <div>
                       <div className="font-bold text-yellow-900 dark:text-yellow-200">CARD NETWORK (Visa/Mastercard)</div>
-                      <div className="text-xs text-gray-600 dark:text-gray-400">Routes approval back</div>
+                      <div className="text-xs text-stone-600 dark:text-stone-400">Routes approval back</div>
                     </div>
                   </div>
                 </div>
@@ -1046,7 +1046,7 @@ export default function TapToPayArticle() {
                     <Store className="text-cyan-600 dark:text-cyan-400" size={28} />
                     <div>
                       <div className="font-bold text-cyan-900 dark:text-cyan-200">MERCHANT'S PROCESSOR</div>
-                      <div className="text-xs text-gray-600 dark:text-gray-400">Forwards to terminal</div>
+                      <div className="text-xs text-stone-600 dark:text-stone-400">Forwards to terminal</div>
                     </div>
                   </div>
                 </div>
@@ -1065,7 +1065,7 @@ export default function TapToPayArticle() {
                     <Monitor className="text-blue-600 dark:text-blue-400" size={28} />
                     <div>
                       <div className="font-bold text-blue-900 dark:text-blue-200">TERMINAL</div>
-                      <div className="text-xs text-gray-600 dark:text-gray-400">Transmits to card</div>
+                      <div className="text-xs text-stone-600 dark:text-stone-400">Transmits to card</div>
                     </div>
                   </div>
                 </div>
@@ -1084,7 +1084,7 @@ export default function TapToPayArticle() {
                     <CreditCard className="text-purple-600 dark:text-purple-400" size={28} />
                     <div>
                       <div className="font-bold text-purple-900 dark:text-purple-200">YOUR CARD</div>
-                      <div className="text-xs text-gray-600 dark:text-gray-400">Validates ARPC cryptogram</div>
+                      <div className="text-xs text-stone-600 dark:text-stone-400">Validates ARPC cryptogram</div>
                     </div>
                   </div>
                 </div>
@@ -1094,14 +1094,14 @@ export default function TapToPayArticle() {
                     <Lock className="text-purple-600 dark:text-purple-400" size={24} />
                     <div>
                       <div className="font-bold text-purple-900 dark:text-purple-200 mb-2">Card validates ARPC to confirm:</div>
-                      <div className="text-gray-800 dark:text-gray-200 italic">"Yes, this response is really from my bank, not an imposter"</div>
+                      <div className="text-stone-800 dark:text-stone-200 italic">"Yes, this response is really from my bank, not an imposter"</div>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div className="bg-accent-50 dark:bg-accent-900/20 border-l-4 border-accent-500 p-6 rounded-r-xl">
-                <p className="text-lg text-gray-800 dark:text-gray-200 font-bold">
+                <p className="text-lg text-stone-800 dark:text-stone-200 font-bold">
                   Total time for all of this? About 0.3 seconds.
                 </p>
               </div>
@@ -1109,11 +1109,11 @@ export default function TapToPayArticle() {
 
             {/* Multi-Layer Architecture */}
             <div className="mb-12 bg-gradient-to-br from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-2xl p-8 border border-purple-200 dark:border-purple-800 shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+              <h3 className="text-2xl font-bold text-stone-900 dark:text-stone-100 mb-6">
                 The Multi-Layer Encryption Architecture
               </h3>
 
-              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+              <p className="text-lg text-stone-700 dark:text-stone-300 leading-relaxed mb-8">
                 What's brilliant is that there are multiple encryption layers, each protecting different things:
               </p>
 
@@ -1128,7 +1128,7 @@ export default function TapToPayArticle() {
                       <h4 className="text-xl font-bold text-red-900 dark:text-red-200 mb-3">
                         Secure Element
                       </h4>
-                      <ul className="space-y-2 text-gray-800 dark:text-gray-200">
+                      <ul className="space-y-2 text-stone-800 dark:text-stone-200">
                         <li className="flex items-start gap-2">
                           <span className="text-red-500 mt-1">✓</span>
                           <span>Hardware encryption</span>
@@ -1156,7 +1156,7 @@ export default function TapToPayArticle() {
                       <h4 className="text-xl font-bold text-orange-900 dark:text-orange-200 mb-3">
                         Token Generation <span className="text-sm font-normal">(FPE - Format Preserving Encryption)</span>
                       </h4>
-                      <ul className="space-y-2 text-gray-800 dark:text-gray-200">
+                      <ul className="space-y-2 text-stone-800 dark:text-stone-200">
                         <li className="flex items-start gap-2">
                           <span className="text-orange-500 mt-1">✓</span>
                           <span>One-way function</span>
@@ -1184,7 +1184,7 @@ export default function TapToPayArticle() {
                       <h4 className="text-xl font-bold text-yellow-900 dark:text-yellow-200 mb-3">
                         Cryptogram <span className="text-sm font-normal">(AES-128 or 3DES)</span>
                       </h4>
-                      <ul className="space-y-2 text-gray-800 dark:text-gray-200">
+                      <ul className="space-y-2 text-stone-800 dark:text-stone-200">
                         <li className="flex items-start gap-2">
                           <span className="text-yellow-500 mt-1">✓</span>
                           <span>Unique per transaction</span>
@@ -1212,7 +1212,7 @@ export default function TapToPayArticle() {
                       <h4 className="text-xl font-bold text-green-900 dark:text-green-200 mb-3">
                         NFC Protocol Encryption
                       </h4>
-                      <ul className="space-y-2 text-gray-800 dark:text-gray-200">
+                      <ul className="space-y-2 text-stone-800 dark:text-stone-200">
                         <li className="flex items-start gap-2">
                           <span className="text-green-500 mt-1">✓</span>
                           <span>Encrypted communication channel</span>
@@ -1236,7 +1236,7 @@ export default function TapToPayArticle() {
                       <h4 className="text-xl font-bold text-blue-900 dark:text-blue-200 mb-3">
                         Network Transport <span className="text-sm font-normal">(TLS 1.3)</span>
                       </h4>
-                      <ul className="space-y-2 text-gray-800 dark:text-gray-200">
+                      <ul className="space-y-2 text-stone-800 dark:text-stone-200">
                         <li className="flex items-start gap-2">
                           <span className="text-blue-500 mt-1">✓</span>
                           <span>End-to-end encryption</span>
@@ -1264,7 +1264,7 @@ export default function TapToPayArticle() {
                       <h4 className="text-xl font-bold text-purple-900 dark:text-purple-200 mb-3">
                         Token Vault Security
                       </h4>
-                      <ul className="space-y-2 text-gray-800 dark:text-gray-200">
+                      <ul className="space-y-2 text-stone-800 dark:text-stone-200">
                         <li className="flex items-start gap-2">
                           <span className="text-purple-500 mt-1">✓</span>
                           <span>HSM (Hardware Security Module)</span>
@@ -1287,8 +1287,8 @@ export default function TapToPayArticle() {
                 </div>
               </div>
 
-              <div className="mt-8 bg-white dark:bg-gray-900 rounded-xl p-6 border-2 border-purple-300 dark:border-purple-700">
-                <p className="text-lg text-gray-800 dark:text-gray-200 font-semibold text-center">
+              <div className="mt-8 bg-white dark:bg-stone-900 rounded-xl p-6 border-2 border-purple-300 dark:border-purple-700">
+                <p className="text-lg text-stone-800 dark:text-stone-200 font-semibold text-center">
                   🔒 An attacker would need to break through ALL six layers simultaneously. Breaking one doesn't help you need them all.
                 </p>
               </div>
@@ -1296,42 +1296,42 @@ export default function TapToPayArticle() {
 
             {/* Why Genius */}
             <div className="mb-12">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+              <h3 className="text-2xl font-bold text-stone-900 dark:text-stone-100 mb-6">
                 Why This Architecture Is Genius
               </h3>
 
-              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+              <p className="text-lg text-stone-700 dark:text-stone-300 leading-relaxed mb-6">
                 Here's what blew my mind about this whole system:
               </p>
 
               <div className="space-y-6">
-                <div className="bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-800">
-                  <h5 className="font-bold text-gray-900 dark:text-white mb-2">It's stateless for the merchant:</h5>
-                  <p className="text-gray-700 dark:text-gray-300">Starbucks never sees your real card number, never stores anything reusable, and has minimal PCI compliance burden.</p>
+                <div className="bg-white dark:bg-stone-900 rounded-xl p-6 border border-stone-200 dark:border-stone-800">
+                  <h5 className="font-bold text-stone-900 dark:text-stone-100 mb-2">It's stateless for the merchant:</h5>
+                  <p className="text-stone-700 dark:text-stone-300">Starbucks never sees your real card number, never stores anything reusable, and has minimal PCI compliance burden.</p>
                 </div>
 
-                <div className="bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-800">
-                  <h5 className="font-bold text-gray-900 dark:text-white mb-2">It's deterministic for the bank:</h5>
-                  <p className="text-gray-700 dark:text-gray-300">Given the same inputs and keys, the cryptogram calculation is always the same. So the bank can independently verify without any back-and-forth with your card.</p>
+                <div className="bg-white dark:bg-stone-900 rounded-xl p-6 border border-stone-200 dark:border-stone-800">
+                  <h5 className="font-bold text-stone-900 dark:text-stone-100 mb-2">It's deterministic for the bank:</h5>
+                  <p className="text-stone-700 dark:text-stone-300">Given the same inputs and keys, the cryptogram calculation is always the same. So the bank can independently verify without any back-and-forth with your card.</p>
                 </div>
 
-                <div className="bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-800">
-                  <h5 className="font-bold text-gray-900 dark:text-white mb-2">It's impossible to replay:</h5>
-                  <p className="text-gray-700 dark:text-gray-300">The counter ensures every transaction is unique and ordered.</p>
+                <div className="bg-white dark:bg-stone-900 rounded-xl p-6 border border-stone-200 dark:border-stone-800">
+                  <h5 className="font-bold text-stone-900 dark:text-stone-100 mb-2">It's impossible to replay:</h5>
+                  <p className="text-stone-700 dark:text-stone-300">The counter ensures every transaction is unique and ordered.</p>
                 </div>
 
-                <div className="bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-800">
-                  <h5 className="font-bold text-gray-900 dark:text-white mb-2">It's resistant to man in the middle attacks:</h5>
-                  <p className="text-gray-700 dark:text-gray-300">Even if someone intercepts everything, they can't modify it (MAC verification fails) or reuse it (counter mismatch).</p>
+                <div className="bg-white dark:bg-stone-900 rounded-xl p-6 border border-stone-200 dark:border-stone-800">
+                  <h5 className="font-bold text-stone-900 dark:text-stone-100 mb-2">It's resistant to man in the middle attacks:</h5>
+                  <p className="text-stone-700 dark:text-stone-300">Even if someone intercepts everything, they can't modify it (MAC verification fails) or reuse it (counter mismatch).</p>
                 </div>
 
-                <div className="bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-800">
-                  <h5 className="font-bold text-gray-900 dark:text-white mb-2">It works offline (sometimes):</h5>
-                  <p className="text-gray-700 dark:text-gray-300">For small amounts, the card can approve transactions even without reaching your bank, using risk management built into the chip.</p>
+                <div className="bg-white dark:bg-stone-900 rounded-xl p-6 border border-stone-200 dark:border-stone-800">
+                  <h5 className="font-bold text-stone-900 dark:text-stone-100 mb-2">It works offline (sometimes):</h5>
+                  <p className="text-stone-700 dark:text-stone-300">For small amounts, the card can approve transactions even without reaching your bank, using risk management built into the chip.</p>
                 </div>
               </div>
 
-              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-6">
+              <p className="text-lg text-stone-700 dark:text-stone-300 leading-relaxed mt-6">
                 According to research published by Akter and colleagues in 2017, this architecture has been tested against every attack vector researchers could think of and the fundamental design has held up.
               </p>
             </div>
@@ -1339,12 +1339,12 @@ export default function TapToPayArticle() {
 
           {/* Additional Sections */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 flex items-center gap-3">
               <span className="w-2 h-12 bg-gradient-to-b from-accent-500 to-accent-600 rounded-full"></span>
               I Tried to Break It (On Paper)
             </h2>
 
-            <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               <p>
                 So I thought, okay, what if I'm a hacker and I capture, say, 1,000 transactions from the same card? Surely I could find a pattern, right?
               </p>
@@ -1368,12 +1368,12 @@ export default function TapToPayArticle() {
           </motion.section>
 
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 flex items-center gap-3">
               <span className="w-2 h-12 bg-gradient-to-b from-accent-500 to-accent-600 rounded-full"></span>
               But Wait, Don't Hackers Always Find a Way?
             </h2>
 
-            <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               <p>This is where it gets interesting. Yes, attackers have tried. Extensively.</p>
 
               <p>
@@ -1391,12 +1391,12 @@ export default function TapToPayArticle() {
           </motion.section>
 
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 flex items-center gap-3">
               <span className="w-2 h-12 bg-gradient-to-b from-accent-500 to-accent-600 rounded-full"></span>
               The Secret Vault Nobody Talks About
             </h2>
 
-            <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               <p>So if these tokens can't be "decrypted," how do legitimate transactions work?</p>
 
               <p>
@@ -1414,12 +1414,12 @@ export default function TapToPayArticle() {
           </motion.section>
 
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 flex items-center gap-3">
               <span className="w-2 h-12 bg-gradient-to-b from-accent-500 to-accent-600 rounded-full"></span>
               Does This Actually Work in the Real World?
             </h2>
 
-            <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               <p>Honestly? The data is pretty compelling.</p>
 
               <p>
@@ -1437,12 +1437,12 @@ export default function TapToPayArticle() {
           </motion.section>
 
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 flex items-center gap-3">
               <span className="w-2 h-12 bg-gradient-to-b from-accent-500 to-accent-600 rounded-full"></span>
               What About Quantum Computers?
             </h2>
 
-            <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               <p>I know someone's thinking this, so let me address it: won't quantum computers break all this?</p>
 
               <p>
@@ -1456,12 +1456,12 @@ export default function TapToPayArticle() {
           </motion.section>
 
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 flex items-center gap-3">
               <span className="w-2 h-12 bg-gradient-to-b from-accent-500 to-accent-600 rounded-full"></span>
               Why This Matters
             </h2>
 
-            <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               <p>
                 Look, I'm not saying the system is perfect. A recent comprehensive review by Ajisegiri and colleagues in 2024 pointed out that new attack methods keep emerging. Security is an ongoing arms race, not a solved problem.
               </p>
@@ -1496,7 +1496,7 @@ export default function TapToPayArticle() {
               </p>
 
               <div className="bg-gradient-to-r from-accent-50 to-blue-50 dark:from-accent-900/20 dark:to-blue-900/20 border-l-4 border-accent-500 p-8 rounded-r-2xl my-8">
-                <p className="text-xl text-gray-800 dark:text-gray-200 font-medium">
+                <p className="text-xl text-stone-800 dark:text-stone-200 font-medium">
                   Next time you tap your card, take a second to appreciate that you're using one of the most elegant applications of modern cryptography in everyday life. The math is protecting you, and it's doing a pretty incredible job.
                 </p>
               </div>
@@ -1505,9 +1505,9 @@ export default function TapToPayArticle() {
 
           {/* Sources */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <div className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-800 shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Sources u can get more information from:</h3>
-              <ul className="grid md:grid-cols-2 gap-3 text-gray-700 dark:text-gray-300">
+            <div className="bg-stone-50 dark:bg-stone-900 rounded-2xl p-8 border border-stone-200 dark:border-stone-800 shadow-lg">
+              <h3 className="text-2xl font-bold text-stone-900 dark:text-stone-100 mb-6">Sources u can get more information from:</h3>
+              <ul className="grid md:grid-cols-2 gap-3 text-stone-700 dark:text-stone-300">
                 <li className="flex items-start gap-2">
                   <span className="text-accent-500 mt-1">•</span>
                   <span>EMVCo Payment Tokenisation Specification (2014)</span>
@@ -1563,13 +1563,13 @@ export default function TapToPayArticle() {
           {/* Closing */}
           <motion.section variants={fadeInUp} className="mb-16">
             <div className="bg-gradient-to-br from-accent-50 via-blue-50 to-purple-50 dark:from-accent-900/20 dark:via-blue-900/20 dark:to-purple-900/20 rounded-2xl p-8 border border-accent-200 dark:border-accent-800">
-              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6 italic">
+              <p className="text-lg text-stone-700 dark:text-stone-300 leading-relaxed mb-6 italic">
                 Have you ever worried about tap-to-pay security? Or am I the only one who goes down these research rabbit holes? Drop a comment I'd love to hear what security topics you're curious about.
               </p>
               
               <div className="flex flex-wrap gap-3">
                 {['PaymentSecurity', 'Fintech', 'Cybersecurity', 'Technology', 'Innovation'].map((tag) => (
-                  <span key={tag} className="inline-flex items-center px-4 py-2 bg-white dark:bg-gray-900 rounded-full text-accent-600 dark:text-accent-400 font-medium border border-accent-200 dark:border-accent-800 hover:bg-accent-50 dark:hover:bg-accent-900/30 transition-colors">
+                  <span key={tag} className="inline-flex items-center px-4 py-2 bg-white dark:bg-stone-900 rounded-full text-accent-600 dark:text-accent-400 font-medium border border-accent-200 dark:border-accent-800 hover:bg-accent-50 dark:hover:bg-accent-900/30 transition-colors">
                     #{tag}
                   </span>
                 ))}

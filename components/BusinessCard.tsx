@@ -11,21 +11,21 @@ const BusinessCard = () => {
   ]
 
   return (
-    <section id="stats" className="py-12 md:py-16 bg-white dark:bg-gray-950">
+    <section id="stats" className="py-12 bg-stone-50 dark:bg-stone-950 border-y border-stone-200 dark:border-stone-800">
       <div className="container-custom">
-        <motion.div 
-          className="grid grid-cols-2 md:grid-cols-4 gap-4"
-          initial={{ opacity: 0, y: 20 }}
+        <motion.div
+          className="grid grid-cols-2 md:grid-cols-4 gap-0 divide-x divide-stone-200 dark:divide-stone-800"
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
+          transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
         >
           {stats.map((stat, index) => (
-            <div key={index} className="card text-center">
-              <div className="text-3xl font-bold text-accent-600 dark:text-accent-400">
+            <div key={index} className="text-center py-4 px-6">
+              <div className="font-mono text-2xl font-medium text-accent-600 dark:text-accent-400 mb-1">
                 {stat.value}
               </div>
-              <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+              <div className="text-xs text-stone-400 dark:text-stone-500 tracking-wide">
                 {stat.label}
               </div>
             </div>

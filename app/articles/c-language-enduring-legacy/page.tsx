@@ -24,18 +24,18 @@ export default function CLangEnduringLegacyArticle() {
   }
 
   return (
-    <article className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-white dark:from-gray-950 dark:via-gray-900 dark:to-gray-950">
+    <article className="min-h-screen bg-stone-50 dark:bg-stone-950">
       {/* Header */}
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="bg-white dark:bg-gray-950 border-b border-gray-200 dark:border-gray-800 sticky top-0 z-50 backdrop-blur-sm bg-white/90 dark:bg-gray-950/90"
+        className="bg-stone-50 dark:bg-stone-950 border-b border-stone-200 dark:border-stone-800 sticky top-0 z-50 backdrop-blur-sm bg-white/90 dark:bg-stone-950/90"
       >
         <div className="container mx-auto px-4 md:px-8 py-6">
           <Link 
             href="/#articles" 
-            className="inline-flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 hover:text-accent-600 dark:hover:text-accent-400 transition-colors group"
+            className="inline-flex items-center gap-2 text-sm text-stone-600 dark:text-stone-400 hover:text-accent-600 dark:hover:text-accent-400 transition-colors group"
           >
             <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
             Back to Articles
@@ -51,15 +51,15 @@ export default function CLangEnduringLegacyArticle() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="max-w-5xl mx-auto"
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-stone-900 dark:text-stone-100 mb-6 leading-tight">
             The Enduring Legacy of C
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-8">
+          <p className="text-xl md:text-2xl text-stone-600 dark:text-stone-400 mb-8">
             Why Half a Century Later, We Still Can&apos;t Live Without It
           </p>
           
-          <div className="flex items-center gap-6 text-sm text-gray-600 dark:text-gray-400 mb-8">
+          <div className="flex items-center gap-6 text-sm text-stone-600 dark:text-stone-400 mb-8">
             <div className="flex items-center gap-2">
               <Calendar size={16} />
               <time dateTime="2025-12-25">December 25, 2025</time>
@@ -75,7 +75,7 @@ export default function CLangEnduringLegacyArticle() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 shadow-2xl"
+            className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-stone-200 dark:border-stone-800 shadow-2xl"
           >
             <Image
               src="/articles/c.png"
@@ -98,7 +98,7 @@ export default function CLangEnduringLegacyArticle() {
         >
           {/* Lead Paragraph */}
           <motion.div variants={fadeInUp} className="mb-12">
-            <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 leading-relaxed font-light">
+            <p className="text-xl md:text-2xl text-stone-700 dark:text-stone-300 leading-relaxed font-light">
               In the gleaming corridors of Bell Labs in 1972, a young computer scientist named Dennis Ritchie was quietly crafting something revolutionary. He couldn&apos;t have known that his creation the C programming language would become the invisible foundation upon which the entire digital world would be built. More than fifty years later, C remains not just relevant but indispensable, powering everything from the smartphone in your pocket to the aircraft soaring overhead.
             </p>
           </motion.div>
@@ -111,9 +111,9 @@ export default function CLangEnduringLegacyArticle() {
                 { number: '90%', label: 'Of OS Kernels Use C' },
                 { number: 'Billions', label: 'Of Devices Run C Code Daily' }
               ].map((stat, idx) => (
-                <div key={idx} className="bg-white dark:bg-gray-800/50 border border-accent-200 dark:border-accent-500/30 rounded-xl p-8 text-center hover:transform hover:-translate-y-1 transition-all shadow-lg hover:shadow-accent-500/20">
+                <div key={idx} className="bg-white dark:bg-stone-800/50 border border-accent-200 dark:border-accent-500/30 rounded-xl p-8 text-center hover:transform hover:-translate-y-1 transition-all shadow-lg hover:shadow-accent-500/20">
                   <div className="text-5xl font-bold text-accent-600 dark:text-accent-400 mb-2">{stat.number}</div>
-                  <div className="text-gray-700 dark:text-gray-400">{stat.label}</div>
+                  <div className="text-stone-700 dark:text-stone-400">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -121,12 +121,12 @@ export default function CLangEnduringLegacyArticle() {
 
           {/* Genesis Section */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 border-l-4 border-accent-500 pl-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 border-l-4 border-accent-500 pl-6">
               The Genesis: From BCPL to C
             </h2>
 
             {/* Timeline */}
-            <div className="relative pl-8 md:pl-12 my-12 bg-gray-50 dark:bg-gray-800/30 rounded-xl p-6">
+            <div className="relative pl-8 md:pl-12 my-12 bg-stone-50 dark:bg-stone-800/30 rounded-xl p-6">
               <div className="absolute left-8 md:left-9 top-6 bottom-6 w-1 bg-gradient-to-b from-accent-500 to-accent-600"></div>
               
               {[
@@ -141,12 +141,12 @@ export default function CLangEnduringLegacyArticle() {
                 <div key={idx} className="relative mb-8 pl-8">
                   <div className="absolute -left-5 md:-left-6 top-1 w-4 h-4 rounded-full bg-accent-500 shadow-lg shadow-accent-500/50"></div>
                   <div className="font-bold text-xl text-accent-600 dark:text-accent-400 mb-2">{item.year}</div>
-                  <p className="text-gray-700 dark:text-gray-300">{item.desc}</p>
+                  <p className="text-stone-700 dark:text-stone-300">{item.desc}</p>
                 </div>
               ))}
             </div>
 
-            <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
+            <div className="space-y-6 text-lg text-stone-300 leading-relaxed">
               <p>
                 The story of C begins between 1969 and 1973, evolving alongside the nascent Unix operating system, with its most creative period occurring during 1972. Dennis Ritchie began modifying B (created by his colleague Ken Thompson), adding data types and syntax characteristics that transformed it into C by 1972.
               </p>
@@ -161,11 +161,11 @@ export default function CLangEnduringLegacyArticle() {
 
           {/* Architecture Section with SVG */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 border-l-4 border-accent-500 pl-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 border-l-4 border-accent-500 pl-6">
               C Language Architecture: The Foundation of Modern Computing
             </h2>
 
-            <div className="bg-white dark:bg-gray-800/50 border-2 border-accent-200 dark:border-accent-500/30 rounded-2xl p-6 md:p-10 my-12 shadow-2xl">
+            <div className="bg-white dark:bg-stone-800/50 border-2 border-accent-200 dark:border-accent-500/30 rounded-2xl p-6 md:p-10 my-12 shadow-2xl">
               <h3 className="text-xl font-bold text-center text-accent-600 dark:text-accent-400 mb-8">C Language Architecture - Layer Model</h3>
               
               <svg viewBox="0 0 800 600" className="w-full h-auto">
@@ -221,7 +221,7 @@ export default function CLangEnduringLegacyArticle() {
 
           {/* Why C is Superior */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 border-l-4 border-accent-500 pl-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 border-l-4 border-accent-500 pl-6">
               Why C is Architecturally Superior
             </h2>
 
@@ -231,10 +231,10 @@ export default function CLangEnduringLegacyArticle() {
                 { icon: Zap, title: 'Direct Memory Control', desc: 'Unlike higher-level languages, C gives programmers complete control over memory allocation and deallocation. This enables optimization that\'s impossible in garbage-collected languages.' },
                 { icon: Wrench, title: 'Hardware Access', desc: 'C can manipulate arbitrary memory addresses, read/write hardware registers, and use inline assembly when needed. This makes it indispensable for device drivers and embedded systems.' }
               ].map((feature, idx) => (
-                <div key={idx} className="bg-white dark:bg-gray-800/50 border border-accent-200 dark:border-accent-500 rounded-xl p-8 hover:border-accent-500 dark:hover:border-accent-400 transition-colors shadow-sm">
+                <div key={idx} className="bg-white dark:bg-stone-800/50 border border-accent-200 dark:border-accent-500 rounded-xl p-8 hover:border-accent-500 dark:hover:border-accent-400 transition-colors shadow-sm">
                   <feature.icon className="w-10 h-10 text-accent-600 dark:text-accent-400 mb-4" />
                   <h3 className="text-xl font-bold text-accent-600 dark:text-accent-400 mb-3">{feature.title}</h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{feature.desc}</p>
+                  <p className="text-stone-700 dark:text-stone-300 leading-relaxed">{feature.desc}</p>
                 </div>
               ))}
             </div>
@@ -242,11 +242,11 @@ export default function CLangEnduringLegacyArticle() {
 
           {/* Embedded Systems Section */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 border-l-4 border-accent-500 pl-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 border-l-4 border-accent-500 pl-6">
               C in Embedded Systems: Architecture Deep Dive
             </h2>
 
-            <div className="bg-white dark:bg-gray-800/50 border-2 border-accent-200 dark:border-accent-500/30 rounded-2xl p-6 md:p-10 my-12 shadow-2xl">
+            <div className="bg-white dark:bg-stone-800/50 border-2 border-accent-200 dark:border-accent-500/30 rounded-2xl p-6 md:p-10 my-12 shadow-2xl">
               <h3 className="text-xl font-bold text-center text-accent-600 dark:text-accent-400 mb-8">Embedded System Architecture with C</h3>
               
               <svg viewBox="0 0 900 700" className="w-full h-auto">
@@ -322,10 +322,10 @@ export default function CLangEnduringLegacyArticle() {
                 { icon: Factory, title: 'Industrial Control', desc: 'PLCs, robotics, factory automation. Precise timing control for coordinated machinery.' },
                 { icon: Radio, title: 'Communication', desc: 'Routers, switches, modems, cellular base stations. Handles high-speed packet processing efficiently.' }
               ].map((app, idx) => (
-                <div key={idx} className="bg-white dark:bg-gray-800/50 border border-accent-200 dark:border-accent-500/30 rounded-xl p-6 hover:border-accent-500 dark:hover:border-accent-400 transition-colors shadow-sm">
+                <div key={idx} className="bg-white dark:bg-stone-800/50 border border-accent-200 dark:border-accent-500/30 rounded-xl p-6 hover:border-accent-500 dark:hover:border-accent-400 transition-colors shadow-sm">
                   <app.icon className="w-12 h-12 text-accent-600 dark:text-accent-400 mb-3" />
                   <h4 className="text-lg font-bold text-accent-600 dark:text-accent-400 mb-2">{app.title}</h4>
-                  <p className="text-sm text-gray-700 dark:text-gray-300">{app.desc}</p>
+                  <p className="text-sm text-stone-700 dark:text-stone-300">{app.desc}</p>
                 </div>
               ))}
             </div>
@@ -333,11 +333,11 @@ export default function CLangEnduringLegacyArticle() {
 
           {/* Operating System Architecture */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 border-l-4 border-accent-500 pl-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 border-l-4 border-accent-500 pl-6">
               Operating System Architecture: C at the Core
             </h2>
 
-            <div className="bg-white dark:bg-gray-800/50 border-2 border-accent-200 dark:border-accent-500/30 rounded-2xl p-6 md:p-10 my-12 shadow-2xl">
+            <div className="bg-white dark:bg-stone-800/50 border-2 border-accent-200 dark:border-accent-500/30 rounded-2xl p-6 md:p-10 my-12 shadow-2xl">
               <h3 className="text-xl font-bold text-center text-accent-600 dark:text-accent-400 mb-8">Operating System Kernel Architecture (Linux Example)</h3>
               
               <svg viewBox="0 0 900 800" className="w-full h-auto">
@@ -404,7 +404,7 @@ export default function CLangEnduringLegacyArticle() {
               </svg>
             </div>
 
-            <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               <p>
                 The Linux kernel is written mostly in C as supported by the GNU Compiler Collection (GCC), which includes extensions beyond standard C, with some assembly code for architecture-specific optimizations. C made it possible to undertake something never done successfully before: write an entire operating system in a high-level language.
               </p>
@@ -416,12 +416,12 @@ export default function CLangEnduringLegacyArticle() {
 
           {/* Why C Remains Unbeatable - Comparison Table */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 border-l-4 border-accent-500 pl-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 border-l-4 border-accent-500 pl-6">
               Why C Remains Unbeatable in 2025
             </h2>
 
             <div className="overflow-x-auto">
-              <table className="w-full border-collapse bg-white dark:bg-gray-800/50 rounded-xl overflow-hidden shadow-lg">
+              <table className="w-full border-collapse bg-white dark:bg-stone-800/50 rounded-xl overflow-hidden shadow-lg">
                 <thead>
                   <tr className="bg-accent-500 text-white">
                     <th className="p-4 text-left font-bold">Feature</th>
@@ -438,10 +438,10 @@ export default function CLangEnduringLegacyArticle() {
                     { feature: 'Predictability', clang: 'Deterministic\nNo GC pauses', why: 'Real-time systems, aviation, medical devices requiring guaranteed response times' },
                     { feature: 'Ecosystem', clang: '50+ years\nBillions of LOC', why: 'Massive existing codebase, proven libraries, extensive tooling' }
                   ].map((row, idx) => (
-                    <tr key={idx} className="border-t border-gray-200 dark:border-gray-700 hover:bg-accent-50 dark:hover:bg-accent-900/10 transition-colors">
+                    <tr key={idx} className="border-t border-stone-200 dark:border-stone-700 hover:bg-accent-50 dark:hover:bg-accent-900/10 transition-colors">
                       <td className="p-4 font-semibold text-accent-700 dark:text-accent-400">{row.feature}</td>
-                      <td className="p-4 text-gray-700 dark:text-gray-300 whitespace-pre-line">{row.clang}</td>
-                      <td className="p-4 text-gray-700 dark:text-gray-300">{row.why}</td>
+                      <td className="p-4 text-stone-700 dark:text-stone-300 whitespace-pre-line">{row.clang}</td>
+                      <td className="p-4 text-stone-700 dark:text-stone-300">{row.why}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -451,14 +451,14 @@ export default function CLangEnduringLegacyArticle() {
 
           {/* Code Examples */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 border-l-4 border-accent-500 pl-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 border-l-4 border-accent-500 pl-6">
               What Can You Build With C?
             </h2>
 
             <div className="space-y-6">
-              <div className="bg-gray-50 dark:bg-gray-950 rounded-xl p-6 border-l-4 border-accent-500 overflow-x-auto shadow-sm">
-                <div className="text-sm text-gray-600 dark:text-gray-400 mb-3 font-mono">Memory-Mapped I/O in Embedded C</div>
-                <pre className="text-gray-800 dark:text-accent-300 font-mono text-sm leading-relaxed">
+              <div className="bg-stone-50 dark:bg-stone-950 rounded-xl p-6 border-l-4 border-accent-500 overflow-x-auto shadow-sm">
+                <div className="text-sm text-stone-600 dark:text-stone-400 mb-3 font-mono">Memory-Mapped I/O in Embedded C</div>
+                <pre className="text-stone-800 dark:text-accent-300 font-mono text-sm leading-relaxed">
 {`#define UART_BASE_ADDR  0x40013800
 #define UART_DR         (*(volatile uint32_t *)(UART_BASE_ADDR + 0x04))
 #define UART_SR         (*(volatile uint32_t *)(UART_BASE_ADDR + 0x00))
@@ -476,9 +476,9 @@ void uart_send_char(char c) {
                 </pre>
               </div>
 
-              <div className="bg-gray-50 dark:bg-gray-950 rounded-xl p-6 border-l-4 border-accent-500 overflow-x-auto shadow-sm">
-                <div className="text-sm text-gray-600 dark:text-gray-400 mb-3 font-mono">Linux Kernel Style Code</div>
-                <pre className="text-gray-800 dark:text-accent-300 font-mono text-sm leading-relaxed">
+              <div className="bg-stone-50 dark:bg-stone-950 rounded-xl p-6 border-l-4 border-accent-500 overflow-x-auto shadow-sm">
+                <div className="text-sm text-stone-600 dark:text-stone-400 mb-3 font-mono">Linux Kernel Style Code</div>
+                <pre className="text-stone-800 dark:text-accent-300 font-mono text-sm leading-relaxed">
 {`struct task_struct {
     volatile long state;    // -1 unrunnable, 0 runnable, >0 stopped
     void *stack;
@@ -499,15 +499,15 @@ static inline struct task_struct *get_current(void) {
 
           {/* Modern C Development */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 border-l-4 border-accent-500 pl-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 border-l-4 border-accent-500 pl-6">
               Modern C Development: Tools & Practices
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white dark:bg-gray-800/50 border border-accent-200 dark:border-accent-500/30 rounded-xl p-6 shadow-sm">
+              <div className="bg-white dark:bg-stone-800/50 border border-accent-200 dark:border-accent-500/30 rounded-xl p-6 shadow-sm">
                 <Hammer className="w-12 h-12 text-accent-600 dark:text-accent-400 mb-4" />
                 <h3 className="text-xl font-bold text-accent-600 dark:text-accent-400 mb-3">Development Tools</h3>
-                <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                <ul className="space-y-2 text-stone-700 dark:text-stone-300">
                   <li><strong>Compilers:</strong> GCC, Clang/LLVM, MSVC with advanced optimizations</li>
                   <li><strong>Debuggers:</strong> GDB, LLDB, rr (record & replay), Valgrind for memory analysis</li>
                   <li><strong>Build Systems:</strong> Make, CMake, Meson for complex project management</li>
@@ -515,10 +515,10 @@ static inline struct task_struct *get_current(void) {
                 </ul>
               </div>
 
-              <div className="bg-white dark:bg-gray-800/50 border border-accent-200 dark:border-accent-500/30 rounded-xl p-6 shadow-sm">
+              <div className="bg-white dark:bg-stone-800/50 border border-accent-200 dark:border-accent-500/30 rounded-xl p-6 shadow-sm">
                 <BookOpen className="w-12 h-12 text-accent-600 dark:text-accent-400 mb-4" />
                 <h3 className="text-xl font-bold text-accent-600 dark:text-accent-400 mb-3">Standard Library Power</h3>
-                <div className="space-y-3 text-gray-700 dark:text-gray-300">
+                <div className="space-y-3 text-stone-700 dark:text-stone-300">
                   <p>
                     The C standard library provides macros, type definitions, and functions for string manipulation, mathematical computation, I/O processing, and memory management. On Unix-like systems, the C library is considered part of the operating system and cannot be erased without breaking system functionality.
                   </p>
@@ -532,7 +532,7 @@ static inline struct task_struct *get_current(void) {
 
           {/* Real-World Impact */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 border-l-4 border-accent-500 pl-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 border-l-4 border-accent-500 pl-6">
               Real-World Impact: Projects Powered by C
             </h2>
 
@@ -543,15 +543,15 @@ static inline struct task_struct *get_current(void) {
                 { icon: Zap, stat: 'Redis', label: 'In-Memory DB in C' },
                 { icon: Github, stat: 'Git', label: 'Version Control in C' }
               ].map((project, idx) => (
-                <div key={idx} className="bg-white dark:bg-gray-800/50 border border-accent-200 dark:border-accent-500/30 rounded-xl p-6 text-center hover:border-accent-500 dark:hover:border-accent-400 transition-colors shadow-sm">
+                <div key={idx} className="bg-white dark:bg-stone-800/50 border border-accent-200 dark:border-accent-500/30 rounded-xl p-6 text-center hover:border-accent-500 dark:hover:border-accent-400 transition-colors shadow-sm">
                   <project.icon className="w-16 h-16 text-accent-600 dark:text-accent-400 mx-auto mb-3" />
                   <div className="text-2xl font-bold text-accent-600 dark:text-accent-400 mb-2">{project.stat}</div>
-                  <div className="text-sm text-gray-700 dark:text-gray-400">{project.label}</div>
+                  <div className="text-sm text-stone-700 dark:text-stone-400">{project.label}</div>
                 </div>
               ))}
             </div>
 
-            <div className="mt-8 space-y-4 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="mt-8 space-y-4 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               <p>
                 The list of influential software written in C reads like a who&apos;s who of computing infrastructure. PostgreSQL, a powerful object-relational database system, has most built-in functions written in C, as functions written in C offer the best performance. Redis, the popular in-memory key-value database, was initially prototyped in Tcl but the final product was rewritten in C for performance.
               </p>
@@ -563,12 +563,12 @@ static inline struct task_struct *get_current(void) {
 
           {/* Learning Curve */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 border-l-4 border-accent-500 pl-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 border-l-4 border-accent-500 pl-6">
               The Learning Curve: Why C Makes Better Programmers
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <div className="space-y-4 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+              <div className="space-y-4 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
                 <p>
                   Learning C is admittedly challenging. Programming in C requires a defensive programmer&apos;s mindset since the language allows doing anything with the computer, meaning developers can break everything if not cautious. Yet this challenge creates exceptional developers.
                 </p>
@@ -577,7 +577,7 @@ static inline struct task_struct *get_current(void) {
                 </p>
               </div>
 
-              <div className="bg-white dark:bg-gray-800/50 border-2 border-accent-200 dark:border-accent-500/30 rounded-2xl p-8 shadow-xl">
+              <div className="bg-white dark:bg-stone-800/50 border-2 border-accent-200 dark:border-accent-500/30 rounded-2xl p-8 shadow-xl">
                 <h3 className="text-xl font-bold text-center text-accent-600 dark:text-accent-400 mb-6">The C Programming Skillset</h3>
                 <svg viewBox="0 0 400 400" className="w-full h-auto">
                   <circle cx="200" cy="200" r="180" className="fill-accent-50 dark:fill-accent-900/20 stroke-accent-500 stroke-2"/>
@@ -612,11 +612,11 @@ static inline struct task_struct *get_current(void) {
 
           {/* The Future - C23 */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 border-l-4 border-accent-500 pl-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 border-l-4 border-accent-500 pl-6">
               The Future: C in 2025 and Beyond
             </h2>
 
-            <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+            <div className="space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed mb-8">
               <p>
                 Far from being a relic, C continues evolving. C23 is the latest major C language standard revision, introducing 14 new keywords and modern features including arbitrary-width integers via `_BitInt`, the `#embed` preprocessor directive for including binary data, and improved developer experience while maintaining C&apos;s core strengths.
               </p>
@@ -636,15 +636,15 @@ static inline struct task_struct *get_current(void) {
                   { feature: '[[attributes]]', desc: 'Modern syntax for compiler hints' },
                   { feature: 'Binary literals', desc: '0b prefix for bit patterns' }
                 ].map((item, idx) => (
-                  <div key={idx} className="bg-white dark:bg-gray-800/50 border border-accent-300 dark:border-accent-600/30 rounded-lg p-4">
+                  <div key={idx} className="bg-white dark:bg-stone-800/50 border border-accent-300 dark:border-accent-600/30 rounded-lg p-4">
                     <code className="text-accent-700 dark:text-accent-400 font-bold">{item.feature}</code>
-                    <p className="text-sm text-gray-700 dark:text-gray-300 mt-2">{item.desc}</p>
+                    <p className="text-sm text-stone-700 dark:text-stone-300 mt-2">{item.desc}</p>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="mt-8 space-y-4 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="mt-8 space-y-4 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               <p>
                 C remains a cornerstone of the software world in 2025, with operating system kernels, modern compilers and interpreters choosing C as an implementation vehicle, leveraging its ability to produce efficient, portable executables serving as a widely accepted lowest common denominator on diverse platforms.
               </p>
@@ -656,23 +656,23 @@ static inline struct task_struct *get_current(void) {
 
           {/* Conclusion */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 border-l-4 border-accent-500 pl-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 border-l-4 border-accent-500 pl-6">
               Conclusion: The Invisible Infrastructure
             </h2>
 
-            <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               <p>
                 The next time you make a phone call, browse the web, drive a car, or board an airplane, remember: you&apos;re trusting your life to C code. The world is running on C-powered devices that we use every day whether we realize it or not.
               </p>
 
               <div className="bg-accent-50 dark:bg-accent-900/20 border-l-4 border-accent-500 p-8 rounded-r-xl my-8 shadow-xl">
-                <p className="text-xl italic text-gray-800 dark:text-gray-200 mb-4">
+                <p className="text-xl italic text-stone-800 dark:text-stone-200 mb-4">
                   C is quirky, flawed, and an enormous success. While accidents of history surely helped, C evidently satisfied a need for a system implementation language efficient enough to displace assembly language, yet sufficiently abstract and fluent to describe algorithms and interactions in a wide variety of environments.
                 </p>
               </div>
 
               {/* From Atoms to Galaxies Diagram */}
-              <div className="bg-white dark:bg-gray-800/50 border-2 border-accent-200 dark:border-accent-500/30 rounded-2xl p-8 my-12 shadow-2xl">
+              <div className="bg-white dark:bg-stone-800/50 border-2 border-accent-200 dark:border-accent-500/30 rounded-2xl p-8 my-12 shadow-2xl">
                 <h3 className="text-xl font-bold text-center text-accent-600 dark:text-accent-400 mb-8">C&apos;s Domain: From Atoms to Galaxies</h3>
                 
                 <svg viewBox="0 0 900 400" className="w-full h-auto">

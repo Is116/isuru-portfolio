@@ -24,18 +24,18 @@ export default function RFHardwareLockdownArticle() {
   }
 
   return (
-    <article className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-white dark:from-gray-950 dark:via-gray-900 dark:to-gray-950">
+    <article className="min-h-screen bg-stone-50 dark:bg-stone-950">
       {/* Header */}
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="bg-white dark:bg-gray-950 border-b border-gray-200 dark:border-gray-800 sticky top-0 z-50 backdrop-blur-sm bg-white/90 dark:bg-gray-950/90"
+        className="bg-stone-50 dark:bg-stone-950 border-b border-stone-200 dark:border-stone-800 sticky top-0 z-50 backdrop-blur-sm bg-white/90 dark:bg-stone-950/90"
       >
         <div className="container-custom py-6">
           <Link 
             href="/#articles" 
-            className="inline-flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 hover:text-accent-600 dark:hover:text-accent-400 transition-colors group"
+            className="inline-flex items-center gap-2 text-sm text-stone-600 dark:text-stone-400 hover:text-accent-600 dark:hover:text-accent-400 transition-colors group"
           >
             <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
             Back to Articles
@@ -49,12 +49,12 @@ export default function RFHardwareLockdownArticle() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="max-w-4xl mx-auto"
+          className="w-full"
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-stone-900 dark:text-stone-100 mb-8 leading-tight">
             The Hidden Radio Inside Your Pocket: Why Your Phone Can't Access Its Own Hardware
           </h1>
-            <div className="flex flex-wrap items-center gap-4 md:gap-6 text-sm text-gray-600 dark:text-gray-400 mb-8">
+            <div className="flex flex-wrap items-center gap-4 md:gap-6 text-sm text-stone-600 dark:text-stone-400 mb-8">
             <div className="flex items-center gap-2">
               <Calendar size={16} className="flex-shrink-0" />
               <time dateTime="2024-12-23">Dec 23, 2024</time>
@@ -81,7 +81,7 @@ export default function RFHardwareLockdownArticle() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 shadow-2xl"
+            className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-stone-200 dark:border-stone-800 shadow-2xl"
           >
             <Image
               src="/articles/radio_article.png"
@@ -92,7 +92,7 @@ export default function RFHardwareLockdownArticle() {
             />
           </motion.div>
           <div className="mt-8">
-            <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed font-light">
+            <p className="text-lg md:text-xl text-stone-700 dark:text-stone-300 leading-relaxed font-light">
               A deep technical exploration of RF hardware lockdown, regulatory compliance, and the architecture preventing custom wireless transmission on modern smartphones.
             </p>
           </div>
@@ -105,30 +105,30 @@ export default function RFHardwareLockdownArticle() {
           initial="initial"
           animate="animate"
           variants={staggerContainer}
-          className="max-w-4xl mx-auto"
+          className="w-full"
         >
           {/* Lead Paragraph */}
           <motion.div variants={fadeInUp} className="mb-12">
-            <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 leading-relaxed font-light">
+            <p className="text-xl md:text-2xl text-stone-700 dark:text-stone-300 leading-relaxed font-light">
               Your Google Pixel 9 Pro contains some of the most sophisticated radio frequency (RF) hardware ever created. With its Tensor G4 chip, it can simultaneously communicate across dozens of frequency bands from 5G millimeter wave at 39 GHz to Bluetooth Low Energy at 2.4 GHz, NFC at 13.56 MHz, and Ultra-Wideband (UWB) at 6-9 GHz.
             </p>
           </motion.div>
 
           <motion.div variants={fadeInUp} className="mb-12">
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p className="text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               Yet, despite having this powerful transmitter in your pocket, you cannot write an app that transmits even the simplest custom RF signal. This article explores the technical, regulatory, and architectural reasons why modern smartphones are "locked down" at the radio level.
             </p>
           </motion.div>
 
           {/* Section 1: RF Hardware Architecture */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 flex items-center gap-3">
               <span className="w-2 h-12 bg-gradient-to-b from-accent-500 to-accent-600 rounded-full"></span>
               Part 1: The RF Hardware Architecture
             </h2>
 
-            <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6 mt-12">
+            <div className="space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
+              <h3 className="text-2xl md:text-3xl font-bold text-stone-900 dark:text-stone-100 mb-6 mt-12">
                 Inside the Pixel 9 Pro's RF System
               </h3>
 
@@ -140,7 +140,7 @@ export default function RFHardwareLockdownArticle() {
               <div className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/30 dark:to-cyan-900/30 rounded-2xl p-8 border-2 border-blue-300 dark:border-blue-700 shadow-xl my-8">
                 <div className="space-y-4">
                   {/* Application Processor */}
-                  <div className="bg-white dark:bg-gray-800 rounded-xl p-6 border-2 border-blue-400 dark:border-blue-600">
+                  <div className="bg-white dark:bg-stone-800 rounded-xl p-6 border-2 border-blue-400 dark:border-blue-600">
                     <div className="flex items-center gap-3 mb-4">
                       <Cpu className="text-blue-600 dark:text-blue-400" size={32} />
                       <h4 className="text-xl font-bold text-blue-900 dark:text-blue-200">Google Tensor G4 SoC</h4>
@@ -148,7 +148,7 @@ export default function RFHardwareLockdownArticle() {
                     <div className="ml-11 space-y-2">
                       <div className="bg-blue-50 dark:bg-blue-900/40 rounded-lg p-4">
                         <div className="font-bold text-blue-900 dark:text-blue-200 mb-2">Application Processor (ARM)</div>
-                        <ul className="space-y-1 text-sm text-gray-700 dark:text-gray-300">
+                        <ul className="space-y-1 text-sm text-stone-700 dark:text-stone-300">
                           <li className="flex items-center gap-2">
                             <span className="text-blue-500">•</span>
                             <span>Android OS</span>
@@ -164,7 +164,7 @@ export default function RFHardwareLockdownArticle() {
                       </div>
                       <div className="bg-purple-50 dark:bg-purple-900/40 rounded-lg p-4 border-2 border-purple-300 dark:border-purple-700">
                         <div className="font-bold text-purple-900 dark:text-purple-200 mb-2">Modem Processor (Exynos 5300)</div>
-                        <ul className="space-y-1 text-sm text-gray-700 dark:text-gray-300">
+                        <ul className="space-y-1 text-sm text-stone-700 dark:text-stone-300">
                           <li className="flex items-center gap-2">
                             <span className="text-purple-500">•</span>
                             <span>Baseband firmware</span>
@@ -183,7 +183,7 @@ export default function RFHardwareLockdownArticle() {
                   </div>
 
                   {/* RF Front-End Modules */}
-                  <div className="bg-white dark:bg-gray-800 rounded-xl p-6 border-2 border-green-400 dark:border-green-600">
+                  <div className="bg-white dark:bg-stone-800 rounded-xl p-6 border-2 border-green-400 dark:border-green-600">
                     <div className="flex items-center gap-3 mb-4">
                       <Radio className="text-green-600 dark:text-green-400" size={32} />
                       <h4 className="text-xl font-bold text-green-900 dark:text-green-200">RF Front-End Modules (RFFEs)</h4>
@@ -209,7 +209,7 @@ export default function RFHardwareLockdownArticle() {
                   </div>
 
                   {/* Power Amplifiers */}
-                  <div className="bg-white dark:bg-gray-800 rounded-xl p-6 border-2 border-yellow-400 dark:border-yellow-600">
+                  <div className="bg-white dark:bg-stone-800 rounded-xl p-6 border-2 border-yellow-400 dark:border-yellow-600">
                     <div className="flex items-center gap-3 mb-4">
                       <Zap className="text-yellow-600 dark:text-yellow-400" size={32} />
                       <h4 className="text-xl font-bold text-yellow-900 dark:text-yellow-200">Power Amplifiers & Filters</h4>
@@ -237,18 +237,18 @@ export default function RFHardwareLockdownArticle() {
                   </div>
                 </div>
 
-                <div className="mt-6 bg-white dark:bg-gray-900 rounded-xl p-6 border-2 border-red-300 dark:border-red-700">
+                <div className="mt-6 bg-white dark:bg-stone-900 rounded-xl p-6 border-2 border-red-300 dark:border-red-700">
                   <div className="flex items-start gap-3">
                     <AlertTriangle className="text-red-600 dark:text-red-400" size={24} />
                     <div>
                       <div className="font-bold text-red-900 dark:text-red-200 mb-2">Key Observation:</div>
-                      <p className="text-gray-800 dark:text-gray-200">Notice the separation between the application processor (where your apps run) and the modem processor (which controls the radios). This architectural separation is the <strong>first line of defense</strong> against custom RF transmission.</p>
+                      <p className="text-stone-800 dark:text-stone-200">Notice the separation between the application processor (where your apps run) and the modem processor (which controls the radios). This architectural separation is the <strong>first line of defense</strong> against custom RF transmission.</p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6 mt-12">
+              <h3 className="text-2xl md:text-3xl font-bold text-stone-900 dark:text-stone-100 mb-6 mt-12">
                 The Firmware Barrier
               </h3>
 
@@ -257,13 +257,13 @@ export default function RFHardwareLockdownArticle() {
               </p>
 
               {/* Firmware Authentication Flow */}
-              <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-800 shadow-lg my-8">
+              <div className="bg-white dark:bg-stone-900 rounded-2xl p-8 border border-stone-200 dark:border-stone-800 shadow-lg my-8">
                 <h4 className="text-xl font-bold text-accent-600 dark:text-accent-400 mb-6">
                   WiFi/Bluetooth Chip Firmware Authentication
                 </h4>
 
-                <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 mb-6 font-mono text-sm overflow-x-auto">
-                  <pre className="text-gray-800 dark:text-gray-200">{`// Simplified firmware authentication flow
+                <div className="bg-stone-50 dark:bg-stone-800 rounded-xl p-6 mb-6 font-mono text-sm overflow-x-auto">
+                  <pre className="text-stone-800 dark:text-stone-200">{`// Simplified firmware authentication flow
 struct firmware_header {
     uint32_t magic;              // 0x57434E37 ("WCN7")
     uint32_t version;
@@ -295,19 +295,19 @@ int verify_firmware(struct firmware_header *fw) {
                 <div className="space-y-3">
                   <div className="flex items-center gap-3 p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border-2 border-red-300 dark:border-red-700">
                     <span className="text-red-500 text-2xl">✗</span>
-                    <span className="font-semibold text-gray-900 dark:text-white">You cannot load custom firmware</span>
+                    <span className="font-semibold text-stone-900 dark:text-stone-100">You cannot load custom firmware</span>
                   </div>
                   <div className="flex items-center gap-3 p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border-2 border-red-300 dark:border-red-700">
                     <span className="text-red-500 text-2xl">✗</span>
-                    <span className="font-semibold text-gray-900 dark:text-white">You cannot modify existing firmware</span>
+                    <span className="font-semibold text-stone-900 dark:text-stone-100">You cannot modify existing firmware</span>
                   </div>
                   <div className="flex items-center gap-3 p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border-2 border-red-300 dark:border-red-700">
                     <span className="text-red-500 text-2xl">✗</span>
-                    <span className="font-semibold text-gray-900 dark:text-white">Even with root access, unsigned code won't run on the RF chip</span>
+                    <span className="font-semibold text-stone-900 dark:text-stone-100">Even with root access, unsigned code won't run on the RF chip</span>
                   </div>
                   <div className="flex items-center gap-3 p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border-2 border-red-300 dark:border-red-700">
                     <span className="text-red-500 text-2xl">✗</span>
-                    <span className="font-semibold text-gray-900 dark:text-white">Rollback protection prevents loading older, vulnerable firmware</span>
+                    <span className="font-semibold text-stone-900 dark:text-stone-100">Rollback protection prevents loading older, vulnerable firmware</span>
                   </div>
                 </div>
               </div>
@@ -316,13 +316,13 @@ int verify_firmware(struct firmware_header *fw) {
 
           {/* Section 2: Regulatory Enforcement */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 flex items-center gap-3">
               <span className="w-2 h-12 bg-gradient-to-b from-accent-500 to-accent-600 rounded-full"></span>
               Part 2: Regulatory Enforcement Architecture
             </h2>
 
-            <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6 mt-12">
+            <div className="space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
+              <h3 className="text-2xl md:text-3xl font-bold text-stone-900 dark:text-stone-100 mb-6 mt-12">
                 The FCC Equipment Authorization System
               </h3>
 
@@ -342,11 +342,11 @@ int verify_firmware(struct firmware_header *fw) {
                     <h4 className="text-lg md:text-xl font-bold text-red-900 dark:text-red-200 mb-2 md:mb-3">
                     Layer 1: Hardware Registers (Non-Volatile Memory)
                     </h4>
-                    <p className="text-sm md:text-base text-gray-800 dark:text-gray-200 mb-3 md:mb-4">
+                    <p className="text-sm md:text-base text-stone-800 dark:text-stone-200 mb-3 md:mb-4">
                     Regulatory restrictions are burned into the chip at manufacturing time and cannot be modified:
                     </p>
-                    <div className="bg-white dark:bg-gray-800 rounded-lg p-3 md:p-4 font-mono text-[10px] sm:text-xs overflow-x-auto">
-                    <pre className="text-gray-800 dark:text-gray-200">{`// Burned into chip at manufacturing
+                    <div className="bg-white dark:bg-stone-800 rounded-lg p-3 md:p-4 font-mono text-[10px] sm:text-xs overflow-x-auto">
+                    <pre className="text-stone-800 dark:text-stone-200">{`// Burned into chip at manufacturing
         struct regulatory_domain {
           char country_code[2];        // "US", "EU", "JP", etc.
           uint32_t allowed_channels;   // Bitmask of legal channels
@@ -368,25 +368,25 @@ int verify_firmware(struct firmware_header *fw) {
                       <h4 className="text-xl font-bold text-orange-900 dark:text-orange-200 mb-3">
                         Layer 2: Firmware State Machine
                       </h4>
-                      <p className="text-gray-800 dark:text-gray-200 mb-4">
+                      <p className="text-stone-800 dark:text-stone-200 mb-4">
                         Firmware enforces checks on every transmission attempt:
                       </p>
                       <div className="space-y-2">
-                        <div className="flex items-center gap-2 p-3 bg-white dark:bg-gray-800 rounded-lg">
+                        <div className="flex items-center gap-2 p-3 bg-white dark:bg-stone-800 rounded-lg">
                           <span className="text-orange-500">✓</span>
-                          <span className="text-gray-800 dark:text-gray-200">Frequency in allowed band?</span>
+                          <span className="text-stone-800 dark:text-stone-200">Frequency in allowed band?</span>
                         </div>
-                        <div className="flex items-center gap-2 p-3 bg-white dark:bg-gray-800 rounded-lg">
+                        <div className="flex items-center gap-2 p-3 bg-white dark:bg-stone-800 rounded-lg">
                           <span className="text-orange-500">✓</span>
-                          <span className="text-gray-800 dark:text-gray-200">Power within limits?</span>
+                          <span className="text-stone-800 dark:text-stone-200">Power within limits?</span>
                         </div>
-                        <div className="flex items-center gap-2 p-3 bg-white dark:bg-gray-800 rounded-lg">
+                        <div className="flex items-center gap-2 p-3 bg-white dark:bg-stone-800 rounded-lg">
                           <span className="text-orange-500">✓</span>
-                          <span className="text-gray-800 dark:text-gray-200">Protocol compliance?</span>
+                          <span className="text-stone-800 dark:text-stone-200">Protocol compliance?</span>
                         </div>
-                        <div className="flex items-center gap-2 p-3 bg-white dark:bg-gray-800 rounded-lg">
+                        <div className="flex items-center gap-2 p-3 bg-white dark:bg-stone-800 rounded-lg">
                           <span className="text-orange-500">✓</span>
-                          <span className="text-gray-800 dark:text-gray-200">Duty cycle limits (LBT for Europe)?</span>
+                          <span className="text-stone-800 dark:text-stone-200">Duty cycle limits (LBT for Europe)?</span>
                         </div>
                       </div>
                     </div>
@@ -403,7 +403,7 @@ int verify_firmware(struct firmware_header *fw) {
                       <h4 className="text-xl font-bold text-yellow-900 dark:text-yellow-200 mb-3">
                         Layer 3: Driver-Level Enforcement
                       </h4>
-                      <p className="text-gray-800 dark:text-gray-200">
+                      <p className="text-stone-800 dark:text-stone-200">
                         The Linux kernel driver provides an additional layer of regulatory checks, including SAR (Specific Absorption Rate) limits to protect human health.
                       </p>
                     </div>
@@ -412,7 +412,7 @@ int verify_firmware(struct firmware_header *fw) {
               </div>
 
               <div className="bg-accent-50 dark:bg-accent-900/20 border-l-4 border-accent-500 p-6 rounded-r-xl my-8">
-                <p className="text-lg text-gray-800 dark:text-gray-200 font-medium">
+                <p className="text-lg text-stone-800 dark:text-stone-200 font-medium">
                   <strong>The result:</strong> Even if you could somehow bypass one layer, the other layers would still block any unauthorized transmission. The system is designed with redundant enforcement at every level.
                 </p>
               </div>
@@ -421,12 +421,12 @@ int verify_firmware(struct firmware_header *fw) {
 
           {/* Section 3: Seven Layers of Lockdown */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 flex items-center gap-3">
               <span className="w-2 h-12 bg-gradient-to-b from-accent-500 to-accent-600 rounded-full"></span>
               The Seven Layers of RF Lockdown
             </h2>
 
-            <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               <p>
                 Your Pixel 9 Pro is locked down at <strong className="text-accent-600 dark:text-accent-400">seven distinct layers</strong>. To transmit a custom RF signal, you would need to defeat ALL seven layers simultaneously which is effectively impossible:
               </p>
@@ -434,12 +434,12 @@ int verify_firmware(struct firmware_header *fw) {
               <div className="bg-gradient-to-br from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-2xl p-8 border border-purple-200 dark:border-purple-800 shadow-lg my-8">
                 <div className="space-y-4">
                   {/* Layer 7 */}
-                  <div className="relative bg-white dark:bg-gray-800 rounded-xl p-6 border-l-4 border-purple-500 shadow-md">
+                  <div className="relative bg-white dark:bg-stone-800 rounded-xl p-6 border-l-4 border-purple-500 shadow-md">
                     <div className="flex items-center gap-3 mb-2">
                       <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold">7</div>
                       <h4 className="text-lg font-bold text-purple-900 dark:text-purple-200">Android Permission System</h4>
                     </div>
-                    <p className="text-gray-700 dark:text-gray-300 ml-13 text-sm">No custom RF APIs exist</p>
+                    <p className="text-stone-700 dark:text-stone-300 ml-13 text-sm">No custom RF APIs exist</p>
                   </div>
 
                   <div className="flex justify-center">
@@ -447,12 +447,12 @@ int verify_firmware(struct firmware_header *fw) {
                   </div>
 
                   {/* Layer 6 */}
-                  <div className="relative bg-white dark:bg-gray-800 rounded-xl p-6 border-l-4 border-blue-500 shadow-md">
+                  <div className="relative bg-white dark:bg-stone-800 rounded-xl p-6 border-l-4 border-blue-500 shadow-md">
                     <div className="flex items-center gap-3 mb-2">
                       <div className="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">6</div>
                       <h4 className="text-lg font-bold text-blue-900 dark:text-blue-200">HAL Restrictions</h4>
                     </div>
-                    <p className="text-gray-700 dark:text-gray-300 ml-13 text-sm">Protocol enforcement at hardware abstraction layer</p>
+                    <p className="text-stone-700 dark:text-stone-300 ml-13 text-sm">Protocol enforcement at hardware abstraction layer</p>
                   </div>
 
                   <div className="flex justify-center">
@@ -460,12 +460,12 @@ int verify_firmware(struct firmware_header *fw) {
                   </div>
 
                   {/* Layer 5 */}
-                  <div className="relative bg-white dark:bg-gray-800 rounded-xl p-6 border-l-4 border-cyan-500 shadow-md">
+                  <div className="relative bg-white dark:bg-stone-800 rounded-xl p-6 border-l-4 border-cyan-500 shadow-md">
                     <div className="flex items-center gap-3 mb-2">
                       <div className="w-10 h-10 bg-cyan-500 text-white rounded-full flex items-center justify-center font-bold">5</div>
                       <h4 className="text-lg font-bold text-cyan-900 dark:text-cyan-200">Driver/Kernel Enforcement</h4>
                     </div>
-                    <p className="text-gray-700 dark:text-gray-300 ml-13 text-sm">Regulatory checks in nl80211 driver</p>
+                    <p className="text-stone-700 dark:text-stone-300 ml-13 text-sm">Regulatory checks in nl80211 driver</p>
                   </div>
 
                   <div className="flex justify-center">
@@ -473,12 +473,12 @@ int verify_firmware(struct firmware_header *fw) {
                   </div>
 
                   {/* Layer 4 */}
-                  <div className="relative bg-white dark:bg-gray-800 rounded-xl p-6 border-l-4 border-green-500 shadow-md">
+                  <div className="relative bg-white dark:bg-stone-800 rounded-xl p-6 border-l-4 border-green-500 shadow-md">
                     <div className="flex items-center gap-3 mb-2">
                       <div className="w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center font-bold">4</div>
                       <h4 className="text-lg font-bold text-green-900 dark:text-green-200">Firmware Signature Verification</h4>
                     </div>
-                    <p className="text-gray-700 dark:text-gray-300 ml-13 text-sm">Cryptographic authentication (RSA-2048/4096)</p>
+                    <p className="text-stone-700 dark:text-stone-300 ml-13 text-sm">Cryptographic authentication (RSA-2048/4096)</p>
                   </div>
 
                   <div className="flex justify-center">
@@ -486,12 +486,12 @@ int verify_firmware(struct firmware_header *fw) {
                   </div>
 
                   {/* Layer 3 */}
-                  <div className="relative bg-white dark:bg-gray-800 rounded-xl p-6 border-l-4 border-yellow-500 shadow-md">
+                  <div className="relative bg-white dark:bg-stone-800 rounded-xl p-6 border-l-4 border-yellow-500 shadow-md">
                     <div className="flex items-center gap-3 mb-2">
                       <div className="w-10 h-10 bg-yellow-500 text-white rounded-full flex items-center justify-center font-bold">3</div>
                       <h4 className="text-lg font-bold text-yellow-900 dark:text-yellow-200">Baseband Processor Isolation</h4>
                     </div>
-                    <p className="text-gray-700 dark:text-gray-300 ml-13 text-sm">Separate security domain with Secure Element</p>
+                    <p className="text-stone-700 dark:text-stone-300 ml-13 text-sm">Separate security domain with Secure Element</p>
                   </div>
 
                   <div className="flex justify-center">
@@ -499,12 +499,12 @@ int verify_firmware(struct firmware_header *fw) {
                   </div>
 
                   {/* Layer 2 */}
-                  <div className="relative bg-white dark:bg-gray-800 rounded-xl p-6 border-l-4 border-orange-500 shadow-md">
+                  <div className="relative bg-white dark:bg-stone-800 rounded-xl p-6 border-l-4 border-orange-500 shadow-md">
                     <div className="flex items-center gap-3 mb-2">
                       <div className="w-10 h-10 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold">2</div>
                       <h4 className="text-lg font-bold text-orange-900 dark:text-orange-200">Hardware Security (Titan M2)</h4>
                     </div>
-                    <p className="text-gray-700 dark:text-gray-300 ml-13 text-sm">Root of trust with tamper resistance</p>
+                    <p className="text-stone-700 dark:text-stone-300 ml-13 text-sm">Root of trust with tamper resistance</p>
                   </div>
 
                   <div className="flex justify-center">
@@ -512,12 +512,12 @@ int verify_firmware(struct firmware_header *fw) {
                   </div>
 
                   {/* Layer 1 */}
-                  <div className="relative bg-white dark:bg-gray-800 rounded-xl p-6 border-l-4 border-red-500 shadow-md">
+                  <div className="relative bg-white dark:bg-stone-800 rounded-xl p-6 border-l-4 border-red-500 shadow-md">
                     <div className="flex items-center gap-3 mb-2">
                       <div className="w-10 h-10 bg-red-500 text-white rounded-full flex items-center justify-center font-bold">1</div>
                       <h4 className="text-lg font-bold text-red-900 dark:text-red-200">Physical RF Filters</h4>
                     </div>
-                    <p className="text-gray-700 dark:text-gray-300 ml-13 text-sm">Hardware bandpass filters block out-of-band signals</p>
+                    <p className="text-stone-700 dark:text-stone-300 ml-13 text-sm">Hardware bandpass filters block out-of-band signals</p>
                   </div>
 
                   <div className="flex justify-center">
@@ -532,7 +532,7 @@ int verify_firmware(struct firmware_header *fw) {
               </div>
 
               <div className="bg-gradient-to-r from-red-50 to-pink-50 dark:from-red-900/20 dark:to-pink-900/20 border-2 border-red-300 dark:border-red-700 rounded-xl p-6">
-                <p className="text-lg text-gray-800 dark:text-gray-200 font-bold text-center">
+                <p className="text-lg text-stone-800 dark:text-stone-200 font-bold text-center">
                   🔒 Each layer independently enforces FCC/regulatory compliance, carrier requirements, security policies, and protocol standards.
                 </p>
               </div>
@@ -541,17 +541,17 @@ int verify_firmware(struct firmware_header *fw) {
 
           {/* Section 4: Why Even Root Access Doesn't Help */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 flex items-center gap-3">
               <span className="w-2 h-12 bg-gradient-to-b from-accent-500 to-accent-600 rounded-full"></span>
               Why Even Root Access Doesn't Help
             </h2>
 
-            <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               <p>
                 Many technically-minded users assume that gaining root access would give them control over the RF hardware. Unfortunately, that's not how modern smartphone security works.
               </p>
 
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6 mt-12">
+              <h3 className="text-2xl md:text-3xl font-bold text-stone-900 dark:text-stone-100 mb-6 mt-12">
                 The Titan M2: Hardware Root of Trust
               </h3>
 
@@ -559,7 +559,7 @@ int verify_firmware(struct firmware_header *fw) {
                 The Pixel 9 Pro's Titan M2 chip enforces security even against root access. It's a separate processor that operates independently of Android:
               </p>
 
-              <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-800 shadow-lg my-8">
+              <div className="bg-white dark:bg-stone-900 rounded-2xl p-8 border border-stone-200 dark:border-stone-800 shadow-lg my-8">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl p-6">
                     <h5 className="font-bold text-green-900 dark:text-green-200 mb-4">✅ What root access DOES allow:</h5>
@@ -615,12 +615,12 @@ int verify_firmware(struct firmware_header *fw) {
 
           {/* Section 5: Comparison with SDR */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 flex items-center gap-3">
               <span className="w-2 h-12 bg-gradient-to-b from-accent-500 to-accent-600 rounded-full"></span>
               What About Software Defined Radio?
             </h2>
 
-            <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               <p>
                 Interestingly, you CAN do custom RF transmission with your phone just not using the phone's built-in radios. A $300 HackRF One connected via USB-C gives you complete RF control:
               </p>
@@ -633,19 +633,19 @@ int verify_firmware(struct firmware_header *fw) {
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start gap-2">
                       <span className="text-green-500 mt-1">•</span>
-                      <span className="text-gray-800 dark:text-gray-200">Open-source firmware</span>
+                      <span className="text-stone-800 dark:text-stone-200">Open-source firmware</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-500 mt-1">•</span>
-                      <span className="text-gray-800 dark:text-gray-200">No regulatory enforcement in hardware</span>
+                      <span className="text-stone-800 dark:text-stone-200">No regulatory enforcement in hardware</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-500 mt-1">•</span>
-                      <span className="text-gray-800 dark:text-gray-200">Direct access to RF transceiver</span>
+                      <span className="text-stone-800 dark:text-stone-200">Direct access to RF transceiver</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-500 mt-1">•</span>
-                      <span className="text-gray-800 dark:text-gray-200">User accepts legal responsibility</span>
+                      <span className="text-stone-800 dark:text-stone-200">User accepts legal responsibility</span>
                     </li>
                   </ul>
                 </div>
@@ -657,26 +657,26 @@ int verify_firmware(struct firmware_header *fw) {
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start gap-2">
                       <span className="text-red-500 mt-1">•</span>
-                      <span className="text-gray-800 dark:text-gray-200">Closed firmware with signature verification</span>
+                      <span className="text-stone-800 dark:text-stone-200">Closed firmware with signature verification</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-500 mt-1">•</span>
-                      <span className="text-gray-800 dark:text-gray-200">Multi-layer regulatory enforcement</span>
+                      <span className="text-stone-800 dark:text-stone-200">Multi-layer regulatory enforcement</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-500 mt-1">•</span>
-                      <span className="text-gray-800 dark:text-gray-200">No API for raw RF access</span>
+                      <span className="text-stone-800 dark:text-stone-200">No API for raw RF access</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-500 mt-1">•</span>
-                      <span className="text-gray-800 dark:text-gray-200">Manufacturer liable for regulatory violations</span>
+                      <span className="text-stone-800 dark:text-stone-200">Manufacturer liable for regulatory violations</span>
                     </li>
                   </ul>
                 </div>
               </div>
 
               <div className="bg-accent-50 dark:bg-accent-900/20 border-l-4 border-accent-500 p-6 rounded-r-xl">
-                <p className="text-lg text-gray-800 dark:text-gray-200">
+                <p className="text-lg text-stone-800 dark:text-stone-200">
                   <strong>The fundamental difference:</strong> With an SDR, YOU are legally responsible for compliance. With a phone, the MANUFACTURER is responsible so they lock down the hardware to prevent any possibility of violation.
                 </p>
               </div>
@@ -685,64 +685,64 @@ int verify_firmware(struct firmware_header *fw) {
 
           {/* Conclusion */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 flex items-center gap-3">
               <span className="w-2 h-12 bg-gradient-to-b from-accent-500 to-accent-600 rounded-full"></span>
               Key Takeaways
             </h2>
 
-            <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-800">
+                <div className="bg-white dark:bg-stone-900 rounded-xl p-6 border border-stone-200 dark:border-stone-800">
                   <div className="flex items-start gap-3 mb-3">
                     <Smartphone className="text-accent-500" size={24} />
-                    <h5 className="font-bold text-gray-900 dark:text-white">Your phone is more capable than your apps can access</h5>
+                    <h5 className="font-bold text-stone-900 dark:text-stone-100">Your phone is more capable than your apps can access</h5>
                   </div>
-                  <p className="text-gray-700 dark:text-gray-300">The hardware can do far more than the software allows.</p>
+                  <p className="text-stone-700 dark:text-stone-300">The hardware can do far more than the software allows.</p>
                 </div>
 
-                <div className="bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-800">
+                <div className="bg-white dark:bg-stone-900 rounded-xl p-6 border border-stone-200 dark:border-stone-800">
                   <div className="flex items-start gap-3 mb-3">
                     <Lock className="text-accent-500" size={24} />
-                    <h5 className="font-bold text-gray-900 dark:text-white">Restrictions are by design, not limitation</h5>
+                    <h5 className="font-bold text-stone-900 dark:text-stone-100">Restrictions are by design, not limitation</h5>
                   </div>
-                  <p className="text-gray-700 dark:text-gray-300">Manufacturers intentionally lock down RF to comply with regulations and limit liability.</p>
+                  <p className="text-stone-700 dark:text-stone-300">Manufacturers intentionally lock down RF to comply with regulations and limit liability.</p>
                 </div>
 
-                <div className="bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-800">
+                <div className="bg-white dark:bg-stone-900 rounded-xl p-6 border border-stone-200 dark:border-stone-800">
                   <div className="flex items-start gap-3 mb-3">
                     <Shield className="text-accent-500" size={24} />
-                    <h5 className="font-bold text-gray-900 dark:text-white">Root access is not enough</h5>
+                    <h5 className="font-bold text-stone-900 dark:text-stone-100">Root access is not enough</h5>
                   </div>
-                  <p className="text-gray-700 dark:text-gray-300">Firmware, bootloaders, and hardware security chips enforce restrictions independently of Android.</p>
+                  <p className="text-stone-700 dark:text-stone-300">Firmware, bootloaders, and hardware security chips enforce restrictions independently of Android.</p>
                 </div>
 
-                <div className="bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-800">
+                <div className="bg-white dark:bg-stone-900 rounded-xl p-6 border border-stone-200 dark:border-stone-800">
                   <div className="flex items-start gap-3 mb-3">
                     <Network className="text-accent-500" size={24} />
-                    <h5 className="font-bold text-gray-900 dark:text-white">Regulatory compliance is multi-layered</h5>
+                    <h5 className="font-bold text-stone-900 dark:text-stone-100">Regulatory compliance is multi-layered</h5>
                   </div>
-                  <p className="text-gray-700 dark:text-gray-300">From international law to carrier requirements to device certification, restrictions come from many sources.</p>
+                  <p className="text-stone-700 dark:text-stone-300">From international law to carrier requirements to device certification, restrictions come from many sources.</p>
                 </div>
 
-                <div className="bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-800">
+                <div className="bg-white dark:bg-stone-900 rounded-xl p-6 border border-stone-200 dark:border-stone-800">
                   <div className="flex items-start gap-3 mb-3">
                     <AlertTriangle className="text-accent-500" size={24} />
-                    <h5 className="font-bold text-gray-900 dark:text-white">The gap is widening</h5>
+                    <h5 className="font-bold text-stone-900 dark:text-stone-100">The gap is widening</h5>
                   </div>
-                  <p className="text-gray-700 dark:text-gray-300">New technologies like WiFi 7, 5G Advanced, and eSIM introduce even more restrictions and remote control.</p>
+                  <p className="text-stone-700 dark:text-stone-300">New technologies like WiFi 7, 5G Advanced, and eSIM introduce even more restrictions and remote control.</p>
                 </div>
 
-                <div className="bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-800">
+                <div className="bg-white dark:bg-stone-900 rounded-xl p-6 border border-stone-200 dark:border-stone-800">
                   <div className="flex items-start gap-3 mb-3">
                     <Radio className="text-accent-500" size={24} />
-                    <h5 className="font-bold text-gray-900 dark:text-white">External SDR hardware remains the only option</h5>
+                    <h5 className="font-bold text-stone-900 dark:text-stone-100">External SDR hardware remains the only option</h5>
                   </div>
-                  <p className="text-gray-700 dark:text-gray-300">For custom RF transmission, you need separate hardware that doesn't have these restrictions.</p>
+                  <p className="text-stone-700 dark:text-stone-300">For custom RF transmission, you need separate hardware that doesn't have these restrictions.</p>
                 </div>
               </div>
 
               <div className="bg-gradient-to-r from-accent-50 to-blue-50 dark:from-accent-900/20 dark:to-blue-900/20 border-l-4 border-accent-500 p-8 rounded-r-2xl my-8">
-                <p className="text-xl text-gray-800 dark:text-gray-200 font-medium">
+                <p className="text-xl text-stone-800 dark:text-stone-200 font-medium">
                   The sophisticated radio in your pocket represents an incredible engineering achievement not just in its capabilities, but in how thoroughly it's been locked down. This multi-layered security architecture protects both users and manufacturers, ensuring that the powerful RF hardware can only be used in ways that comply with global regulations and safety standards.
                 </p>
               </div>
@@ -751,13 +751,13 @@ int verify_firmware(struct firmware_header *fw) {
 
           {/* Sources */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <div className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-800 shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">References & Further Reading:</h3>
+            <div className="bg-stone-50 dark:bg-stone-900 rounded-2xl p-8 border border-stone-200 dark:border-stone-800 shadow-lg">
+              <h3 className="text-2xl font-bold text-stone-900 dark:text-stone-100 mb-6">References & Further Reading:</h3>
               
               <div className="space-y-6">
                 <div>
-                  <h4 className="font-bold text-gray-900 dark:text-white mb-3">Official Documentation:</h4>
-                  <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                  <h4 className="font-bold text-stone-900 dark:text-stone-100 mb-3">Official Documentation:</h4>
+                  <ul className="space-y-2 text-stone-700 dark:text-stone-300">
                     <li className="flex items-start gap-2">
                       <span className="text-accent-500 mt-1">•</span>
                       <span>FCC Part 15 Regulations: https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-15</span>
@@ -778,8 +778,8 @@ int verify_firmware(struct firmware_header *fw) {
                 </div>
 
                 <div>
-                  <h4 className="font-bold text-gray-900 dark:text-white mb-3">Technical Papers:</h4>
-                  <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                  <h4 className="font-bold text-stone-900 dark:text-stone-100 mb-3">Technical Papers:</h4>
+                  <ul className="space-y-2 text-stone-700 dark:text-stone-300">
                     <li className="flex items-start gap-2">
                       <span className="text-accent-500 mt-1">•</span>
                       <span>"Shannon Baseband Security Analysis" - Comsecuris Research</span>
@@ -800,8 +800,8 @@ int verify_firmware(struct firmware_header *fw) {
                 </div>
 
                 <div>
-                  <h4 className="font-bold text-gray-900 dark:text-white mb-3">Legal Resources:</h4>
-                  <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                  <h4 className="font-bold text-stone-900 dark:text-stone-100 mb-3">Legal Resources:</h4>
+                  <ul className="space-y-2 text-stone-700 dark:text-stone-300">
                     <li className="flex items-start gap-2">
                       <span className="text-accent-500 mt-1">•</span>
                       <span>FCC Equipment Authorization Database: https://fccid.io</span>
@@ -826,8 +826,8 @@ int verify_firmware(struct firmware_header *fw) {
               <div className="flex items-start gap-3">
                 <AlertTriangle className="text-yellow-600 dark:text-yellow-400" size={24} />
                 <div>
-                  <p className="text-gray-800 dark:text-gray-200 font-semibold mb-2">Legal Disclaimer</p>
-                  <p className="text-gray-700 dark:text-gray-300">
+                  <p className="text-stone-800 dark:text-stone-200 font-semibold mb-2">Legal Disclaimer</p>
+                  <p className="text-stone-700 dark:text-stone-300">
                     This article is for educational purposes only. Modifying device firmware or transmitting on unauthorized frequencies is illegal and may result in significant fines or criminal penalties. Always comply with local regulations regarding RF transmission.
                   </p>
                 </div>
@@ -838,13 +838,13 @@ int verify_firmware(struct firmware_header *fw) {
           {/* Closing */}
           <motion.section variants={fadeInUp} className="mb-16">
             <div className="bg-gradient-to-br from-accent-50 via-blue-50 to-purple-50 dark:from-accent-900/20 dark:via-blue-900/20 dark:to-purple-900/20 rounded-2xl p-8 border border-accent-200 dark:border-accent-800">
-              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6 italic">
+              <p className="text-lg text-stone-700 dark:text-stone-300 leading-relaxed mb-6 italic">
                 Did this deep dive into smartphone RF architecture surprise you? What other technical topics would you like to see explored? Let me know in the comments below.
               </p>
               
               <div className="flex flex-wrap gap-3">
                 {['MobileSecurity', 'RFEngineering', 'Android', 'TechDeepDive', 'Cybersecurity'].map((tag) => (
-                  <span key={tag} className="inline-flex items-center px-4 py-2 bg-white dark:bg-gray-900 rounded-full text-accent-600 dark:text-accent-400 font-medium border border-accent-200 dark:border-accent-800 hover:bg-accent-50 dark:hover:bg-accent-900/30 transition-colors">
+                  <span key={tag} className="inline-flex items-center px-4 py-2 bg-white dark:bg-stone-900 rounded-full text-accent-600 dark:text-accent-400 font-medium border border-accent-200 dark:border-accent-800 hover:bg-accent-50 dark:hover:bg-accent-900/30 transition-colors">
                     #{tag}
                   </span>
                 ))}

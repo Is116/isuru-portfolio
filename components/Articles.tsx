@@ -1,6 +1,6 @@
 'use client'
 
-import { ExternalLink, Calendar, Clock, BookOpen, ChevronDown } from 'lucide-react'
+import { ExternalLink, Calendar, Clock, ChevronDown } from 'lucide-react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -12,176 +12,141 @@ const Articles = () => {
   const articles = [
     {
       title: 'Building a Searchable Archive: How AI Processes 8,000+ Legal Documents',
-      description: 'A technical deep-dive into OCR technology, entity extraction (12,243 people, 5,709 organizations, 3,211 locations), AI deduplication systems, and the open-source Python pipeline that powers legal transparency.',
+      description: 'A technical deep-dive into OCR technology, entity extraction, AI deduplication, and the open-source Python pipeline that powers legal transparency.',
       date: '2026-02-15',
-      readTime: '18 min read',
+      readTime: '18 min',
       link: '/articles/searchable-legal-archive',
       tags: ['AI', 'OCR', 'Legal Tech', 'Python', 'Open Source'],
-      image: '/articles/document_search.png'
+      image: '/articles/document_search.png',
     },
     {
       title: 'How Electromagnetic Interference Stops, Crashes, and Compromises Integrated Circuits',
-      description: 'A technical deep dive into frequency injection attacks, chip-backside vulnerabilities, timing jitter models, and real-world exploitation. Learn how EMI attacks work and how to defend against them.',
+      description: 'A technical deep dive into frequency injection attacks, chip-backside vulnerabilities, timing jitter models, and real-world exploitation.',
       date: '2026-02-01',
-      readTime: '24 min read',
+      readTime: '24 min',
       link: '/articles/electromagnetic-interference-attacks',
       tags: ['Hardware Security', 'EMI', 'Cryptography', 'Automotive', 'IoT'],
-      image: '/articles/emi_security.png'
+      image: '/articles/emi_security.png',
     },
     {
       title: 'Democratizing Brain-Machine Interfaces: What You Can Do With Affordable Devices',
-      description: 'Discover how consumer-grade brain-machine interfaces are making neurotechnology accessible to everyone. From meditation apps to creative applications, explore what\'s possible with affordable EEG devices.',
+      description: "Discover how consumer-grade brain-machine interfaces are making neurotechnology accessible. From meditation apps to creative applications with affordable EEG devices.",
       date: '2026-01-26',
-      readTime: '18 min read',
+      readTime: '18 min',
       link: '/articles/democratizing-brain-machine-interfaces',
       tags: ['Neurotechnology', 'BMI', 'EEG', 'AI', 'Consumer Tech'],
-      image: '/articles/human_brain.png'
+      image: '/articles/human_brain.png',
     },
     {
       title: 'From Coaxial to Fiber: The Evolution of Broadband Infrastructure',
-      description: 'Explore the evolution of broadband from coaxial cables to fiber optics. Dive deep into network architecture, signal processing, and the quest for better alternatives in telecommunications infrastructure.',
+      description: 'Explore the evolution of broadband from coaxial cables to fiber optics — network architecture, signal processing, and the quest for better alternatives.',
       date: '2026-01-06',
-      readTime: '35 min read',
+      readTime: '35 min',
       link: '/articles/from-coaxial-to-fiber',
-      tags: ['Network Infrastructure', 'Broadband', 'Telecommunications', 'Fiber Optics'],
-      image: '/articles/line_evolution.png'
+      tags: ['Network Infrastructure', 'Broadband', 'Telecommunications'],
+      image: '/articles/line_evolution.png',
     },
     {
-      title: 'The Enduring Legacy of C: Why Half a Century Later, We Still Can\'t Live Without It',
-      description: 'From Bell Labs in 1972 to your smartphone today—discover how C became the invisible foundation of modern computing. Explore its architecture, see why 90% of OS kernels use C, and understand why this 50-year-old language remains indispensable.',
+      title: "The Enduring Legacy of C: Why Half a Century Later, We Still Can't Live Without It",
+      description: 'From Bell Labs in 1972 to your smartphone today — how C became the invisible foundation of modern computing.',
       date: '2025-12-25',
-      readTime: '22 min read',
+      readTime: '22 min',
       link: '/articles/c-language-enduring-legacy',
       tags: ['C', 'Systems Programming', 'History', 'Architecture'],
-      image: '/articles/c.png'
+      image: '/articles/c.png',
     },
     {
       title: 'Why Your Tap-to-Pay Card Is Way Smarter Than You Think',
-      description: 'A deep dive into the cryptographic architecture protecting your contactless payments. From NFC power transfer to quantum-resistant algorithms, discover how tokenization, secure elements, and multi-layer encryption work together to secure every tap.',
+      description: 'A deep dive into the cryptographic architecture protecting contactless payments — tokenization, secure elements, and multi-layer encryption.',
       date: '2025-12-21',
-      readTime: '18 min read',
+      readTime: '18 min',
       link: '/articles/tap-to-pay-security',
       tags: ['Payment Security', 'NFC', 'Cryptography', 'Fintech'],
-      image: '/articles/NFC_article.png'
+      image: '/articles/NFC_article.png',
     },
     {
       title: "The Hidden Radio Inside Your Pocket: Why Your Phone Can't Access Its Own Hardware",
-      description: 'A deep technical exploration of RF hardware lockdown, regulatory compliance, and the architecture preventing custom wireless transmission on modern smartphones.',
+      description: 'A deep technical exploration of RF hardware lockdown, regulatory compliance, and the architecture preventing custom wireless transmission.',
       date: '2024-12-23',
-      readTime: '25 min read',
+      readTime: '25 min',
       link: '/articles/the-hidden-radio-inside-your-pocket',
       tags: ['RF', 'Security', 'Android', 'Hardware', 'Regulation'],
-      image: '/articles/radio_article.png'
-    }
+      image: '/articles/radio_article.png',
+    },
   ]
 
   return (
-    <section id="articles" className="py-20 md:py-32 bg-white dark:bg-gray-950">
+    <section id="articles" className="py-24 md:py-36 bg-white dark:bg-stone-900">
       <div className="container-custom">
-        <motion.div 
-          className="max-w-3xl mb-16"
-          initial={{ opacity: 0, y: 30 }}
+        <motion.div
+          className="mb-14"
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
         >
-          <h2 className="section-title">
-            Latest <span className="gradient-text">Articles</span>
-          </h2>
-          <p className="section-subtitle">
-            Thoughts, tutorials, and insights about web development, programming, and technology
-          </p>
+          <h2 className="section-title">Articles</h2>
+          <p className="section-subtitle">Thoughts and deep dives on technology, security, and engineering</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {articles.slice(0, showAll ? articles.length : 3).map((article, index) => (
             <motion.article
               key={index}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ 
-                duration: 0.8, 
-                delay: index * 0.15,
-                ease: [0.25, 0.1, 0.25, 1]
-              }}
-              whileHover={{ 
-                y: -8,
-                transition: { duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }
-              }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: index * 0.08, ease: [0.25, 0.1, 0.25, 1] }}
             >
-              <Link 
+              <Link
                 href={article.link}
-                className="card group hover:border-accent-300 dark:hover:border-accent-700 transition-all hover-lift block cursor-pointer h-full"
-                {...(article.link.startsWith('http') ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                className="card group flex flex-col h-full cursor-pointer block"
               >
-                {/* Article Image */}
                 {article.image && (
-                  <div className="mb-4 -mt-2">
-                    <div className="relative rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 w-full aspect-[16/9]">
+                  <div className="mb-4 -mx-6 -mt-6 rounded-t-lg overflow-hidden">
+                    <div className="relative w-full aspect-[16/9] bg-stone-100 dark:bg-stone-800">
                       <Image
                         src={article.image}
                         alt={article.title}
                         fill
                         sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                        className="object-cover group-hover:scale-[1.02] transition-transform duration-300"
                       />
                     </div>
                   </div>
                 )}
 
-                {/* Article Icon */}
-                <div className="mb-4">
-                  <div className="p-2 bg-accent-50 dark:bg-accent-900/20 rounded-lg inline-block">
-                    <BookOpen size={20} className="text-accent-600 dark:text-accent-400" />
+                <div className="flex-1 flex flex-col space-y-3">
+                  <div className="flex items-center gap-3 text-xs text-stone-400 dark:text-stone-500 font-mono">
+                    <span className="flex items-center gap-1">
+                      <Calendar size={11} />
+                      {new Date(article.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
+                    </span>
+                    <span>·</span>
+                    <span className="flex items-center gap-1">
+                      <Clock size={11} />
+                      {article.readTime}
+                    </span>
                   </div>
-                </div>
 
-                {/* Article Content */}
-                <div className="space-y-3 flex-1 flex flex-col">
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                  <h3 className="font-sans text-sm font-medium text-stone-900 dark:text-stone-100 leading-snug group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors flex-1">
                     {article.title}
                   </h3>
 
-                  <p className="text-sm text-gray-600 dark:text-gray-400 flex-1 line-clamp-3">
+                  <p className="text-xs text-stone-500 dark:text-stone-400 leading-relaxed line-clamp-3">
                     {article.description}
                   </p>
 
-                  {/* Meta Info */}
-                  <div className="flex items-center gap-3 text-xs text-gray-500 dark:text-gray-500 pt-2">
-                    <div className="flex items-center gap-1">
-                      <Calendar className="w-3.5 h-3.5" />
-                      <time dateTime={article.date}>
-                        {new Date(article.date).toLocaleDateString('en-US', { 
-                          year: 'numeric', 
-                          month: 'short', 
-                          day: 'numeric' 
-                        })}
-                      </time>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Clock className="w-3.5 h-3.5" />
-                      <span>{article.readTime}</span>
-                    </div>
-                  </div>
-
-                  {/* Tags */}
-                  <div className="flex flex-wrap gap-2 pt-2">
+                  <div className="flex flex-wrap gap-1.5 pt-1">
                     {article.tags.map((tag, tagIndex) => (
-                      <span
-                        key={tagIndex}
-                        className="badge"
-                      >
-                        {tag}
-                      </span>
+                      <span key={tagIndex} className="badge">{tag}</span>
                     ))}
                   </div>
 
-                  {/* Read Link */}
-                  <div className="pt-3 mt-auto">
-                    <span className="inline-flex items-center gap-1.5 text-sm text-accent-600 dark:text-accent-400 group-hover:text-accent-700 dark:group-hover:text-accent-300 font-medium transition-colors">
+                  <div className="pt-2 mt-auto">
+                    <span className="inline-flex items-center gap-1.5 text-xs text-accent-600 dark:text-accent-400 font-medium">
                       Read Article
-                      <ExternalLink size={16} />
+                      <ExternalLink size={11} />
                     </span>
                   </div>
                 </div>
@@ -190,21 +155,17 @@ const Articles = () => {
           ))}
         </div>
 
-        {/* Load More Button */}
         {articles.length > 3 && !showAll && (
-          <motion.div 
-            className="flex justify-center mt-12"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+          <motion.div
+            className="flex justify-center mt-10"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            transition={{ duration: 0.5 }}
           >
-            <button
-              onClick={() => setShowAll(true)}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-accent-600 hover:bg-accent-700 dark:bg-accent-500 dark:hover:bg-accent-600 text-white font-semibold rounded-xl transition-all hover:scale-105 shadow-lg hover:shadow-xl"
-            >
-              Load More Articles
-              <ChevronDown size={20} />
+            <button onClick={() => setShowAll(true)} className="btn-secondary gap-2">
+              Show All Articles
+              <ChevronDown size={16} />
             </button>
           </motion.div>
         )}

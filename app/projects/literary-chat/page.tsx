@@ -24,18 +24,18 @@ export default function LiteraryChatProject() {
   }
 
   return (
-    <article className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-white dark:from-gray-950 dark:via-gray-900 dark:to-gray-950">
+    <article className="min-h-screen bg-stone-50 dark:bg-stone-950">
       {/* Header */}
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="bg-white dark:bg-gray-950 border-b border-gray-200 dark:border-gray-800 sticky top-0 z-50 backdrop-blur-sm bg-white/90 dark:bg-gray-950/90"
+        className="bg-stone-50 dark:bg-stone-950 border-b border-stone-200 dark:border-stone-800 sticky top-0 z-50 backdrop-blur-sm bg-white/90 dark:bg-stone-950/90"
       >
         <div className="container mx-auto px-4 md:px-8 py-6">
           <Link 
             href="/#projects" 
-            className="inline-flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 hover:text-accent-600 dark:hover:text-accent-400 transition-colors group"
+            className="inline-flex items-center gap-2 text-sm text-stone-600 dark:text-stone-400 hover:text-accent-600 dark:hover:text-accent-400 transition-colors group"
           >
             <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
             Back to Projects
@@ -51,15 +51,15 @@ export default function LiteraryChatProject() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="max-w-5xl mx-auto"
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-stone-900 dark:text-stone-100 mb-6 leading-tight">
             Literary Chat AI Book Character Conversations
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-8">
+          <p className="text-xl md:text-2xl text-stone-600 dark:text-stone-400 mb-8">
             A full-stack AI web application for dynamic conversations with literary characters. Users upload PDF books; the system uses Google Gemini AI for automatic character and metadata extraction, leveraging RAG for context-aware, multilingual chats with detailed, opinionated character personas.
           </p>
           
-          <div className="flex flex-wrap items-center gap-6 text-sm text-gray-600 dark:text-gray-400 mb-8">
+          <div className="flex flex-wrap items-center gap-6 text-sm text-stone-600 dark:text-stone-400 mb-8">
             <div className="flex flex-wrap gap-2">
               {['Gemini AI', 'React', 'Node.js', 'Express', 'SQLite', 'Prisma', 'RAG', 'Tailwind CSS'].map((tag, index) => (
                 <span
@@ -77,7 +77,7 @@ export default function LiteraryChatProject() {
               href="https://github.com/Is116/ai-chat-fin-stories"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 dark:bg-gray-800 hover:bg-gray-800 dark:hover:bg-gray-700 text-white font-semibold rounded-xl transition-all hover:scale-105 shadow-lg"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-stone-900 dark:bg-stone-800 hover:bg-stone-800 dark:hover:bg-stone-700 text-white font-semibold rounded-xl transition-all hover:scale-105 shadow-lg"
             >
               <Github size={20} />
               View Code
@@ -90,7 +90,7 @@ export default function LiteraryChatProject() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 shadow-2xl"
+              className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-stone-200 dark:border-stone-800 shadow-2xl"
             >
               <Image
                 src="/projects/ai_chat/ai_chat.jpeg"
@@ -105,7 +105,7 @@ export default function LiteraryChatProject() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 shadow-2xl"
+              className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-stone-200 dark:border-stone-800 shadow-2xl"
             >
               <Image
                 src="/projects/ai_chat/landing.jpeg"
@@ -121,7 +121,7 @@ export default function LiteraryChatProject() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 shadow-2xl"
+            className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-stone-200 dark:border-stone-800 shadow-2xl"
           >
             <Image
               src="/projects/ai_chat/book_single.jpeg"
@@ -144,14 +144,14 @@ export default function LiteraryChatProject() {
           {/* Overview */}
           <motion.div variants={fadeInUp} className="mb-12">
             <div className="prose prose-lg dark:prose-invert max-w-none">
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
+              <h2 className="text-3xl font-bold text-stone-900 dark:text-stone-100 mb-6 flex items-center gap-3">
                 <Target className="text-accent-600 dark:text-accent-400" size={32} />
                 Project Overview
               </h2>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+              <p className="text-stone-700 dark:text-stone-300 leading-relaxed mb-4">
                 Literary Chat is a full-stack web application that revolutionizes how readers engage with literature by enabling AI-powered conversations with book characters. The platform combines cutting-edge AI technology with intuitive design to create authentic, context-aware interactions with literary personas.
               </p>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+              <p className="text-stone-700 dark:text-stone-300 leading-relaxed">
                 Built with Google Gemini AI and powered by Retrieval-Augmented Generation (RAG), the system automatically extracts characters from uploaded PDFs, generates detailed personas, and facilitates natural conversations in multiple languages. Each character maintains their unique voice, opinions, and personality traits, creating engaging dialogues that feel true to the source material.
               </p>
             </div>
@@ -159,89 +159,89 @@ export default function LiteraryChatProject() {
 
           {/* Key Features */}
           <motion.div variants={fadeInUp} className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-stone-900 dark:text-stone-100 mb-8 flex items-center gap-3">
               <Zap className="text-accent-600 dark:text-accent-400" size={32} />
               Key Features
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="p-6 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-accent-300 dark:hover:border-accent-700 transition-colors">
+              <div className="p-6 bg-white dark:bg-stone-800 rounded-xl border border-stone-200 dark:border-stone-700 hover:border-accent-300 dark:hover:border-accent-700 transition-colors">
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-accent-100 dark:bg-accent-900/30 rounded-lg">
                     <Upload className="text-accent-600 dark:text-accent-400" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">PDF Book Upload</h3>
-                    <p className="text-gray-600 dark:text-gray-400">
+                    <h3 className="text-xl font-semibold text-stone-900 dark:text-stone-100 mb-2">PDF Book Upload</h3>
+                    <p className="text-stone-600 dark:text-stone-400">
                       Upload books in PDF format. The system extracts text, generates cover images, and automatically extracts metadata including title, author, genre, and publication year.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="p-6 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-accent-300 dark:hover:border-accent-700 transition-colors">
+              <div className="p-6 bg-white dark:bg-stone-800 rounded-xl border border-stone-200 dark:border-stone-700 hover:border-accent-300 dark:hover:border-accent-700 transition-colors">
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-accent-100 dark:bg-accent-900/30 rounded-lg">
                     <Brain className="text-accent-600 dark:text-accent-400" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">AI Character Extraction</h3>
-                    <p className="text-gray-600 dark:text-gray-400">
+                    <h3 className="text-xl font-semibold text-stone-900 dark:text-stone-100 mb-2">AI Character Extraction</h3>
+                    <p className="text-stone-600 dark:text-stone-400">
                       Google Gemini AI automatically identifies main characters from uploaded books, extracting names, descriptions, and relationships for seamless character discovery.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="p-6 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-accent-300 dark:hover:border-accent-700 transition-colors">
+              <div className="p-6 bg-white dark:bg-stone-800 rounded-xl border border-stone-200 dark:border-stone-700 hover:border-accent-300 dark:hover:border-accent-700 transition-colors">
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-accent-100 dark:bg-accent-900/30 rounded-lg">
                     <Sparkles className="text-accent-600 dark:text-accent-400" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Opinionated Character Personas</h3>
-                    <p className="text-gray-600 dark:text-gray-400">
+                    <h3 className="text-xl font-semibold text-stone-900 dark:text-stone-100 mb-2">Opinionated Character Personas</h3>
+                    <p className="text-stone-600 dark:text-stone-400">
                       Characters express strong opinions, emotions, and personality traits. Each persona is deeply analyzed for voice, manner of speech, worldview, and emotional patterns.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="p-6 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-accent-300 dark:hover:border-accent-700 transition-colors">
+              <div className="p-6 bg-white dark:bg-stone-800 rounded-xl border border-stone-200 dark:border-stone-700 hover:border-accent-300 dark:hover:border-accent-700 transition-colors">
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-accent-100 dark:bg-accent-900/30 rounded-lg">
                     <Database className="text-accent-600 dark:text-accent-400" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">RAG Integration</h3>
-                    <p className="text-gray-600 dark:text-gray-400">
+                    <h3 className="text-xl font-semibold text-stone-900 dark:text-stone-100 mb-2">RAG Integration</h3>
+                    <p className="text-stone-600 dark:text-stone-400">
                       Retrieval-Augmented Generation ensures context-aware responses. Book content is chunked and stored for precise, relevant character interactions based on source material.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="p-6 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-accent-300 dark:hover:border-accent-700 transition-colors">
+              <div className="p-6 bg-white dark:bg-stone-800 rounded-xl border border-stone-200 dark:border-stone-700 hover:border-accent-300 dark:hover:border-accent-700 transition-colors">
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-accent-100 dark:bg-accent-900/30 rounded-lg">
                     <Globe className="text-accent-600 dark:text-accent-400" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Multilingual Support</h3>
-                    <p className="text-gray-600 dark:text-gray-400">
+                    <h3 className="text-xl font-semibold text-stone-900 dark:text-stone-100 mb-2">Multilingual Support</h3>
+                    <p className="text-stone-600 dark:text-stone-400">
                       Chat in English, Sinhala, Finnish, and more. Characters respond in the same language as the user&apos;s message, powered by i18next internationalization.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="p-6 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-accent-300 dark:hover:border-accent-700 transition-colors">
+              <div className="p-6 bg-white dark:bg-stone-800 rounded-xl border border-stone-200 dark:border-stone-700 hover:border-accent-300 dark:hover:border-accent-700 transition-colors">
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-accent-100 dark:bg-accent-900/30 rounded-lg">
                     <MessageSquare className="text-accent-600 dark:text-accent-400" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Conversation History</h3>
-                    <p className="text-gray-600 dark:text-gray-400">
+                    <h3 className="text-xl font-semibold text-stone-900 dark:text-stone-100 mb-2">Conversation History</h3>
+                    <p className="text-stone-600 dark:text-stone-400">
                       Persistent chat history allows users to continue conversations across sessions. All messages are stored and retrievable for each character interaction.
                     </p>
                   </div>
@@ -252,11 +252,11 @@ export default function LiteraryChatProject() {
 
           {/* Technical Architecture */}
           <motion.div variants={fadeInUp} className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">System Architecture</h2>
+            <h2 className="text-3xl font-bold text-stone-900 dark:text-stone-100 mb-8">System Architecture</h2>
             <div className="space-y-6">
-              <div className="p-6 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Book Processing Pipeline</h3>
-                <ul className="space-y-2 text-gray-600 dark:text-gray-400">
+              <div className="p-6 bg-white dark:bg-stone-800 rounded-xl border border-stone-200 dark:border-stone-700">
+                <h3 className="text-xl font-semibold text-stone-900 dark:text-stone-100 mb-4">Book Processing Pipeline</h3>
+                <ul className="space-y-2 text-stone-600 dark:text-stone-400">
                   <li className="flex items-start gap-2">
                     <span className="text-accent-600 dark:text-accent-400 mt-1">1.</span>
                     <span>PDF uploaded → Book record created (status: pending)</span>
@@ -288,9 +288,9 @@ export default function LiteraryChatProject() {
                 </ul>
               </div>
 
-              <div className="p-6 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Chat Conversation Flow</h3>
-                <ul className="space-y-2 text-gray-600 dark:text-gray-400">
+              <div className="p-6 bg-white dark:bg-stone-800 rounded-xl border border-stone-200 dark:border-stone-700">
+                <h3 className="text-xl font-semibold text-stone-900 dark:text-stone-100 mb-4">Chat Conversation Flow</h3>
+                <ul className="space-y-2 text-stone-600 dark:text-stone-400">
                   <li className="flex items-start gap-2">
                     <span className="text-accent-600 dark:text-accent-400 mt-1">1.</span>
                     <span>User selects character → Conversation record created</span>
@@ -318,36 +318,36 @@ export default function LiteraryChatProject() {
                 </ul>
               </div>
 
-              <div className="p-6 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Database Schema</h3>
-                <div className="space-y-3 text-gray-600 dark:text-gray-400">
+              <div className="p-6 bg-white dark:bg-stone-800 rounded-xl border border-stone-200 dark:border-stone-700">
+                <h3 className="text-xl font-semibold text-stone-900 dark:text-stone-100 mb-4">Database Schema</h3>
+                <div className="space-y-3 text-stone-600 dark:text-stone-400">
                   <div className="flex items-center gap-3">
                     <div className="w-3 h-3 bg-blue-500 rounded"></div>
-                    <span><strong className="text-gray-900 dark:text-white">User:</strong> Authentication and profile data</span>
+                    <span><strong className="text-stone-900 dark:text-stone-100">User:</strong> Authentication and profile data</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-3 h-3 bg-purple-500 rounded"></div>
-                    <span><strong className="text-gray-900 dark:text-white">Book:</strong> Metadata, cover image, processing status</span>
+                    <span><strong className="text-stone-900 dark:text-stone-100">Book:</strong> Metadata, cover image, processing status</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-3 h-3 bg-pink-500 rounded"></div>
-                    <span><strong className="text-gray-900 dark:text-white">BookChunk:</strong> Text segments for RAG retrieval</span>
+                    <span><strong className="text-stone-900 dark:text-stone-100">BookChunk:</strong> Text segments for RAG retrieval</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-3 h-3 bg-green-500 rounded"></div>
-                    <span><strong className="text-gray-900 dark:text-white">Character:</strong> Character info, avatar, book reference</span>
+                    <span><strong className="text-stone-900 dark:text-stone-100">Character:</strong> Character info, avatar, book reference</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-3 h-3 bg-yellow-500 rounded"></div>
-                    <span><strong className="text-gray-900 dark:text-white">CharacterPersona:</strong> Detailed AI-generated personality</span>
+                    <span><strong className="text-stone-900 dark:text-stone-100">CharacterPersona:</strong> Detailed AI-generated personality</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-3 h-3 bg-red-500 rounded"></div>
-                    <span><strong className="text-gray-900 dark:text-white">Conversation:</strong> Chat session between user and character</span>
+                    <span><strong className="text-stone-900 dark:text-stone-100">Conversation:</strong> Chat session between user and character</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-3 h-3 bg-indigo-500 rounded"></div>
-                    <span><strong className="text-gray-900 dark:text-white">Message:</strong> Individual messages with timestamps</span>
+                    <span><strong className="text-stone-900 dark:text-stone-100">Message:</strong> Individual messages with timestamps</span>
                   </div>
                 </div>
               </div>
@@ -356,7 +356,7 @@ export default function LiteraryChatProject() {
 
           {/* Advanced Features */}
           <motion.div variants={fadeInUp} className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">Advanced Features</h2>
+            <h2 className="text-3xl font-bold text-stone-900 dark:text-stone-100 mb-8">Advanced Features</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="p-6 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 rounded-xl border border-blue-200 dark:border-blue-800">
                 <div className="flex items-start gap-4">
@@ -364,8 +364,8 @@ export default function LiteraryChatProject() {
                     <Users className="text-blue-600 dark:text-blue-400" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">User Authentication</h3>
-                    <p className="text-gray-700 dark:text-gray-300">
+                    <h3 className="text-xl font-semibold text-stone-900 dark:text-stone-100 mb-2">User Authentication</h3>
+                    <p className="text-stone-700 dark:text-stone-300">
                       Secure local authentication with bcrypt password hashing. Optional Google OAuth integration for social login with Passport.js middleware.
                     </p>
                   </div>
@@ -378,8 +378,8 @@ export default function LiteraryChatProject() {
                     <ShieldCheck className="text-purple-600 dark:text-purple-400" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Admin Dashboard</h3>
-                    <p className="text-gray-700 dark:text-gray-300">
+                    <h3 className="text-xl font-semibold text-stone-900 dark:text-stone-100 mb-2">Admin Dashboard</h3>
+                    <p className="text-stone-700 dark:text-stone-300">
                       Comprehensive admin panel to manage users, books, characters, and AI prompts. Monitor book processing status and review extracted characters before publishing.
                     </p>
                   </div>
@@ -392,8 +392,8 @@ export default function LiteraryChatProject() {
                     <Sparkles className="text-green-600 dark:text-green-400" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Auto-Generated Avatars</h3>
-                    <p className="text-gray-700 dark:text-gray-300">
+                    <h3 className="text-xl font-semibold text-stone-900 dark:text-stone-100 mb-2">Auto-Generated Avatars</h3>
+                    <p className="text-stone-700 dark:text-stone-300">
                       Unique character avatars generated using DiceBear API. Beautiful, consistent visual representation for each literary character.
                     </p>
                   </div>
@@ -406,8 +406,8 @@ export default function LiteraryChatProject() {
                     <FileCode className="text-orange-600 dark:text-orange-400" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Image Analysis</h3>
-                    <p className="text-gray-700 dark:text-gray-300">
+                    <h3 className="text-xl font-semibold text-stone-900 dark:text-stone-100 mb-2">Image Analysis</h3>
+                    <p className="text-stone-700 dark:text-stone-300">
                       Upload images during conversations for character analysis. Characters provide insights and opinions about images in their unique voice.
                     </p>
                   </div>
@@ -418,11 +418,11 @@ export default function LiteraryChatProject() {
 
           {/* Technical Stack */}
           <motion.div variants={fadeInUp} className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">Technical Stack</h2>
+            <h2 className="text-3xl font-bold text-stone-900 dark:text-stone-100 mb-8">Technical Stack</h2>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="p-6 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 rounded-xl border border-blue-200 dark:border-blue-800">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Frontend</h3>
-                <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                <h3 className="text-lg font-semibold text-stone-900 dark:text-stone-100 mb-3">Frontend</h3>
+                <ul className="space-y-2 text-stone-700 dark:text-stone-300">
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-accent-600 dark:bg-accent-400 rounded-full"></span>
                     React 18.2
@@ -451,8 +451,8 @@ export default function LiteraryChatProject() {
               </div>
 
               <div className="p-6 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-xl border border-purple-200 dark:border-purple-800">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Backend</h3>
-                <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                <h3 className="text-lg font-semibold text-stone-900 dark:text-stone-100 mb-3">Backend</h3>
+                <ul className="space-y-2 text-stone-700 dark:text-stone-300">
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-accent-600 dark:bg-accent-400 rounded-full"></span>
                     Node.js
@@ -481,8 +481,8 @@ export default function LiteraryChatProject() {
               </div>
 
               <div className="p-6 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-xl border border-green-200 dark:border-green-800">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">AI & Services</h3>
-                <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                <h3 className="text-lg font-semibold text-stone-900 dark:text-stone-100 mb-3">AI & Services</h3>
+                <ul className="space-y-2 text-stone-700 dark:text-stone-300">
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-accent-600 dark:bg-accent-400 rounded-full"></span>
                     Google Gemini AI
@@ -506,58 +506,58 @@ export default function LiteraryChatProject() {
 
           {/* How It Works */}
           <motion.div variants={fadeInUp} className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">How It Works</h2>
+            <h2 className="text-3xl font-bold text-stone-900 dark:text-stone-100 mb-8">How It Works</h2>
             <div className="space-y-6">
-              <div className="p-6 bg-white dark:bg-gray-800 rounded-xl border-l-4 border-accent-600 dark:border-accent-400">
+              <div className="p-6 bg-white dark:bg-stone-800 rounded-xl border-l-4 border-accent-600 dark:border-accent-400">
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-accent-600 dark:bg-accent-400 text-white dark:text-gray-900 rounded-full flex items-center justify-center font-bold">
+                  <div className="flex-shrink-0 w-8 h-8 bg-accent-600 dark:bg-accent-400 text-white dark:text-stone-900 rounded-full flex items-center justify-center font-bold">
                     1
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Create Account & Upload Books</h3>
-                    <p className="text-gray-600 dark:text-gray-400">
+                    <h3 className="text-xl font-semibold text-stone-900 dark:text-stone-100 mb-2">Create Account & Upload Books</h3>
+                    <p className="text-stone-600 dark:text-stone-400">
                       Sign up with email or Google OAuth. Admins upload PDF books which are processed to extract text, generate metadata, and identify characters automatically using Google Gemini AI.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="p-6 bg-white dark:bg-gray-800 rounded-xl border-l-4 border-accent-600 dark:border-accent-400">
+              <div className="p-6 bg-white dark:bg-stone-800 rounded-xl border-l-4 border-accent-600 dark:border-accent-400">
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-accent-600 dark:bg-accent-400 text-white dark:text-gray-900 rounded-full flex items-center justify-center font-bold">
+                  <div className="flex-shrink-0 w-8 h-8 bg-accent-600 dark:bg-accent-400 text-white dark:text-stone-900 rounded-full flex items-center justify-center font-bold">
                     2
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Browse & Select Characters</h3>
-                    <p className="text-gray-600 dark:text-gray-400">
+                    <h3 className="text-xl font-semibold text-stone-900 dark:text-stone-100 mb-2">Browse & Select Characters</h3>
+                    <p className="text-stone-600 dark:text-stone-400">
                       Explore a rich library of characters from classic and contemporary literature. Filter by book, genre, or author. Each character has a unique avatar and detailed description.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="p-6 bg-white dark:bg-gray-800 rounded-xl border-l-4 border-accent-600 dark:border-accent-400">
+              <div className="p-6 bg-white dark:bg-stone-800 rounded-xl border-l-4 border-accent-600 dark:border-accent-400">
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-accent-600 dark:bg-accent-400 text-white dark:text-gray-900 rounded-full flex items-center justify-center font-bold">
+                  <div className="flex-shrink-0 w-8 h-8 bg-accent-600 dark:bg-accent-400 text-white dark:text-stone-900 rounded-full flex items-center justify-center font-bold">
                     3
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Start Conversations</h3>
-                    <p className="text-gray-600 dark:text-gray-400">
+                    <h3 className="text-xl font-semibold text-stone-900 dark:text-stone-100 mb-2">Start Conversations</h3>
+                    <p className="text-stone-600 dark:text-stone-400">
                       Chat with characters in any supported language. The AI maintains character authenticity using RAG to reference book content, creating engaging, context-aware dialogues with strong opinions and emotional depth.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="p-6 bg-white dark:bg-gray-800 rounded-xl border-l-4 border-accent-600 dark:border-accent-400">
+              <div className="p-6 bg-white dark:bg-stone-800 rounded-xl border-l-4 border-accent-600 dark:border-accent-400">
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-accent-600 dark:bg-accent-400 text-white dark:text-gray-900 rounded-full flex items-center justify-center font-bold">
+                  <div className="flex-shrink-0 w-8 h-8 bg-accent-600 dark:bg-accent-400 text-white dark:text-stone-900 rounded-full flex items-center justify-center font-bold">
                     4
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Continue & Explore</h3>
-                    <p className="text-gray-600 dark:text-gray-400">
+                    <h3 className="text-xl font-semibold text-stone-900 dark:text-stone-100 mb-2">Continue & Explore</h3>
+                    <p className="text-stone-600 dark:text-stone-400">
                       All conversations are saved. Return anytime to continue discussions with your favorite characters. Upload images for analysis or explore new characters and books.
                     </p>
                   </div>
@@ -568,35 +568,35 @@ export default function LiteraryChatProject() {
 
           {/* Challenges & Solutions */}
           <motion.div variants={fadeInUp} className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">Challenges & Solutions</h2>
+            <h2 className="text-3xl font-bold text-stone-900 dark:text-stone-100 mb-8">Challenges & Solutions</h2>
             <div className="space-y-6">
-              <div className="p-6 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Character Authenticity</h3>
-                <p className="text-gray-600 dark:text-gray-400 mb-3">
-                  <strong className="text-gray-900 dark:text-white">Challenge:</strong> Creating AI personas that truly capture each character&apos;s unique voice, opinions, and personality from the source material.
+              <div className="p-6 bg-white dark:bg-stone-800 rounded-xl border border-stone-200 dark:border-stone-700">
+                <h3 className="text-xl font-semibold text-stone-900 dark:text-stone-100 mb-3">Character Authenticity</h3>
+                <p className="text-stone-600 dark:text-stone-400 mb-3">
+                  <strong className="text-stone-900 dark:text-stone-100">Challenge:</strong> Creating AI personas that truly capture each character&apos;s unique voice, opinions, and personality from the source material.
                 </p>
-                <p className="text-gray-600 dark:text-gray-400">
-                  <strong className="text-gray-900 dark:text-white">Solution:</strong> Implemented detailed persona generation with Google Gemini AI analyzing voice patterns, worldview, emotional expressions, and relationships. RAG integration ensures responses reference actual book content for accuracy.
-                </p>
-              </div>
-
-              <div className="p-6 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Multilingual Consistency</h3>
-                <p className="text-gray-600 dark:text-gray-400 mb-3">
-                  <strong className="text-gray-900 dark:text-white">Challenge:</strong> Maintaining character personality and context across multiple languages while detecting and matching user language automatically.
-                </p>
-                <p className="text-gray-600 dark:text-gray-400">
-                  <strong className="text-gray-900 dark:text-white">Solution:</strong> AI prompts include language-matching instructions. Frontend uses i18next for UI translation while backend ensures characters respond in the same language as user messages.
+                <p className="text-stone-600 dark:text-stone-400">
+                  <strong className="text-stone-900 dark:text-stone-100">Solution:</strong> Implemented detailed persona generation with Google Gemini AI analyzing voice patterns, worldview, emotional expressions, and relationships. RAG integration ensures responses reference actual book content for accuracy.
                 </p>
               </div>
 
-              <div className="p-6 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Efficient Book Processing</h3>
-                <p className="text-gray-600 dark:text-gray-400 mb-3">
-                  <strong className="text-gray-900 dark:text-white">Challenge:</strong> Processing large PDF files, extracting text, chunking for RAG, and extracting metadata efficiently without blocking the system.
+              <div className="p-6 bg-white dark:bg-stone-800 rounded-xl border border-stone-200 dark:border-stone-700">
+                <h3 className="text-xl font-semibold text-stone-900 dark:text-stone-100 mb-3">Multilingual Consistency</h3>
+                <p className="text-stone-600 dark:text-stone-400 mb-3">
+                  <strong className="text-stone-900 dark:text-stone-100">Challenge:</strong> Maintaining character personality and context across multiple languages while detecting and matching user language automatically.
                 </p>
-                <p className="text-gray-600 dark:text-gray-400">
-                  <strong className="text-gray-900 dark:text-white">Solution:</strong> Implemented background processing pipeline with status tracking. Books are chunked into 500-1000 byte segments optimized for vector retrieval and AI context windows.
+                <p className="text-stone-600 dark:text-stone-400">
+                  <strong className="text-stone-900 dark:text-stone-100">Solution:</strong> AI prompts include language-matching instructions. Frontend uses i18next for UI translation while backend ensures characters respond in the same language as user messages.
+                </p>
+              </div>
+
+              <div className="p-6 bg-white dark:bg-stone-800 rounded-xl border border-stone-200 dark:border-stone-700">
+                <h3 className="text-xl font-semibold text-stone-900 dark:text-stone-100 mb-3">Efficient Book Processing</h3>
+                <p className="text-stone-600 dark:text-stone-400 mb-3">
+                  <strong className="text-stone-900 dark:text-stone-100">Challenge:</strong> Processing large PDF files, extracting text, chunking for RAG, and extracting metadata efficiently without blocking the system.
+                </p>
+                <p className="text-stone-600 dark:text-stone-400">
+                  <strong className="text-stone-900 dark:text-stone-100">Solution:</strong> Implemented background processing pipeline with status tracking. Books are chunked into 500-1000 byte segments optimized for vector retrieval and AI context windows.
                 </p>
               </div>
             </div>
@@ -604,14 +604,14 @@ export default function LiteraryChatProject() {
 
           {/* Usage Guide */}
           <motion.div variants={fadeInUp} className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">Usage Guide</h2>
+            <h2 className="text-3xl font-bold text-stone-900 dark:text-stone-100 mb-8">Usage Guide</h2>
             <div className="space-y-6">
               <div className="p-6 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 rounded-xl border border-blue-200 dark:border-blue-800">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+                <h3 className="text-xl font-semibold text-stone-900 dark:text-stone-100 mb-4 flex items-center gap-2">
                   <Users className="text-blue-600 dark:text-blue-400" size={24} />
                   For Users
                 </h3>
-                <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                <ul className="space-y-2 text-stone-700 dark:text-stone-300">
                   <li className="flex items-start gap-2">
                     <span className="text-blue-600 dark:text-blue-400 font-bold">1.</span>
                     <span>Sign up with email or Google account</span>
@@ -636,11 +636,11 @@ export default function LiteraryChatProject() {
               </div>
 
               <div className="p-6 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-xl border border-purple-200 dark:border-purple-800">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+                <h3 className="text-xl font-semibold text-stone-900 dark:text-stone-100 mb-4 flex items-center gap-2">
                   <ShieldCheck className="text-purple-600 dark:text-purple-400" size={24} />
                   For Admins
                 </h3>
-                <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                <ul className="space-y-2 text-stone-700 dark:text-stone-300">
                   <li className="flex items-start gap-2">
                     <span className="text-purple-600 dark:text-purple-400 font-bold">1.</span>
                     <span>Access admin dashboard at /admin</span>
@@ -668,9 +668,9 @@ export default function LiteraryChatProject() {
 
           {/* Development */}
           <motion.div variants={fadeInUp} className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">Installation & Development</h2>
+            <h2 className="text-3xl font-bold text-stone-900 dark:text-stone-100 mb-8">Installation & Development</h2>
             
-            <div className="p-6 bg-gray-900 dark:bg-gray-950 rounded-xl border border-gray-700 mb-6">
+            <div className="p-6 bg-stone-900 dark:bg-stone-950 rounded-xl border border-stone-700 mb-6">
               <div className="flex items-center gap-2 mb-4">
                 <Terminal className="text-green-400" size={20} />
                 <h3 className="text-lg font-semibold text-white">Installation</h3>
@@ -697,12 +697,12 @@ npm run server     # Backend (http://localhost:3001)`}</code>
               </pre>
             </div>
 
-            <div className="p-6 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 mb-6">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+            <div className="p-6 bg-white dark:bg-stone-800 rounded-xl border border-stone-200 dark:border-stone-700 mb-6">
+              <h3 className="text-lg font-semibold text-stone-900 dark:text-stone-100 mb-4 flex items-center gap-2">
                 <Settings className="text-accent-600 dark:text-accent-400" size={20} />
                 Environment Configuration
               </h3>
-              <div className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+              <div className="space-y-2 text-sm text-stone-600 dark:text-stone-400">
                 <p><code className="text-accent-600 dark:text-accent-400 font-mono">PORT</code> - Backend server port (default: 3001)</p>
                 <p><code className="text-accent-600 dark:text-accent-400 font-mono">DATABASE_PATH</code> - SQLite database file path</p>
                 <p><code className="text-accent-600 dark:text-accent-400 font-mono">GEMINI_API_KEY</code> - Google Gemini AI API key</p>
@@ -712,27 +712,27 @@ npm run server     # Backend (http://localhost:3001)`}</code>
               </div>
             </div>
 
-            <div className="p-6 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+            <div className="p-6 bg-white dark:bg-stone-800 rounded-xl border border-stone-200 dark:border-stone-700">
+              <h3 className="text-lg font-semibold text-stone-900 dark:text-stone-100 mb-4 flex items-center gap-2">
                 <Code2 className="text-accent-600 dark:text-accent-400" size={20} />
                 Key Scripts
               </h3>
               <div className="space-y-2 text-sm">
-                <div className="flex items-start gap-3 p-3 bg-gray-50 dark:bg-gray-900 rounded-lg">
+                <div className="flex items-start gap-3 p-3 bg-stone-50 dark:bg-stone-900 rounded-lg">
                   <code className="text-accent-600 dark:text-accent-400 font-mono">npm run dev</code>
-                  <span className="text-gray-600 dark:text-gray-400">Start frontend development server</span>
+                  <span className="text-stone-600 dark:text-stone-400">Start frontend development server</span>
                 </div>
-                <div className="flex items-start gap-3 p-3 bg-gray-50 dark:bg-gray-900 rounded-lg">
+                <div className="flex items-start gap-3 p-3 bg-stone-50 dark:bg-stone-900 rounded-lg">
                   <code className="text-accent-600 dark:text-accent-400 font-mono">npm run server</code>
-                  <span className="text-gray-600 dark:text-gray-400">Start backend server</span>
+                  <span className="text-stone-600 dark:text-stone-400">Start backend server</span>
                 </div>
-                <div className="flex items-start gap-3 p-3 bg-gray-50 dark:bg-gray-900 rounded-lg">
+                <div className="flex items-start gap-3 p-3 bg-stone-50 dark:bg-stone-900 rounded-lg">
                   <code className="text-accent-600 dark:text-accent-400 font-mono">npm run build</code>
-                  <span className="text-gray-600 dark:text-gray-400">Build frontend for production</span>
+                  <span className="text-stone-600 dark:text-stone-400">Build frontend for production</span>
                 </div>
-                <div className="flex items-start gap-3 p-3 bg-gray-50 dark:bg-gray-900 rounded-lg">
+                <div className="flex items-start gap-3 p-3 bg-stone-50 dark:bg-stone-900 rounded-lg">
                   <code className="text-accent-600 dark:text-accent-400 font-mono">npx prisma studio</code>
-                  <span className="text-gray-600 dark:text-gray-400">Open Prisma database GUI</span>
+                  <span className="text-stone-600 dark:text-stone-400">Open Prisma database GUI</span>
                 </div>
               </div>
             </div>
@@ -740,32 +740,32 @@ npm run server     # Backend (http://localhost:3001)`}</code>
 
           {/* Future Enhancements */}
           <motion.div variants={fadeInUp} className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">Future Enhancements</h2>
+            <h2 className="text-3xl font-bold text-stone-900 dark:text-stone-100 mb-8">Future Enhancements</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="p-6 bg-gradient-to-br from-accent-50 to-accent-100 dark:from-accent-900/20 dark:to-accent-800/20 rounded-xl border border-accent-200 dark:border-accent-800">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Multi-Character Conversations</h3>
-                <p className="text-gray-600 dark:text-gray-400">
+                <h3 className="text-lg font-semibold text-stone-900 dark:text-stone-100 mb-2">Multi-Character Conversations</h3>
+                <p className="text-stone-600 dark:text-stone-400">
                   Enable conversations with multiple characters simultaneously, allowing users to witness character interactions and debates.
                 </p>
               </div>
 
               <div className="p-6 bg-gradient-to-br from-accent-50 to-accent-100 dark:from-accent-900/20 dark:to-accent-800/20 rounded-xl border border-accent-200 dark:border-accent-800">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Voice Conversations</h3>
-                <p className="text-gray-600 dark:text-gray-400">
+                <h3 className="text-lg font-semibold text-stone-900 dark:text-stone-100 mb-2">Voice Conversations</h3>
+                <p className="text-stone-600 dark:text-stone-400">
                   Add speech-to-text and text-to-speech capabilities for voice-based conversations with character-specific voice synthesis.
                 </p>
               </div>
 
               <div className="p-6 bg-gradient-to-br from-accent-50 to-accent-100 dark:from-accent-900/20 dark:to-accent-800/20 rounded-xl border border-accent-200 dark:border-accent-800">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Advanced Analytics</h3>
-                <p className="text-gray-600 dark:text-gray-400">
+                <h3 className="text-lg font-semibold text-stone-900 dark:text-stone-100 mb-2">Advanced Analytics</h3>
+                <p className="text-stone-600 dark:text-stone-400">
                   Track conversation patterns, popular characters, user engagement metrics, and provide insights to improve the experience.
                 </p>
               </div>
 
               <div className="p-6 bg-gradient-to-br from-accent-50 to-accent-100 dark:from-accent-900/20 dark:to-accent-800/20 rounded-xl border border-accent-200 dark:border-accent-800">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">PostgreSQL Migration</h3>
-                <p className="text-gray-600 dark:text-gray-400">
+                <h3 className="text-lg font-semibold text-stone-900 dark:text-stone-100 mb-2">PostgreSQL Migration</h3>
+                <p className="text-stone-600 dark:text-stone-400">
                   Migrate from SQLite to PostgreSQL for better scalability, concurrent access, and support for large-scale deployments.
                 </p>
               </div>

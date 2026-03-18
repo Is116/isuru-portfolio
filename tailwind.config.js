@@ -9,17 +9,30 @@ module.exports = {
     extend: {
       colors: {
         accent: {
-          DEFAULT: '#10b981',
-          50: '#f0fdf4',
-          100: '#dcfce7',
-          200: '#bbf7d0',
-          300: '#86efac',
-          400: '#4ade80',
-          500: '#10b981',
-          600: '#059669',
-          700: '#047857',
-          800: '#065f46',
-          900: '#064e3b',
+          DEFAULT: '#4A6FA5',
+          50: '#EFF3FA',
+          100: '#D9E4F3',
+          200: '#BAD0E8',
+          300: '#8CB0D6',
+          400: '#6B8DBF',
+          500: '#4A6FA5',
+          600: '#3A5A8E',
+          700: '#2D4872',
+          800: '#1E3154',
+          900: '#132040',
+        },
+        stone: {
+          50: '#F9F8F6',
+          100: '#F2F0EC',
+          200: '#E8E5DF',
+          300: '#D6D2CA',
+          400: '#B8B3A8',
+          500: '#8F8980',
+          600: '#6B6560',
+          700: '#4E4A45',
+          800: '#333030',
+          900: '#1C1A18',
+          950: '#111010',
         },
         gray: {
           50: '#fafafa',
@@ -38,12 +51,12 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
+        serif: ['Playfair Display', 'Georgia', 'serif'],
         mono: ['JetBrains Mono', 'monospace'],
       },
       animation: {
-        'fade-in': 'fadeIn 0.5s ease-in',
-        'slide-up': 'slideUp 0.5s ease-out',
-        'slide-down': 'slideDown 0.5s ease-out',
+        'fade-in': 'fadeIn 0.6s ease-out',
+        'slide-up': 'slideUp 0.6s ease-out',
       },
       keyframes: {
         fadeIn: {
@@ -51,11 +64,7 @@ module.exports = {
           '100%': { opacity: '1' },
         },
         slideUp: {
-          '0%': { transform: 'translateY(20px)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '1' },
-        },
-        slideDown: {
-          '0%': { transform: 'translateY(-20px)', opacity: '0' },
+          '0%': { transform: 'translateY(16px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
       },

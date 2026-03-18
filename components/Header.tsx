@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Menu, X, Code2 } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const Header = () => {
@@ -21,79 +21,74 @@ const Header = () => {
     { name: 'Articles', href: '#articles' },
     { name: 'Skills', href: '#skills' },
     { name: 'Experience', href: '#experience' },
+    { name: 'Contact', href: '#contact' },
   ]
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/80 dark:bg-gray-950/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 shadow-sm'
-          : 'bg-white/95 dark:bg-gray-950/95 md:bg-transparent backdrop-blur-sm md:backdrop-blur-none'
+          ? 'bg-stone-50/90 dark:bg-stone-950/90 backdrop-blur-md border-b border-stone-200/60 dark:border-stone-800/60'
+          : 'bg-transparent'
       }`}
     >
       <nav className="container-custom">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <a href="#home" className="text-lg font-bold text-gray-900 dark:text-white flex items-center gap-2 hover-scale group">
-            <Code2 size={20} className="text-accent-500 group-hover:text-accent-600 transition-colors" />
-            <span className="font-mono">dev</span>
+          {/* Logo — initials, serif */}
+          <a
+            href="#home"
+            className="font-serif text-xl font-medium text-stone-900 dark:text-stone-100 tracking-wide hover:text-accent-600 dark:hover:text-accent-400 transition-colors"
+          >
+            IP
           </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              <a
+              <motion.a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all duration-300 relative group"
+                className="relative text-sm text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors duration-200 tracking-wide group"
+                whileHover={{ y: -1 }}
+                transition={{ duration: 0.15, ease: 'easeOut' }}
               >
                 {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent-500 group-hover:w-full transition-all duration-300"></span>
-              </a>
+                <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-stone-900 dark:bg-stone-100 group-hover:w-full transition-all duration-200 ease-out" />
+              </motion.a>
             ))}
-            <a href="#contact" className="btn-primary">
-              Contact
-            </a>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-gray-900 dark:text-white p-2"
+            className="md:hidden text-stone-600 dark:text-stone-400 p-2 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         <AnimatePresence>
           {isMobileMenuOpen && (
-            <motion.div 
-              className="md:hidden py-4 border-t border-gray-200 dark:border-gray-800"
+            <motion.div
+              className="md:hidden py-5 border-t border-stone-200 dark:border-stone-800"
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
+              transition={{ duration: 0.25, ease: [0.25, 0.1, 0.25, 1] }}
             >
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-1">
                 {navItems.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
-                    className="text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors py-2"
+                    className="text-sm text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors py-2.5 border-b border-stone-100 dark:border-stone-800 last:border-0"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.name}
                   </a>
                 ))}
-                <a
-                  href="#contact"
-                  className="btn-primary w-full text-center"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Contact
-                </a>
               </div>
             </motion.div>
           )}

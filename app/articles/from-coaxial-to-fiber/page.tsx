@@ -24,18 +24,18 @@ export default function FromCoaxialToFiber() {
   }
 
   return (
-    <article className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-white dark:from-gray-950 dark:via-gray-900 dark:to-gray-950">
+    <article className="min-h-screen bg-stone-50 dark:bg-stone-950">
       {/* Header */}
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="bg-white dark:bg-gray-950 border-b border-gray-200 dark:border-gray-800 sticky top-0 z-50 backdrop-blur-sm bg-white/90 dark:bg-gray-950/90"
+        className="bg-stone-50 dark:bg-stone-950 border-b border-stone-200 dark:border-stone-800 sticky top-0 z-50 backdrop-blur-sm bg-white/90 dark:bg-stone-950/90"
       >
         <div className="container mx-auto px-4 md:px-8 py-6">
           <Link 
             href="/#articles" 
-            className="inline-flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 hover:text-accent-600 dark:hover:text-accent-400 transition-colors group"
+            className="inline-flex items-center gap-2 text-sm text-stone-600 dark:text-stone-400 hover:text-accent-600 dark:hover:text-accent-400 transition-colors group"
           >
             <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
             Back to Articles
@@ -51,15 +51,15 @@ export default function FromCoaxialToFiber() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="max-w-5xl mx-auto"
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-stone-900 dark:text-stone-100 mb-6 leading-tight">
             From Coaxial to Fiber
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-8">
+          <p className="text-xl md:text-2xl text-stone-600 dark:text-stone-400 mb-8">
             The Evolution of Broadband Infrastructure and the Quest for Better Alternatives
           </p>
           
-          <div className="flex items-center gap-6 text-sm text-gray-600 dark:text-gray-400 mb-8">
+          <div className="flex items-center gap-6 text-sm text-stone-600 dark:text-stone-400 mb-8">
             <div className="flex items-center gap-2">
               <Calendar size={16} />
               <time dateTime="2026-01-06">January 6, 2026</time>
@@ -75,7 +75,7 @@ export default function FromCoaxialToFiber() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 shadow-2xl"
+            className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-stone-200 dark:border-stone-800 shadow-2xl"
           >
             <Image
               src="/articles/line_evolution.png"
@@ -98,7 +98,7 @@ export default function FromCoaxialToFiber() {
         >
           {/* Lead Paragraph */}
           <motion.div variants={fadeInUp} className="mb-12">
-            <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 leading-relaxed font-light">
+            <p className="text-xl md:text-2xl text-stone-700 dark:text-stone-300 leading-relaxed font-light">
               Your home internet connection has undergone a remarkable transformation over the past three decades. What began as a simple coaxial cable carrying television signals has evolved into a sophisticated hybrid fiber-coax network, and increasingly, pure fiber-to-the-home deployments. Yet despite fiber optics&apos; dominance in modern telecommunications, the technology carries inherent limitations that have researchers exploring alternatives. This deep dive explores the technical evolution from coaxial to fiber, examines the surprising resiliency of copper-based systems, and investigates cutting-edge alternatives that might define the next generation of broadband.
             </p>
           </motion.div>
@@ -111,9 +111,9 @@ export default function FromCoaxialToFiber() {
                 { number: '$200', label: 'DOCSIS 4.0 upgrade cost per home' },
                 { number: '10 Gbps', label: 'Maximum DOCSIS 4.0 downstream speed' }
               ].map((stat, idx) => (
-                <div key={idx} className="bg-white dark:bg-gray-800/50 border border-accent-200 dark:border-accent-500/30 rounded-xl p-8 text-center hover:transform hover:-translate-y-1 transition-all shadow-lg hover:shadow-accent-500/20">
+                <div key={idx} className="bg-white dark:bg-stone-800/50 border border-accent-200 dark:border-accent-500/30 rounded-xl p-8 text-center hover:transform hover:-translate-y-1 transition-all shadow-lg hover:shadow-accent-500/20">
                   <div className="text-5xl font-bold text-accent-600 dark:text-accent-400 mb-2">{stat.number}</div>
-                  <div className="text-gray-700 dark:text-gray-400">{stat.label}</div>
+                  <div className="text-stone-700 dark:text-stone-400">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -121,18 +121,18 @@ export default function FromCoaxialToFiber() {
 
           {/* Part 1: Coaxial Foundation */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 border-l-4 border-accent-500 pl-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 border-l-4 border-accent-500 pl-6">
               Part 1: The Coaxial Foundation
             </h2>
 
-            <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               <p>
                 Coaxial cable, invented in 1880 and patented by Oliver Heaviside, became the backbone of cable television networks throughout the latter half of the 20th century. The basic architecture is elegantly simple yet highly effective for its purpose.
               </p>
             </div>
 
             {/* Coaxial Cable Diagram */}
-            <div className="bg-white dark:bg-gray-800/50 border-2 border-accent-200 dark:border-accent-500/30 rounded-2xl p-6 md:p-10 my-12 shadow-2xl">
+            <div className="bg-white dark:bg-stone-800/50 border-2 border-accent-200 dark:border-accent-500/30 rounded-2xl p-6 md:p-10 my-12 shadow-2xl">
               <h3 className="text-xl font-bold text-center text-accent-600 dark:text-accent-400 mb-8">Coaxial Cable Cross-Section</h3>
               
               <svg viewBox="0 0 800 400" className="w-full h-auto">
@@ -160,7 +160,7 @@ export default function FromCoaxialToFiber() {
               </svg>
             </div>
 
-            <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               <p>
                 The genius of coaxial cable lies in its electromagnetic shielding. The outer conductor acts as both a return path and an electromagnetic shield, protecting the inner conductor from external interference. This design allows coaxial cables to carry high-frequency signals over longer distances than twisted-pair wiring could manage.
               </p>
@@ -169,11 +169,11 @@ export default function FromCoaxialToFiber() {
 
           {/* HFC Network Topology */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6">
+            <h3 className="text-2xl md:text-3xl font-bold text-stone-900 dark:text-stone-100 mb-6">
               The Hybrid Fiber-Coax Revolution
             </h3>
 
-            <div className="bg-white dark:bg-gray-800/50 border-2 border-accent-200 dark:border-accent-500/30 rounded-2xl p-6 md:p-10 my-12 shadow-2xl">
+            <div className="bg-white dark:bg-stone-800/50 border-2 border-accent-200 dark:border-accent-500/30 rounded-2xl p-6 md:p-10 my-12 shadow-2xl">
               <h3 className="text-xl font-bold text-center text-accent-600 dark:text-accent-400 mb-8">Hybrid Fiber-Coax Network Topology</h3>
               
               <svg viewBox="0 0 900 600" className="w-full h-auto">
@@ -234,7 +234,7 @@ export default function FromCoaxialToFiber() {
               </svg>
             </div>
 
-            <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               <p>
                 This architecture proved remarkably successful. By the early 2000s, HFC networks were delivering broadband speeds that embarrassed incumbent telephone companies still relying on DSL over copper telephone lines. The key innovation was pushing fiber deeper into the network, reducing the distance that signals traveled over lossy coaxial cable.
               </p>
@@ -243,12 +243,12 @@ export default function FromCoaxialToFiber() {
 
           {/* DOCSIS Evolution Table */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6">
+            <h3 className="text-2xl md:text-3xl font-bold text-stone-900 dark:text-stone-100 mb-6">
               DOCSIS: The Cable Modem Standard
             </h3>
 
             <div className="overflow-x-auto">
-              <table className="w-full border-collapse bg-white dark:bg-gray-800/50 rounded-xl overflow-hidden shadow-lg">
+              <table className="w-full border-collapse bg-white dark:bg-stone-800/50 rounded-xl overflow-hidden shadow-lg">
                 <thead>
                   <tr className="bg-accent-500 text-white">
                     <th className="p-4 text-left font-bold">Standard</th>
@@ -266,19 +266,19 @@ export default function FromCoaxialToFiber() {
                     { std: 'DOCSIS 3.1', year: '2013', down: '10 Gbps', up: '1-2 Gbps', feature: 'OFDM modulation' },
                     { std: 'DOCSIS 4.0', year: '2023', down: '10 Gbps', up: '6 Gbps', feature: 'Full-duplex, extended spectrum to 1.8 GHz' }
                   ].map((row, idx) => (
-                    <tr key={idx} className="border-t border-gray-200 dark:border-gray-700 hover:bg-accent-50 dark:hover:bg-accent-900/10 transition-colors">
+                    <tr key={idx} className="border-t border-stone-200 dark:border-stone-700 hover:bg-accent-50 dark:hover:bg-accent-900/10 transition-colors">
                       <td className="p-4 font-semibold text-accent-700 dark:text-accent-400">{row.std}</td>
-                      <td className="p-4 text-gray-700 dark:text-gray-300">{row.year}</td>
-                      <td className="p-4 text-gray-700 dark:text-gray-300">{row.down}</td>
-                      <td className="p-4 text-gray-700 dark:text-gray-300">{row.up}</td>
-                      <td className="p-4 text-gray-700 dark:text-gray-300">{row.feature}</td>
+                      <td className="p-4 text-stone-700 dark:text-stone-300">{row.year}</td>
+                      <td className="p-4 text-stone-700 dark:text-stone-300">{row.down}</td>
+                      <td className="p-4 text-stone-700 dark:text-stone-300">{row.up}</td>
+                      <td className="p-4 text-stone-700 dark:text-stone-300">{row.feature}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
 
-            <div className="mt-8 space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="mt-8 space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               <p>
                 The progression reveals an interesting asymmetry. Downstream speeds improved dramatically while upstream speeds lagged behind—a reflection of the original cable TV architecture&apos;s one-way design philosophy. DOCSIS 4.0 finally addresses this limitation with Full-Duplex DOCSIS (FDX) and Extended Spectrum DOCSIS (ESD) options.
               </p>
@@ -287,12 +287,12 @@ export default function FromCoaxialToFiber() {
 
           {/* Part 2: Fiber Optic Transformation */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 border-l-4 border-accent-500 pl-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 border-l-4 border-accent-500 pl-6">
               Part 2: The Fiber Optic Transformation
             </h2>
 
             {/* Fiber Cable Structure */}
-            <div className="bg-white dark:bg-gray-800/50 border-2 border-accent-200 dark:border-accent-500/30 rounded-2xl p-6 md:p-10 my-12 shadow-2xl">
+            <div className="bg-white dark:bg-stone-800/50 border-2 border-accent-200 dark:border-accent-500/30 rounded-2xl p-6 md:p-10 my-12 shadow-2xl">
               <h3 className="text-xl font-bold text-center text-accent-600 dark:text-accent-400 mb-8">Fiber Optic Cable Structure</h3>
               
               <svg viewBox="0 0 900 600" className="w-full h-auto">
@@ -374,7 +374,7 @@ export default function FromCoaxialToFiber() {
               </svg>
             </div>
 
-            <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               <p>
                 The physics behind fiber optics relies on total internal reflection. The core has a slightly higher refractive index than the cladding (1.47 vs 1.46), causing light to reflect at the boundary rather than escape. This allows light signals to travel vast distances with minimal loss—modern single-mode fibers achieve attenuation as low as 0.15 dB/km at 1550nm wavelength.
               </p>
@@ -383,7 +383,7 @@ export default function FromCoaxialToFiber() {
 
           {/* Finland Statistics */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6">
+            <h3 className="text-2xl md:text-3xl font-bold text-stone-900 dark:text-stone-100 mb-6">
               Finland&apos;s Fiber Deployment
             </h3>
 
@@ -392,7 +392,7 @@ export default function FromCoaxialToFiber() {
                 <Globe className="w-12 h-12 text-accent-600 dark:text-accent-400" />
                 <div>
                   <div className="text-5xl font-bold text-accent-600 dark:text-accent-400">68%</div>
-                  <div className="text-gray-700 dark:text-gray-300">Finnish households with fiber access (Q3 2024)</div>
+                  <div className="text-stone-700 dark:text-stone-300">Finnish households with fiber access (Q3 2024)</div>
                 </div>
               </div>
               
@@ -403,9 +403,9 @@ export default function FromCoaxialToFiber() {
                   { region: 'North Ostrobothnia', coverage: '81%', highlight: false },
                   { region: 'Pirkanmaa', coverage: '78%', highlight: false }
                 ].map((item, idx) => (
-                  <div key={idx} className={`${item.highlight ? 'bg-accent-100 dark:bg-accent-900/40' : 'bg-white dark:bg-gray-800/50'} border border-accent-300 dark:border-accent-600/30 rounded-lg p-4`}>
+                  <div key={idx} className={`${item.highlight ? 'bg-accent-100 dark:bg-accent-900/40' : 'bg-white dark:bg-stone-800/50'} border border-accent-300 dark:border-accent-600/30 rounded-lg p-4`}>
                     <div className="flex justify-between items-center">
-                      <span className="text-gray-900 dark:text-gray-200 font-semibold">{item.region}</span>
+                      <span className="text-stone-900 dark:text-stone-200 font-semibold">{item.region}</span>
                       <span className="text-accent-600 dark:text-accent-400 font-bold text-xl">{item.coverage}</span>
                     </div>
                   </div>
@@ -413,7 +413,7 @@ export default function FromCoaxialToFiber() {
               </div>
             </div>
 
-            <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               <p>
                 Finland has emerged as a European leader in fiber optic deployment. As of September 2024, Finland&apos;s fiber-optic broadband network reaches nearly 2 million homes—68% of Finnish households. This represents a 7 percentage-point increase over a single year, demonstrating aggressive expansion.
               </p>
@@ -422,7 +422,7 @@ export default function FromCoaxialToFiber() {
 
           {/* Part 3: The Hidden Cost of Fiber */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 border-l-4 border-accent-500 pl-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 border-l-4 border-accent-500 pl-6">
               Part 3: The Hidden Cost of Fiber
             </h2>
 
@@ -431,7 +431,7 @@ export default function FromCoaxialToFiber() {
                 <AlertTriangle className="w-8 h-8 text-yellow-600 dark:text-yellow-400 flex-shrink-0" />
                 <div>
                   <h4 className="text-xl font-bold text-yellow-800 dark:text-yellow-300 mb-3">Critical Limitation: Fragility</h4>
-                  <p className="text-gray-800 dark:text-gray-200">
+                  <p className="text-stone-800 dark:text-stone-200">
                     Fiber optic cables made of glass are much more fragile than copper cables. The glass fibers can break if bent too sharply (typically bend radius &lt;15x cable diameter) or subjected to excessive pressure during installation or construction activities.
                   </p>
                 </div>
@@ -445,10 +445,10 @@ export default function FromCoaxialToFiber() {
                 { title: 'Specialized Testing', desc: 'OTDR equipment costs $5,000-$50,000 vs $100-$500 for copper testers', icon: XCircle },
                 { title: 'Environmental Sensitivity', desc: 'Affected by hydrogen gas, chemicals, extreme temperatures, and moisture', icon: XCircle }
               ].map((item, idx) => (
-                <div key={idx} className="bg-white dark:bg-gray-800/50 border border-red-200 dark:border-red-500/30 rounded-xl p-6 shadow-sm">
+                <div key={idx} className="bg-white dark:bg-stone-800/50 border border-red-200 dark:border-red-500/30 rounded-xl p-6 shadow-sm">
                   <item.icon className="w-8 h-8 text-red-600 dark:text-red-400 mb-3" />
                   <h4 className="text-lg font-bold text-red-700 dark:text-red-400 mb-2">{item.title}</h4>
-                  <p className="text-gray-700 dark:text-gray-300 text-sm">{item.desc}</p>
+                  <p className="text-stone-700 dark:text-stone-300 text-sm">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -456,12 +456,12 @@ export default function FromCoaxialToFiber() {
 
           {/* Part 4: Copper's Resilience */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 border-l-4 border-accent-500 pl-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 border-l-4 border-accent-500 pl-6">
               Part 4: The Case for Copper&apos;s Resilience
             </h2>
 
             {/* DOCSIS 4.0 Diagram */}
-            <div className="bg-white dark:bg-gray-800/50 border-2 border-accent-200 dark:border-accent-500/30 rounded-2xl p-6 md:p-10 my-12 shadow-2xl">
+            <div className="bg-white dark:bg-stone-800/50 border-2 border-accent-200 dark:border-accent-500/30 rounded-2xl p-6 md:p-10 my-12 shadow-2xl">
               <h3 className="text-xl font-bold text-center text-accent-600 dark:text-accent-400 mb-8">DOCSIS 4.0 Full-Duplex Operation</h3>
               
               <svg viewBox="0 0 900 500" className="w-full h-auto">
@@ -485,7 +485,7 @@ export default function FromCoaxialToFiber() {
 
             {/* Cost Comparison */}
             <div className="overflow-x-auto mb-8">
-              <table className="w-full border-collapse bg-white dark:bg-gray-800/50 rounded-xl overflow-hidden shadow-lg">
+              <table className="w-full border-collapse bg-white dark:bg-stone-800/50 rounded-xl overflow-hidden shadow-lg">
                 <thead>
                   <tr className="bg-accent-500 text-white">
                     <th className="p-4 text-left font-bold">Technology</th>
@@ -499,18 +499,18 @@ export default function FromCoaxialToFiber() {
                     { tech: 'DOCSIS 4.0 Upgrade', cost: '$100-$200', time: 'Software + node upgrades', infra: 'Builds on existing' },
                     { tech: 'Fiber to Home', cost: '$500-$1,400', time: 'Complete new installation', infra: 'All-new infrastructure' }
                   ].map((row, idx) => (
-                    <tr key={idx} className="border-t border-gray-200 dark:border-gray-700 hover:bg-accent-50 dark:hover:bg-accent-900/10 transition-colors">
+                    <tr key={idx} className="border-t border-stone-200 dark:border-stone-700 hover:bg-accent-50 dark:hover:bg-accent-900/10 transition-colors">
                       <td className="p-4 font-semibold text-accent-700 dark:text-accent-400">{row.tech}</td>
-                      <td className="p-4 text-gray-700 dark:text-gray-300">{row.cost}</td>
-                      <td className="p-4 text-gray-700 dark:text-gray-300">{row.time}</td>
-                      <td className="p-4 text-gray-700 dark:text-gray-300">{row.infra}</td>
+                      <td className="p-4 text-stone-700 dark:text-stone-300">{row.cost}</td>
+                      <td className="p-4 text-stone-700 dark:text-stone-300">{row.time}</td>
+                      <td className="p-4 text-stone-700 dark:text-stone-300">{row.infra}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
 
-            <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               <p>
                 The economics are compelling. Comcast reported that upgrading to DOCSIS 4.0 costs under $200 per passing—a fraction of fiber deployment costs. This cost advantage is why cable operators aren&apos;t rushing to abandon their HFC networks.
               </p>
@@ -519,7 +519,7 @@ export default function FromCoaxialToFiber() {
 
           {/* Part 5: Beyond Fiber */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 border-l-4 border-accent-500 pl-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 border-l-4 border-accent-500 pl-6">
               Part 5: Beyond Fiber—The Quest for Better Alternatives
             </h2>
 
@@ -528,7 +528,7 @@ export default function FromCoaxialToFiber() {
                 <Zap className="w-12 h-12 text-purple-600 dark:text-purple-400" />
                 <div>
                   <h3 className="text-2xl font-bold text-purple-700 dark:text-purple-400">Hollow-Core Photonic Crystal Fiber</h3>
-                  <p className="text-gray-700 dark:text-gray-300">Light travels through air instead of glass</p>
+                  <p className="text-stone-700 dark:text-stone-300">Light travels through air instead of glass</p>
                 </div>
               </div>
               
@@ -539,12 +539,12 @@ export default function FromCoaxialToFiber() {
                   { feature: 'No Rayleigh Scattering', value: 'Potential <0.15 dB/km loss', icon: CheckCircle },
                   { feature: 'Manufacturing Cost', value: '10-100x higher than standard fiber', icon: AlertTriangle }
                 ].map((item, idx) => (
-                  <div key={idx} className="bg-white dark:bg-gray-800/50 border border-purple-300 dark:border-purple-600/30 rounded-lg p-4">
+                  <div key={idx} className="bg-white dark:bg-stone-800/50 border border-purple-300 dark:border-purple-600/30 rounded-lg p-4">
                     <div className="flex items-start gap-3">
                       <item.icon className={`w-6 h-6 flex-shrink-0 ${item.icon === CheckCircle ? 'text-green-600 dark:text-green-400' : 'text-yellow-600 dark:text-yellow-400'}`} />
                       <div>
-                        <div className="font-bold text-gray-900 dark:text-gray-200">{item.feature}</div>
-                        <div className="text-sm text-gray-700 dark:text-gray-300">{item.value}</div>
+                        <div className="font-bold text-stone-900 dark:text-stone-200">{item.feature}</div>
+                        <div className="text-sm text-stone-700 dark:text-stone-300">{item.value}</div>
                       </div>
                     </div>
                   </div>
@@ -552,7 +552,7 @@ export default function FromCoaxialToFiber() {
               </div>
             </div>
 
-            <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               <p>
                 Recent breakthroughs have been dramatic. In 2020, researchers at the University of Southampton published results showing hollow-core fibers with attenuation <strong>lower than solid-core fibers</strong> at multiple wavelengths—0.28 dB/km in the C and L telecommunication bands.
               </p>
@@ -561,21 +561,21 @@ export default function FromCoaxialToFiber() {
 
           {/* Conclusion */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 border-l-4 border-accent-500 pl-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6 border-l-4 border-accent-500 pl-6">
               Conclusion: There Is No Silver Bullet
             </h2>
 
             <div className="bg-accent-50 dark:bg-accent-900/20 border-l-4 border-accent-500 p-8 rounded-r-xl my-8 shadow-xl">
               <div className="space-y-4">
-                <p className="text-lg text-gray-800 dark:text-gray-200">
+                <p className="text-lg text-stone-800 dark:text-stone-200">
                   <strong>Fiber optics dominates</strong> long-distance and high-bandwidth applications because light in glass offers unmatched bandwidth-distance product. But fragility, installation complexity, and cost limit its universal deployment.
                 </p>
                 
-                <p className="text-lg text-gray-800 dark:text-gray-200">
+                <p className="text-lg text-stone-800 dark:text-stone-200">
                   <strong>Coaxial and copper systems excel</strong> in durability, ease of installation, and leveraging existing infrastructure. But fundamental electromagnetic limits cap their bandwidth and distance.
                 </p>
                 
-                <p className="text-lg text-gray-800 dark:text-gray-200">
+                <p className="text-lg text-stone-800 dark:text-stone-200">
                   <strong>Hollow-core fiber could theoretically</strong> combine the best of both worlds—but manufacturing challenges and cost make it impractical for mass deployment in the 2020s.
                 </p>
               </div>
@@ -588,15 +588,15 @@ export default function FromCoaxialToFiber() {
                 { title: 'Rural Villages', tech: 'Subsidized Fiber', icon: Radio },
                 { title: 'Remote Areas', tech: '5G/6G Wireless', icon: Wifi }
               ].map((item, idx) => (
-                <div key={idx} className="bg-white dark:bg-gray-800/50 border border-accent-200 dark:border-accent-500/30 rounded-xl p-6 text-center hover:border-accent-500 dark:hover:border-accent-400 transition-colors shadow-sm">
+                <div key={idx} className="bg-white dark:bg-stone-800/50 border border-accent-200 dark:border-accent-500/30 rounded-xl p-6 text-center hover:border-accent-500 dark:hover:border-accent-400 transition-colors shadow-sm">
                   <item.icon className="w-12 h-12 text-accent-600 dark:text-accent-400 mx-auto mb-3" />
-                  <div className="font-bold text-gray-900 dark:text-gray-200 mb-1">{item.title}</div>
-                  <div className="text-sm text-gray-700 dark:text-gray-400">{item.tech}</div>
+                  <div className="font-bold text-stone-900 dark:text-stone-200 mb-1">{item.title}</div>
+                  <div className="text-sm text-stone-700 dark:text-stone-400">{item.tech}</div>
                 </div>
               ))}
             </div>
 
-            <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               <p>
                 The quest for a cable &quot;more durable and faster&quot; than fiber at lower cost faces insurmountable physics. Speed is bounded by the speed of light in the medium—fiber already approaches this limit. Durability favors copper, but at severe bandwidth sacrifice. Cost favors leveraging existing infrastructure, which means HFC/DOCSIS for much of the world.
               </p>
@@ -609,13 +609,13 @@ export default function FromCoaxialToFiber() {
 
           {/* References */}
           <motion.section variants={fadeInUp} className="mb-16">
-            <div className="bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 rounded-xl p-8">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">References & Further Reading</h3>
+            <div className="bg-stone-50 dark:bg-stone-800/50 border border-stone-200 dark:border-stone-700 rounded-xl p-8">
+              <h3 className="text-2xl font-bold text-stone-900 dark:text-stone-100 mb-6">References & Further Reading</h3>
               
               <div className="space-y-6">
                 <div>
                   <h4 className="text-lg font-bold text-accent-600 dark:text-accent-400 mb-2">Fiber Optics Research:</h4>
-                  <ul className="space-y-2 text-gray-700 dark:text-gray-300 text-sm ml-4">
+                  <ul className="space-y-2 text-stone-700 dark:text-stone-300 text-sm ml-4">
                     <li>• Jasion et al., &quot;Hollow Core NANF with 0.28 dB/km Attenuation in the C and L Bands,&quot; <em>OFC 2020</em></li>
                     <li>• Debord et al., &quot;Ultralow transmission loss in inhibited-coupling guiding hollow fibers,&quot; <em>Optica</em>, Vol. 4, 2017</li>
                     <li>• Nature Communications, &quot;Hollow core optical fibres with comparable attenuation to silica fibres,&quot; 2020</li>
@@ -624,7 +624,7 @@ export default function FromCoaxialToFiber() {
 
                 <div>
                   <h4 className="text-lg font-bold text-accent-600 dark:text-accent-400 mb-2">Network Infrastructure:</h4>
-                  <ul className="space-y-2 text-gray-700 dark:text-gray-300 text-sm ml-4">
+                  <ul className="space-y-2 text-stone-700 dark:text-stone-300 text-sm ml-4">
                     <li>• Traficom, &quot;Fibre optic connections available to nearly 2 million households,&quot; 2024</li>
                     <li>• CableLabs, &quot;DOCSIS 4.0 Technology Specifications,&quot; 2023</li>
                     <li>• IEEE Spectrum, &quot;When Copper Broadband Beats Fiber Optics,&quot; 2022</li>

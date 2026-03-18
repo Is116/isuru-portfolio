@@ -9,9 +9,9 @@ const Experience = () => {
       title: 'Software Developer Trainee',
       company: 'CDB Bank',
       companyUrl: 'https://www.cdb.lk/',
-      period: '2023 - Present',
+      period: '2023 – Present',
       type: 'Training',
-      description: 'Training at Citizens Development Business Finance PLC, a leading financial institution focused on sustainable financing and digital banking solutions. Working with the CDB Self mobile app and digital banking platforms.',
+      description: 'Training at Citizens Development Business Finance PLC, focused on digital banking solutions. Working with the CDB Self mobile app and digital banking platforms.',
       achievements: [
         'Developing features for CDB Self digital banking app',
         'Learning fintech solutions including payment processing and e-passbook',
@@ -22,13 +22,13 @@ const Experience = () => {
       title: 'Full Stack Developer',
       company: 'Veesoft',
       companyUrl: 'https://www.veesoft.lk/',
-      period: '2022 - 2023',
+      period: '2022 – 2023',
       type: 'Project-Based',
-      description: 'Developed comprehensive ERP solutions at Veesoft IT (Pvt) Ltd, specializing in JAPRA ERP system with integrated modules for POS, inventory, CRM, and business intelligence for retail and enterprise clients.',
+      description: 'Developed comprehensive ERP solutions specialising in JAPRA ERP with integrated modules for POS, inventory, CRM, and business intelligence.',
       achievements: [
         'Built features for Smart POS & Inventory management system',
         'Developed mobile applications for sales representatives',
-        'Created dashboard analytics and promotion modules using cloud technologies',
+        'Created dashboard analytics and promotion modules',
       ],
     },
     {
@@ -37,11 +37,11 @@ const Experience = () => {
       companyUrl: 'https://codezela.com/',
       period: '2022',
       type: 'Project-Based',
-      description: 'Developed professional web and mobile applications at Codezela Technologies, a UK-based software company serving 500+ global clients across healthcare, finance, e-commerce, and education sectors with cutting-edge digital solutions.',
+      description: 'Developed web and mobile applications at a UK-based software company serving 500+ global clients across healthcare, finance, and e-commerce.',
       achievements: [
         'Built e-commerce platforms and CMS solutions using Next.js and React',
-        'Developed AI-powered features and mobile applications for diverse industries',
-        'Implemented responsive designs with Tailwind CSS and modern frameworks',
+        'Developed AI-powered features and mobile applications',
+        'Implemented responsive designs with Tailwind CSS',
       ],
     },
   ]
@@ -61,77 +61,68 @@ const Experience = () => {
     {
       degree: 'Bachelor of Science in Computer Science',
       institution: 'University of Plymouth',
-      period: '2019 - 2022',
+      period: '2019 – 2022',
       description: 'Studied software engineering, web development, and computer science fundamentals with focus on modern development practices.',
     },
   ]
 
   return (
-    <section id="experience" className="py-20 md:py-32 bg-white dark:bg-gray-950">
+    <section id="experience" className="py-24 md:py-36 bg-stone-50 dark:bg-stone-950">
       <div className="container-custom">
-        <motion.div 
-          className="max-w-3xl mb-16"
-          initial={{ opacity: 0, y: 30 }}
+        <motion.div
+          className="mb-14"
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
         >
-          <h2 className="section-title">
-            Experience & <span className="gradient-text">Education</span>
-          </h2>
-          <p className="section-subtitle">
-            My professional journey and academic background
-          </p>
+          <h2 className="section-title">Experience & Education</h2>
+          <p className="section-subtitle">My professional journey and academic background</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Work Experience */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
           >
-            <div className="flex items-center gap-3 mb-8">
-              <div className="p-3 bg-accent-50 dark:bg-accent-900/20 rounded-lg hover-scale">
-                <Briefcase className="text-accent-600 dark:text-accent-400" size={24} />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Work Experience</h3>
+            <div className="flex items-center gap-2.5 mb-8">
+              <Briefcase size={16} className="text-accent-500" />
+              <h3 className="font-sans text-xs font-medium text-stone-400 dark:text-stone-500 uppercase tracking-widest">Work Experience</h3>
             </div>
 
             <div className="space-y-6">
               {workExperience.map((job, index) => (
                 <div
                   key={index}
-                  className="relative pl-8 pb-8 border-l-2 border-gray-200 dark:border-gray-800 last:pb-0 group"
+                  className="relative pl-6 pb-6 border-l border-stone-200 dark:border-stone-800 last:pb-0"
                 >
-                  {/* Timeline Dot */}
-                  <div className="absolute -left-[9px] top-0 w-4 h-4 bg-accent-500 rounded-full border-4 border-white dark:border-gray-950 transition-all group-hover:scale-125 group-hover:animate-glow-pulse"></div>
-
-                  <div className="card hover-lift">
+                  <div className="absolute -left-[5px] top-1 w-2.5 h-2.5 bg-accent-400 dark:bg-accent-500 rounded-full border-2 border-stone-50 dark:border-stone-950" />
+                  <div className="card">
                     <div className="mb-3">
-                      <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+                      <h4 className="font-sans text-base font-medium text-stone-900 dark:text-stone-100 mb-0.5">
                         {job.title}
                       </h4>
-                      <a 
-                        href={job.companyUrl} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="text-accent-600 dark:text-accent-400 font-medium hover:underline"
-                      >
-                        {job.company}
-                      </a>
-                      <div className="flex items-center gap-2 mt-1">
-                        <p className="text-sm text-gray-500 dark:text-gray-400">{job.period}</p>
-                        <span className="text-gray-300 dark:text-gray-600">•</span>
-                        <span className="text-sm text-gray-500 dark:text-gray-400">{job.type}</span>
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <a
+                          href={job.companyUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm text-accent-600 dark:text-accent-400 hover:underline underline-offset-4"
+                        >
+                          {job.company}
+                        </a>
+                        <span className="text-stone-300 dark:text-stone-700">·</span>
+                        <span className="text-xs text-stone-400 dark:text-stone-500 font-mono">{job.period}</span>
                       </div>
                     </div>
-                    <p className="text-gray-600 dark:text-gray-400 mb-3">{job.description}</p>
-                    <ul className="space-y-2">
+                    <p className="text-sm text-stone-500 dark:text-stone-400 mb-3 leading-relaxed">{job.description}</p>
+                    <ul className="space-y-1.5">
                       {job.achievements.map((achievement, idx) => (
-                        <li key={idx} className="text-sm text-gray-600 dark:text-gray-400 flex items-start gap-2">
-                          <span className="text-accent-500 mt-1">•</span>
+                        <li key={idx} className="text-xs text-stone-500 dark:text-stone-400 flex items-start gap-2">
+                          <span className="text-accent-400 mt-1 flex-shrink-0">✓</span>
                           <span>{achievement}</span>
                         </li>
                       ))}
@@ -144,80 +135,61 @@ const Experience = () => {
 
           {/* Education & Certifications */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.15, ease: [0.25, 0.1, 0.25, 1] }}
           >
-            <div className="flex items-center gap-3 mb-8">
-              <div className="p-3 bg-accent-50 dark:bg-accent-900/20 rounded-lg hover-scale">
-                <GraduationCap className="text-accent-600 dark:text-accent-400" size={24} />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Education</h3>
+            <div className="flex items-center gap-2.5 mb-8">
+              <GraduationCap size={16} className="text-accent-500" />
+              <h3 className="font-sans text-xs font-medium text-stone-400 dark:text-stone-500 uppercase tracking-widest">Education</h3>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-6 mb-10">
               {education.map((edu, index) => (
                 <div
                   key={index}
-                  className="relative pl-8 pb-8 border-l-2 border-gray-200 dark:border-gray-800 last:pb-0 group"
+                  className="relative pl-6 border-l border-stone-200 dark:border-stone-800"
                 >
-                  {/* Timeline Dot */}
-                  <div className="absolute -left-[9px] top-0 w-4 h-4 bg-accent-500 rounded-full border-4 border-white dark:border-gray-950 transition-all group-hover:scale-125 group-hover:animate-glow-pulse"></div>
-
-                  <div className="card hover-lift">
-                    <div className="mb-3">
-                      <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
-                        {edu.degree}
-                      </h4>
-                      <p className="text-accent-600 dark:text-accent-400 font-medium">{edu.institution}</p>
-                      <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">{edu.period}</p>
-                    </div>
-                    <p className="text-gray-600 dark:text-gray-400">{edu.description}</p>
+                  <div className="absolute -left-[5px] top-1 w-2.5 h-2.5 bg-accent-400 dark:bg-accent-500 rounded-full border-2 border-stone-50 dark:border-stone-950" />
+                  <div className="card">
+                    <h4 className="font-sans text-base font-medium text-stone-900 dark:text-stone-100 mb-0.5">{edu.degree}</h4>
+                    <p className="text-sm text-accent-600 dark:text-accent-400 mb-0.5">{edu.institution}</p>
+                    <p className="text-xs text-stone-400 dark:text-stone-500 font-mono mb-3">{edu.period}</p>
+                    <p className="text-sm text-stone-500 dark:text-stone-400 leading-relaxed">{edu.description}</p>
                   </div>
                 </div>
               ))}
             </div>
 
-            {/* Certifications */}
-            <div className="mt-10">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="p-3 bg-accent-50 dark:bg-accent-900/20 rounded-lg hover-scale">
-                  <Award className="text-accent-600 dark:text-accent-400" size={24} />
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Certifications</h3>
-              </div>
+            <div className="flex items-center gap-2.5 mb-6">
+              <Award size={16} className="text-accent-500" />
+              <h3 className="font-sans text-xs font-medium text-stone-400 dark:text-stone-500 uppercase tracking-widest">Certifications</h3>
+            </div>
 
-              <div className="space-y-4">
-                {certifications.map((cert, index) => (
-                  <a
-                    key={index}
-                    href={cert.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="card hover-lift block group"
-                  >
-                    <div className="flex items-start mb-3">
-                      <div className="flex-1">
-                        <h4 className="text-base font-bold text-gray-900 dark:text-white mb-1 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
-                          {cert.title}
-                        </h4>
-                        <p className="text-accent-600 dark:text-accent-400 font-medium text-sm">{cert.issuer}</p>
-                        <div className="flex items-center gap-2 mt-1">
-                          <p className="text-xs text-gray-500 dark:text-gray-400">{cert.platform}</p>
-                          <span className="text-gray-300 dark:text-gray-600">•</span>
-                          <p className="text-xs text-gray-500 dark:text-gray-400">{cert.date}</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex flex-wrap gap-1.5 mt-3">
-                      {cert.skills.map((skill, idx) => (
-                        <span key={idx} className="badge text-xs">{skill}</span>
-                      ))}
-                    </div>
-                  </a>
-                ))}
-              </div>
+            <div className="space-y-4">
+              {certifications.map((cert, index) => (
+                <a
+                  key={index}
+                  href={cert.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="card block group"
+                >
+                  <h4 className="font-sans text-sm font-medium text-stone-900 dark:text-stone-100 mb-1 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors leading-snug">
+                    {cert.title}
+                  </h4>
+                  <p className="text-xs text-accent-600 dark:text-accent-400 mb-0.5">{cert.issuer}</p>
+                  <p className="text-xs text-stone-400 dark:text-stone-500 font-mono mb-3">
+                    {cert.platform} · {cert.date}
+                  </p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {cert.skills.map((skill, idx) => (
+                      <span key={idx} className="badge">{skill}</span>
+                    ))}
+                  </div>
+                </a>
+              ))}
             </div>
           </motion.div>
         </div>

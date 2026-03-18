@@ -1,6 +1,6 @@
 'use client'
 
-import { Github, Linkedin, Mail, Code2 } from 'lucide-react'
+import { Github, Linkedin, Mail } from 'lucide-react'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -12,34 +12,33 @@ const Footer = () => {
   ]
 
   return (
-    <footer className="bg-white dark:bg-gray-950 border-t border-gray-200 dark:border-gray-800">
-      <div className="container-custom py-12">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+    <footer className="bg-stone-50 dark:bg-stone-950 border-t border-stone-200 dark:border-stone-800">
+      <div className="container-custom py-10">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-5">
           {/* Brand */}
-          <div className="flex items-center gap-2">
-            <Code2 size={20} className="text-accent-500" />
-            <span className="font-mono font-bold text-gray-900 dark:text-white">dev</span>
-          </div>
+          <span className="font-serif text-lg font-medium text-stone-900 dark:text-stone-100 tracking-wide">
+            Isuru Pathirathna
+          </span>
 
           {/* Social Links */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-5">
             {socialLinks.map((social, index) => (
               <a
                 key={index}
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-500 hover:text-gray-900 dark:hover:text-white transition-colors"
+                className="text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors"
                 aria-label={social.label}
               >
-                <social.icon size={20} />
+                <social.icon size={18} />
               </a>
             ))}
           </div>
 
           {/* Copyright */}
-          <p className="text-sm text-gray-600 dark:text-gray-400">
-            © {currentYear} • Built with Next.js & Tailwind
+          <p className="text-xs text-stone-400 dark:text-stone-500 font-mono">
+            © {currentYear} · Built with Next.js
           </p>
         </div>
       </div>

@@ -2,99 +2,112 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @layer base {
   * {
-    @apply border-gray-800;
+    @apply border-stone-200 dark:border-stone-800;
   }
-  
-  body {
-    @apply bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 antialiased;
-  }
-  
+
   html {
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
   }
-  
+
+  body {
+    @apply bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-100 antialiased;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+
   ::selection {
-    @apply bg-accent-500 text-white;
+    @apply bg-accent-200 text-accent-900;
+  }
+
+  h1, h2, h3 {
+    @apply font-serif;
   }
 }
 
 @layer components {
   .container-custom {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply max-w-6xl mx-auto px-6 sm:px-8 lg:px-12;
   }
-  
+
+  /* Clean primary button */
   .btn-primary {
-    @apply relative inline-flex items-center justify-center px-5 py-2.5 bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-medium rounded-md transition-all duration-300 hover:bg-gray-800 dark:hover:bg-gray-100 hover:shadow-lg overflow-hidden;
+    @apply inline-flex items-center justify-center px-5 py-2.5
+           bg-stone-900 dark:bg-stone-100
+           text-white dark:text-stone-900
+           text-sm font-medium tracking-wide
+           rounded transition-colors duration-200
+           hover:bg-stone-700 dark:hover:bg-white;
   }
-  
-  .btn-primary::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transform: translateX(-100%);
-    transition: transform 0.6s;
-  }
-  
-  .btn-primary:hover::before {
-    transform: translateX(100%);
-  }
-  
+
+  /* Outlined secondary button */
   .btn-secondary {
-    @apply inline-flex items-center justify-center px-5 py-2.5 border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 font-medium rounded-md transition-all duration-300 hover:bg-gray-50 dark:hover:bg-gray-900 hover:border-accent-500 dark:hover:border-accent-500 hover:shadow-md;
+    @apply inline-flex items-center justify-center px-5 py-2.5
+           border border-stone-300 dark:border-stone-700
+           text-stone-700 dark:text-stone-300
+           text-sm font-medium tracking-wide
+           rounded transition-colors duration-200
+           hover:border-accent-400 hover:text-accent-600
+           dark:hover:border-accent-500 dark:hover:text-accent-400;
   }
-  
+
+  /* Accent filled button */
   .btn-accent {
-    @apply relative inline-flex items-center justify-center px-5 py-2.5 bg-accent-500 text-white font-medium rounded-md transition-all duration-300 hover:bg-accent-600 hover:shadow-lg hover:shadow-accent-500/30 overflow-hidden;
+    @apply inline-flex items-center justify-center px-5 py-2.5
+           bg-accent-500 text-white
+           text-sm font-medium tracking-wide
+           rounded transition-colors duration-200
+           hover:bg-accent-600;
   }
-  
-  .btn-accent::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transform: translateX(-100%);
-    transition: transform 0.6s;
-  }
-  
-  .btn-accent:hover::before {
-    transform: translateX(100%);
-  }
-  
+
+  /* Section headings — serif, measured */
   .section-title {
-    @apply text-3xl md:text-4xl font-bold mb-3 tracking-tight;
+    @apply font-serif text-3xl md:text-4xl font-medium mb-3 tracking-normal text-stone-900 dark:text-stone-100;
   }
-  
+
   .section-subtitle {
-    @apply text-base md:text-lg text-gray-600 dark:text-gray-400 mb-12;
+    @apply text-sm md:text-base text-stone-500 dark:text-stone-400 mb-12 font-sans font-normal leading-relaxed;
   }
-  
+
+  /* Calm card — flat, minimal border */
   .card {
-    @apply relative bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg p-6 transition-all duration-300 hover:shadow-lg hover:border-accent-200 dark:hover:border-accent-800 hover:-translate-y-0.5;
+    @apply bg-white dark:bg-stone-900
+           border border-stone-200 dark:border-stone-800
+           rounded-lg p-6
+           transition-all duration-200
+           hover:border-accent-300 dark:hover:border-accent-700
+           hover:shadow-sm;
   }
-  
+
+  /* Accent text — gentle blue */
   .gradient-text {
-    @apply bg-gradient-to-r from-accent-600 to-accent-400 bg-clip-text text-transparent;
+    @apply text-accent-600 dark:text-accent-400;
   }
-  
+
   .text-mono {
     @apply font-mono text-sm;
   }
-  
+
   .divider {
-    @apply border-t border-gray-200 dark:border-gray-800;
+    @apply border-t border-stone-200 dark:border-stone-800;
   }
-  
+
   .link {
-    @apply text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors underline-offset-4 hover:underline;
+    @apply text-stone-500 dark:text-stone-400
+           hover:text-stone-900 dark:hover:text-stone-100
+           transition-colors underline-offset-4 hover:underline;
   }
-  
+
+  /* Refined badge — pill style */
   .badge {
-    @apply inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200;
+    @apply inline-flex items-center px-2.5 py-1 rounded-full
+           text-xs font-medium font-sans
+           bg-stone-100 dark:bg-stone-800
+           text-stone-600 dark:text-stone-300
+           border border-stone-200 dark:border-stone-700;
   }
 }
 
