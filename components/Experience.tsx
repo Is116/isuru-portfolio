@@ -55,6 +55,22 @@ const Experience = () => {
       url: 'https://www.coursera.org/account/accomplishments/verify/NLSSSEXY1N3I',
       skills: ['AI', 'FinTech', 'Portfolio Management', 'Machine Learning', 'Investment Management'],
     },
+    {
+      title: 'Raising Capital: Credit Tech, Coin Offerings, and Crowdfunding',
+      issuer: 'University of Michigan',
+      platform: 'Coursera',
+      date: 'March 2026',
+      url: 'https://coursera.org/share/c2ec9ff0a1eed5b75809de072751620c',
+      skills: ['FinTech', 'Credit Risk', 'Blockchain', 'Fundraising', 'Capital Markets'],
+    },
+    {
+      title: 'Foundations: Data, Data, Everywhere',
+      issuer: 'Google',
+      platform: 'Coursera',
+      date: 'March 2026',
+      url: 'https://www.coursera.org/account/accomplishments/verify/47EHHOHGWFSU',
+      skills: ['Data Analytics', 'SQL', 'Data Visualization', 'Business Analytics', 'Google Sheets'],
+    },
   ]
 
   const education = [
