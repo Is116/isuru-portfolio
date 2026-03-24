@@ -45,8 +45,8 @@ const About = () => {
 
             <p className="text-stone-600 dark:text-stone-400 leading-relaxed text-base">
               My work sits at the intersection of{' '}
-              <span className="text-accent-600 dark:text-accent-400 font-medium">Psychology, Data Science, and Software Engineering</span>.
-              I build tools and explore data to understand human behaviour — how people think, decide, and act in the digital world.
+              <span className="text-accent-600 dark:text-accent-400 font-medium">Psychology, Data Science &amp; Analytics, and Software Engineering</span>.
+              I build tools, analyse data, and explore patterns to understand human behaviour — how people think, decide, and act in the digital world. I’m currently open to new opportunities in these spaces.
             </p>
 
             <p className="text-stone-600 dark:text-stone-400 leading-relaxed text-base">

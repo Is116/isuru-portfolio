@@ -9,7 +9,7 @@ const Experience = () => {
       title: 'Software Developer Trainee',
       company: 'CDB Bank',
       companyUrl: 'https://www.cdb.lk/',
-      period: '2023 – Present',
+      period: '2022 – 2022',
       type: 'Training',
       description: 'Training at Citizens Development Business Finance PLC, focused on digital banking solutions. Working with the CDB Self mobile app and digital banking platforms.',
       achievements: [
@@ -22,7 +22,7 @@ const Experience = () => {
       title: 'Full Stack Developer',
       company: 'Veesoft',
       companyUrl: 'https://www.veesoft.lk/',
-      period: '2022 – 2023',
+      period: '2024 – 2025',
       type: 'Project-Based',
       description: 'Developed comprehensive ERP solutions specialising in JAPRA ERP with integrated modules for POS, inventory, CRM, and business intelligence.',
       achievements: [
@@ -35,7 +35,7 @@ const Experience = () => {
       title: 'Full Stack Developer',
       company: 'Codezela',
       companyUrl: 'https://codezela.com/',
-      period: '2022',
+      period: '2022 – 2025',
       type: 'Project-Based',
       description: 'Developed web and mobile applications at a UK-based software company serving 500+ global clients across healthcare, finance, and e-commerce.',
       achievements: [

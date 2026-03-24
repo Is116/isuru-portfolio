@@ -53,8 +53,7 @@ const Hero = () => {
               Isuru Pathirathna
             </h1>
             <p className="text-base sm:text-lg text-stone-500 dark:text-stone-400 leading-relaxed max-w-xl font-sans font-normal">
-              Exploring why people do what they do — through data.{' '}
-              <span className="text-stone-700 dark:text-stone-300 font-medium">Psychology · Data Science · Software Engineering</span>
+              Exploring why people do what they do — through data · <span className="text-stone-700 dark:text-stone-300 font-medium">Psychology</span> · <span className="text-stone-700 dark:text-stone-300 font-medium">Data Science &amp; Analytics</span> · <span className="text-stone-700 dark:text-stone-300 font-medium">Software Engineering</span> · <span className="text-accent-600 dark:text-accent-400 font-medium">Open to opportunities</span>
             </p>
           </motion.div>
 
