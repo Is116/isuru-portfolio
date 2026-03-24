@@ -53,9 +53,8 @@ const Hero = () => {
               Isuru Pathirathna
             </h1>
             <p className="text-base sm:text-lg text-stone-500 dark:text-stone-400 leading-relaxed max-w-xl font-sans font-normal">
-              Software Engineer at the intersection of{' '}
-              <span className="text-stone-700 dark:text-stone-300 font-medium">Fintech and Psychology</span>.
-              Building thoughtful Web and Mobile applications — precise where it matters, human everywhere else.
+              Exploring why people do what they do — through data.{' '}
+              <span className="text-stone-700 dark:text-stone-300 font-medium">Psychology · Data Science · Software Engineering</span>
             </p>
           </motion.div>
 

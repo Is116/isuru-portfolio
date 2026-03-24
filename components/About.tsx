@@ -35,26 +35,24 @@ const About = () => {
           >
             <div>
               <h2 className="section-title mb-2">About</h2>
-              <p className="text-xs font-mono text-stone-400 dark:text-stone-500 tracking-widest uppercase">The story behind the code</p>
+              <p className="text-xs font-mono text-stone-400 dark:text-stone-500 tracking-widest uppercase">The story behind the curiosity</p>
             </div>
 
             <p className="text-stone-600 dark:text-stone-400 leading-relaxed text-base">
               I'm <span className="font-medium text-stone-900 dark:text-stone-100">Isuru Pathirathna</span>, a Software Engineering
-              graduate from NSBM with Plymouth University (UK). Experienced in building mobile and web applications end-to-end,
-              collaborating with cross-functional teams, and finding creative solutions to technical challenges.
+              graduate from NSBM with Plymouth University (UK). I'm driven by one core question: why do people do what they do?
             </p>
 
             <p className="text-stone-600 dark:text-stone-400 leading-relaxed text-base">
-              I'm drawn to the intersection of{' '}
-              <span className="text-accent-600 dark:text-accent-400 font-medium">fintech and psychology</span> — understanding
-              how people think about and interact with money through technology. It's a space where human behaviour meets
-              product design, and I find it endlessly fascinating.
+              My work sits at the intersection of{' '}
+              <span className="text-accent-600 dark:text-accent-400 font-medium">Psychology, Data Science, and Software Engineering</span>.
+              I build tools and explore data to understand human behaviour — how people think, decide, and act in the digital world.
             </p>
 
             <p className="text-stone-600 dark:text-stone-400 leading-relaxed text-base">
-              Active{' '}
-              <span className="text-accent-600 dark:text-accent-400 font-medium">open source contributor</span>, passionate
-              about continuous learning and always exploring new technologies that make a real impact.
+              Whether it's analysing patterns in data, building products, or writing about cognition and behaviour, I approach
+              every problem through the same lens:{' '}
+              <span className="text-accent-600 dark:text-accent-400 font-medium">the human behind the data</span>.
             </p>
           </motion.div>
         </div>

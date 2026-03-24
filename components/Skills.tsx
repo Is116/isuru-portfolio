@@ -36,7 +36,7 @@ const Skills = () => {
           transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
         >
           <h2 className="section-title">Skills & Technologies</h2>
-          <p className="section-subtitle">Tools and frameworks I use to build modern applications</p>
+          <p className="section-subtitle">Tools and frameworks I use to explore data and build meaningful software</p>
         </motion.div>
 
         {/* Skill Categories */}

@@ -8,9 +8,9 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' })
 
 export const metadata: Metadata = {
-  title: 'Isuru Pathirathna — Software Engineer',
-  description: 'Software engineer at the intersection of fintech and psychology. Building thoughtful web and mobile applications.',
-  keywords: ['isuru pathirathna', 'software engineer', 'web developer', 'mobile developer', 'react native', 'next.js', 'fintech', 'typescript'],
+  title: 'Isuru Pathirathna — Psychology · Data Science · Software Engineering',
+  description: 'Exploring why people do what they do — through data. Working at the intersection of psychology, data science, and software engineering.',
+  keywords: ['isuru pathirathna', 'psychology', 'data science', 'software engineering', 'human behaviour', 'data analysis', 'web developer', 'next.js', 'typescript'],
 }
 
 export default function RootLayout({
