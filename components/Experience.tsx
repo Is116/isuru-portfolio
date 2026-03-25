@@ -71,6 +71,14 @@ const Experience = () => {
       url: 'https://www.coursera.org/account/accomplishments/verify/47EHHOHGWFSU',
       skills: ['Data Analytics', 'SQL', 'Data Visualization', 'Business Analytics', 'Google Sheets'],
     },
+    {
+      title: 'Ask Questions to Make Data-Driven Decisions',
+      issuer: 'Google',
+      platform: 'Coursera',
+      date: 'March 2026',
+      url: 'https://coursera.org/share/3a84a73546f7f1a463b773a22bc54f51',
+      skills: ['Data Analysis', 'Problem Solving', 'Data-Driven Decision-Making', 'Spreadsheet Software', 'Analytical Skills'],
+    },
   ]
 
   const education = [
@@ -183,28 +191,41 @@ const Experience = () => {
               <h3 className="font-sans text-xs font-medium text-stone-400 dark:text-stone-500 uppercase tracking-widest">Certifications</h3>
             </div>
 
-            <div className="space-y-4">
-              {certifications.map((cert, index) => (
-                <a
-                  key={index}
-                  href={cert.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="card block group"
-                >
-                  <h4 className="font-sans text-sm font-medium text-stone-900 dark:text-stone-100 mb-1 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors leading-snug">
-                    {cert.title}
-                  </h4>
-                  <p className="text-xs text-accent-600 dark:text-accent-400 mb-0.5">{cert.issuer}</p>
-                  <p className="text-xs text-stone-400 dark:text-stone-500 font-mono mb-3">
-                    {cert.platform} · {cert.date}
+            <div className="space-y-6">
+              {Object.entries(
+                certifications.reduce<Record<string, typeof certifications>>((groups, cert) => {
+                  ;(groups[cert.issuer] ??= []).push(cert)
+                  return groups
+                }, {})
+              ).map(([issuer, certs]) => (
+                <div key={issuer}>
+                  <p className="text-xs font-medium text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-3 font-sans">
+                    {issuer}
                   </p>
-                  <div className="flex flex-wrap gap-1.5">
-                    {cert.skills.map((skill, idx) => (
-                      <span key={idx} className="badge">{skill}</span>
+                  <div className="space-y-3">
+                    {certs.map((cert, idx) => (
+                      <a
+                        key={idx}
+                        href={cert.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="card block group"
+                      >
+                        <h4 className="font-sans text-sm font-medium text-stone-900 dark:text-stone-100 mb-1 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors leading-snug">
+                          {cert.title}
+                        </h4>
+                        <p className="text-xs text-stone-400 dark:text-stone-500 font-mono mb-3">
+                          {cert.platform} · {cert.date}
+                        </p>
+                        <div className="flex flex-wrap gap-1.5">
+                          {cert.skills.map((skill, sidx) => (
+                            <span key={sidx} className="badge">{skill}</span>
+                          ))}
+                        </div>
+                      </a>
                     ))}
                   </div>
-                </a>
+                </div>
               ))}
             </div>
           </motion.div>
