@@ -79,6 +79,14 @@ const Experience = () => {
       url: 'https://coursera.org/share/3a84a73546f7f1a463b773a22bc54f51',
       skills: ['Data Analysis', 'Problem Solving', 'Data-Driven Decision-Making', 'Spreadsheet Software', 'Analytical Skills'],
     },
+    {
+      title: 'Prepare Data for Exploration',
+      issuer: 'Google',
+      platform: 'Coursera',
+      date: 'March 2026',
+      url: 'https://coursera.org/share/7209f97f09df3e2e081088260eef25b4',
+      skills: ['SQL', 'Databases', 'Data Collection', 'Data Ethics', 'Data Quality', 'Data Security', 'Google Sheets', 'Data Management', 'Data Storage'],
+    },
   ]
 
   const education = [
