@@ -11,6 +11,15 @@ const Projects = () => {
 
   const projects = [
     {
+      title: 'Finnish Vehicle Market Analyser',
+      description: 'Full-stack Next.js app for exploring 5.2M registered vehicles from Finland\'s Traficom open registry. Features 7 interactive Recharts dashboards, Gemini 2.5 Flash AI-powered market analysis, natural-language chat, and CSV/JSON/Markdown export — all parsed client-side from a 930 MB CSV.',
+      tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Gemini AI', 'Recharts', 'PapaParse'],
+      github: 'https://github.com/Is116/vehicle-stats',
+      demo: null,
+      link: null,
+      images: ['/projects/vechicle_stat/dashboard.jpeg', '/projects/vechicle_stat/aichatand suggestions.jpeg'],
+    },
+    {
       title: 'Literary Chat — AI Book Character Conversations',
       description: 'Full-stack AI web app for dynamic conversations with literary characters. Users upload PDF books; Gemini AI extracts characters and metadata, leveraging RAG for context-aware, multilingual chats.',
       tags: ['Gemini AI', 'React', 'Node.js', 'Express', 'SQLite', 'Tailwind CSS'],
