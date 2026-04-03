@@ -77,6 +77,14 @@ const Experience = () => {
       url: 'https://coursera.org/share/7209f97f09df3e2e081088260eef25b4',
       skills: ['SQL', 'Databases', 'Data Collection', 'Data Ethics', 'Data Quality', 'Data Security', 'Google Sheets', 'Data Management', 'Data Storage'],
     },
+    {
+      title: 'Process Data from Dirty to Clean',
+      issuer: 'Google',
+      platform: 'Coursera',
+      date: 'April 2026',
+      url: 'https://coursera.org/share/bb6f0f5519b9df6b685bbd06e61842b6',
+      skills: ['SQL', 'Data Transformation', 'Data Cleansing', 'Data Validation', 'Data Integrity', 'Data Quality', 'Data Analysis', 'Spreadsheet Software'],
+    },
   ]
 
   const education = [
