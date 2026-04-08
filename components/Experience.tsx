@@ -22,7 +22,7 @@ const Experience = () => {
       title: 'Full-Stack Developer',
       company: 'Codezela Technologies UK',
       companyUrl: 'https://codezela.com/',
-      period: '2021 – 2025',
+      period: '2022 – 2025',
       type: 'Contract',
       description: 'Designed and developed enterprise Information Systems including ERP, CRM, and POS platforms for retail and enterprise clients across global markets at a UK-based software company.',
       achievements: [
