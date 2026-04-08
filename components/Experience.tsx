@@ -85,14 +85,6 @@ const Experience = () => {
       url: 'https://coursera.org/share/bb6f0f5519b9df6b685bbd06e61842b6',
       skills: ['SQL', 'Data Transformation', 'Data Cleansing', 'Data Validation', 'Data Integrity', 'Data Quality', 'Data Analysis', 'Spreadsheet Software'],
     },
-    {
-      title: 'Analyze Data to Answer Questions',
-      issuer: 'Google',
-      platform: 'Coursera',
-      date: 'April 2026',
-      url: 'https://coursera.org/share/458b9f8006d6abbec16a01c7f2f51ad5',
-      skills: ['SQL', 'Data Analysis', 'Data Manipulation', 'Data Validation', 'Pivot Tables And Charts', 'Spreadsheet Software', 'Analytics', 'Data Integration', 'Data Transformation', 'Excel Formulas'],
-    },
   ]
 
   const education = [
