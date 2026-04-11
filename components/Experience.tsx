@@ -85,6 +85,22 @@ const Experience = () => {
       url: 'https://coursera.org/share/bb6f0f5519b9df6b685bbd06e61842b6',
       skills: ['SQL', 'Data Transformation', 'Data Cleansing', 'Data Validation', 'Data Integrity', 'Data Quality', 'Data Analysis', 'Spreadsheet Software'],
     },
+    {
+      title: 'Analyze Data to Answer Questions',
+      issuer: 'Google',
+      platform: 'Coursera',
+      date: 'April 2026',
+      url: 'https://www.coursera.org/account/accomplishments/verify/RA96KDMI8DPI',
+      skills: ['Data Analysis', 'SQL', 'Data Validation', 'Data Transformation', 'Spreadsheet Software', 'Pivot Tables And Charts', 'Data Integration', 'Excel Formulas'],
+    },
+    {
+      title: 'Share Data Through the Art of Visualization',
+      issuer: 'Google',
+      platform: 'Coursera',
+      date: 'April 2026',
+      url: 'https://coursera.org/share/55429396fce76a1dd603eb425f7fe21a',
+      skills: ['Data Visualization', 'Tableau', 'Data Storytelling', 'Presentations', 'Data Analysis'],
+    },
   ]
 
   const education = [
