@@ -101,6 +101,14 @@ const Experience = () => {
       url: 'https://coursera.org/share/55429396fce76a1dd603eb425f7fe21a',
       skills: ['Data Visualization', 'Tableau', 'Data Storytelling', 'Presentations', 'Data Analysis'],
     },
+    {
+      title: 'Introduction to Data Analysis Using Python',
+      issuer: 'Google',
+      platform: 'Coursera',
+      date: 'April 2026',
+      url: 'https://coursera.org/share/9aa85d82e5682f6d6e09a4867f21f0b2',
+      skills: ['Python Programming', 'Data Analysis', 'Pandas', 'NumPy', 'Data Manipulation', 'Data Structures', 'Analytical Skills'],
+    },
   ]
 
   const education = [
