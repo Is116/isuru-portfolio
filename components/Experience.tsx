@@ -20,7 +20,7 @@ const Experience = () => {
     },
     {
       title: 'Full-Stack Developer',
-      company: 'Codezela Technologies UK',
+      company: 'Codezela Technologies',
       companyUrl: 'https://codezela.com/',
       period: '2022 – 2025',
       type: 'Contract',
