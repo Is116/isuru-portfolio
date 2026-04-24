@@ -20,7 +20,7 @@ const Experience = () => {
     },
     {
       title: 'Full-Stack Developer',
-      company: 'Codezela Technologies',
+      company: 'Codezela Technologies UK',
       companyUrl: 'https://codezela.com/',
       period: '2022 – 2025',
       type: 'Contract',
@@ -108,6 +108,14 @@ const Experience = () => {
       date: 'April 2026',
       url: 'https://coursera.org/share/9aa85d82e5682f6d6e09a4867f21f0b2',
       skills: ['Python Programming', 'Data Analysis', 'Pandas', 'NumPy', 'Data Manipulation', 'Data Structures', 'Analytical Skills'],
+    },
+    {
+      title: 'Google Data Analytics Capstone: Complete a Case Study',
+      issuer: 'Google',
+      platform: 'Coursera',
+      date: 'April 2026',
+      url: 'https://coursera.org/share/04b5b11ffc61f535dce6de1b5072b453',
+      skills: ['Data Analysis', 'Data Visualization', 'Case Studies', 'Spreadsheet Software', 'Presentations', 'Data Processing'],
     },
   ]
 
