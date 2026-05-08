@@ -53,69 +53,18 @@ const Experience = () => {
       url: 'https://coursera.org/share/c2ec9ff0a1eed5b75809de072751620c',
       skills: ['FinTech', 'Credit Risk', 'Blockchain', 'Fundraising', 'Capital Markets'],
     },
+  ]
+
+  const badges = [
     {
-      title: 'Foundations: Data, Data, Everywhere',
+      title: 'Google Data Analytics Professional Certificate (v.3)',
       issuer: 'Google',
-      platform: 'Coursera',
-      date: 'March 2026',
-      url: 'https://www.coursera.org/account/accomplishments/verify/47EHHOHGWFSU',
-      skills: ['Data Analytics', 'SQL', 'Data Visualization', 'Business Analytics', 'Google Sheets'],
-    },
-    {
-      title: 'Ask Questions to Make Data-Driven Decisions',
-      issuer: 'Google',
-      platform: 'Coursera',
-      date: 'March 2026',
-      url: 'https://coursera.org/share/3a84a73546f7f1a463b773a22bc54f51',
-      skills: ['Data Analysis', 'Problem Solving', 'Data-Driven Decision-Making', 'Spreadsheet Software', 'Analytical Skills'],
-    },
-    {
-      title: 'Prepare Data for Exploration',
-      issuer: 'Google',
-      platform: 'Coursera',
-      date: 'March 2026',
-      url: 'https://coursera.org/share/7209f97f09df3e2e081088260eef25b4',
-      skills: ['SQL', 'Databases', 'Data Collection', 'Data Ethics', 'Data Quality', 'Data Security', 'Google Sheets', 'Data Management', 'Data Storage'],
-    },
-    {
-      title: 'Process Data from Dirty to Clean',
-      issuer: 'Google',
-      platform: 'Coursera',
-      date: 'April 2026',
-      url: 'https://coursera.org/share/bb6f0f5519b9df6b685bbd06e61842b6',
-      skills: ['SQL', 'Data Transformation', 'Data Cleansing', 'Data Validation', 'Data Integrity', 'Data Quality', 'Data Analysis', 'Spreadsheet Software'],
-    },
-    {
-      title: 'Analyze Data to Answer Questions',
-      issuer: 'Google',
-      platform: 'Coursera',
-      date: 'April 2026',
-      url: 'https://www.coursera.org/account/accomplishments/verify/RA96KDMI8DPI',
-      skills: ['Data Analysis', 'SQL', 'Data Validation', 'Data Transformation', 'Spreadsheet Software', 'Pivot Tables And Charts', 'Data Integration', 'Excel Formulas'],
-    },
-    {
-      title: 'Share Data Through the Art of Visualization',
-      issuer: 'Google',
-      platform: 'Coursera',
-      date: 'April 2026',
-      url: 'https://coursera.org/share/55429396fce76a1dd603eb425f7fe21a',
-      skills: ['Data Visualization', 'Tableau', 'Data Storytelling', 'Presentations', 'Data Analysis'],
-    },
-    {
-      title: 'Introduction to Data Analysis Using Python',
-      issuer: 'Google',
-      platform: 'Coursera',
-      date: 'April 2026',
-      url: 'https://coursera.org/share/9aa85d82e5682f6d6e09a4867f21f0b2',
-      skills: ['Python Programming', 'Data Analysis', 'Pandas', 'NumPy', 'Data Manipulation', 'Data Structures', 'Analytical Skills'],
-    },
-    {
-      title: 'Google Data Analytics Capstone: Complete a Case Study',
-      issuer: 'Google',
-      platform: 'Coursera',
-      date: 'April 2026',
-      url: 'https://coursera.org/share/04b5b11ffc61f535dce6de1b5072b453',
-      skills: ['Data Analysis', 'Data Visualization', 'Case Studies', 'Spreadsheet Software', 'Presentations', 'Data Processing'],
+      platform: 'Credly',
+      date: 'May 2026',
+      url: 'https://www.credly.com/badges/4172d6f8-2f34-4dcb-a18c-68f8b99e10a6',
+      image: '/badges/google_data_badge.png',
+      description: 'Awarded after completing all 9 Coursera courses in the Google Data Analytics Professional Certificate.',
+      skills: ['Data Management With Spreadsheets', 'Data Analytics', 'Databases', 'Data Visualization', 'Python', 'Tableau', 'Google Data Studio', 'Storytelling Using Data', 'Data Cleaning'],
     },
   ]
 
@@ -265,6 +214,50 @@ const Experience = () => {
                   </div>
                 </div>
               ))}
+            </div>
+
+            <div className="mt-10">
+              <div className="flex items-center gap-2.5 mb-6">
+                <Award size={16} className="text-accent-500" />
+                <h3 className="font-sans text-xs font-medium text-stone-400 dark:text-stone-500 uppercase tracking-widest">Badges</h3>
+              </div>
+              <div className="space-y-3">
+                {badges.map((badge, idx) => (
+                  <a
+                    key={idx}
+                    href={badge.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="card block group"
+                  >
+                    <div className="md:grid md:grid-cols-[150px_minmax(0,1fr)] md:items-start md:gap-5">
+                      <div className="mb-4 md:mb-0 md:w-[150px] md:flex-shrink-0">
+                        <img
+                          src={badge.image}
+                          alt={`${badge.title} badge`}
+                          className="w-full max-w-[150px] h-auto rounded-lg object-contain"
+                        />
+                      </div>
+                      <div className="min-w-0">
+                        <h4 className="font-sans text-sm font-semibold text-stone-900 dark:text-stone-100 mb-2 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors leading-snug">
+                          {badge.title}
+                        </h4>
+                        <p className="text-[11px] uppercase tracking-[0.28em] text-stone-400 dark:text-stone-500 font-mono mb-2">
+                          {badge.issuer} · {badge.platform} · {badge.date}
+                        </p>
+                        <p className="text-sm text-stone-500 dark:text-stone-400 mb-2 leading-relaxed">
+                          {badge.description}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {badge.skills.map((skill, sidx) => (
+                        <span key={sidx} className="badge">{skill}</span>
+                      ))}
+                    </div>
+                  </a>
+                ))}
+              </div>
             </div>
           </motion.div>
         </div>
