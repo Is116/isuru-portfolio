@@ -53,6 +53,14 @@ const Experience = () => {
       url: 'https://coursera.org/share/c2ec9ff0a1eed5b75809de072751620c',
       skills: ['FinTech', 'Credit Risk', 'Blockchain', 'Fundraising', 'Capital Markets'],
     },
+    {
+      title: 'Google Data Analytics Professional Certificate (v.3)',
+      issuer: 'Google',
+      platform: 'Coursera',
+      date: 'May 2026',
+      url: 'https://coursera.org/share/f53a3c528486bb363d194fee5502d804',
+      skills: ['Data Management With Spreadsheets', 'Data Analytics', 'Databases', 'Data Visualization', 'Python', 'Tableau', 'Google Data Studio', 'Storytelling Using Data', 'Data Cleaning'],
+    },
   ]
 
   const badges = [
