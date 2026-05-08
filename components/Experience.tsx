@@ -70,7 +70,7 @@ const Experience = () => {
 
   const education = [
     {
-      degree: 'Bachelor of Science in Computer Science',
+      degree: 'Bachelor of Science in Software Engineering',
       institution: 'University of Plymouth',
       period: '2019 – 2022',
       description: 'Studied software engineering, web development, and computer science fundamentals with focus on modern development practices.',
