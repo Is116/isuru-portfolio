@@ -11,6 +11,15 @@ const Articles = () => {
 
   const articles = [
     {
+      title: 'Why Social Media Will Fall Just Like Every Great Civilization Before It',
+      description: 'The inevitable collapse of social media follows the same pattern that destroyed Rome, the Mayans, and the Soviet Union — when the promise stops matching reality.',
+      date: '2026-05-08',
+      readTime: '12 min',
+      link: '/articles/why-social-media-will-fall-like-civilizations',
+      tags: ['Social Media', 'Technology', 'Society', 'AI', 'Psychology'],
+      image: '/articles/civilization_collapse.jpeg',
+    },
+    {
       title: 'Building a Searchable Archive: How AI Processes 8,000+ Legal Documents',
       description: 'A technical deep-dive into OCR technology, entity extraction, AI deduplication, and the open-source Python pipeline that powers legal transparency.',
       date: '2026-02-15',
