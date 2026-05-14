@@ -5,6 +5,14 @@ import { Calendar } from 'lucide-react'
 export default function ArticlesPage() {
   const articles = [
     {
+      slug: 'emotional-amplitude-crisis',
+      title: 'Emotional Amplitude: Why America and Sri Lanka Both Need Narrower, More Manageable Emotional Bands',
+      description: 'A social science and psychology view on how happiness and sadness trends collapse when the gap between promise and reality gets too wide.',
+      date: 'May 2026',
+      image: '/articles/human_brain.png',
+      tags: ['Psychology', 'Social Science', 'Culture'],
+    },
+    {
       slug: 'searchable-legal-archive',
       title: 'Building a Searchable Archive: How AI Processes 8,000+ Legal Documents',
       description: 'A technical deep-dive into OCR, entity extraction, AI deduplication, and the open-source Python pipeline that powers legal transparency.',

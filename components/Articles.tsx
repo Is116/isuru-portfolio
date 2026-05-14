@@ -11,6 +11,15 @@ const Articles = () => {
 
   const articles = [
     {
+      title: 'Emotional Amplitude: Why America and Sri Lanka Both Need Narrower, More Manageable Emotional Bands',
+      description: 'A social science and psychology view on how happiness and sadness trends collapse when the gap between promise and reality gets too wide.',
+      date: '2026-05-14',
+      readTime: '14 min',
+      link: '/articles/emotional-amplitude-crisis',
+      tags: ['Psychology', 'Social Science', 'Culture', 'Sri Lanka', 'USA'],
+      image: '/articles/human_brain.png',
+    },
+    {
       title: 'Why Social Media Will Fall Just Like Every Great Civilization Before It',
       description: 'The inevitable collapse of social media follows the same pattern that destroyed Rome, the Mayans, and the Soviet Union — when the promise stops matching reality.',
       date: '2026-05-08',
