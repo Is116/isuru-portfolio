@@ -17,7 +17,7 @@ const Articles = () => {
       readTime: '14 min',
       link: '/articles/emotional-amplitude-crisis',
       tags: ['Psychology', 'Social Science', 'Culture', 'Sri Lanka', 'USA'],
-      image: '/articles/human_brain.png',
+      image: '/articles/culture_difference.jpeg',
     },
     {
       title: 'Why Social Media Will Fall Just Like Every Great Civilization Before It',

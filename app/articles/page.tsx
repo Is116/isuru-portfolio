@@ -9,7 +9,7 @@ export default function ArticlesPage() {
       title: 'Emotional Amplitude: Why America and Sri Lanka Both Need Narrower, More Manageable Emotional Bands',
       description: 'A social science and psychology view on how happiness and sadness trends collapse when the gap between promise and reality gets too wide.',
       date: 'May 2026',
-      image: '/articles/human_brain.png',
+      image: '/articles/culture_difference.jpeg',
       tags: ['Psychology', 'Social Science', 'Culture'],
     },
     {
