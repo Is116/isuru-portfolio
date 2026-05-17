@@ -5,6 +5,14 @@ import { Calendar } from 'lucide-react'
 export default function ArticlesPage() {
   const articles = [
     {
+      slug: 'why-do-people-do-crazy-things',
+      title: "Why Do People Do 'Crazy' Things?",
+      description: "It's not just loose rules or moral failure. Behind every extreme act lies a web of unmet needs, broken self-worth, social inequality, and a future that feels impossible to plan for.",
+      date: 'May 2026',
+      image: '/articles/corruption.jpeg',
+      tags: ['Psychology', 'Society', 'Social Science'],
+    },
+    {
       slug: 'emotional-amplitude-crisis',
       title: 'Emotional Amplitude: Why America and Sri Lanka Both Need Narrower, More Manageable Emotional Bands',
       description: 'A social science and psychology view on how happiness and sadness trends collapse when the gap between promise and reality gets too wide.',

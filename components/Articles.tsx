@@ -11,6 +11,15 @@ const Articles = () => {
 
   const articles = [
     {
+      title: "Why Do People Do 'Crazy' Things?",
+      description: "It's not just loose rules or moral failure. Behind every extreme act lies a web of unmet needs, broken self-worth, social inequality, and a future that feels impossible to plan for.",
+      date: '2026-05-17',
+      readTime: '12 min',
+      link: '/articles/why-do-people-do-crazy-things',
+      tags: ['Psychology', 'Society', 'Social Science'],
+      image: '/articles/corruption.jpeg',
+    },
+    {
       title: 'Emotional Amplitude: Why America and Sri Lanka Both Need Narrower, More Manageable Emotional Bands',
       description: 'A social science and psychology view on how happiness and sadness trends collapse when the gap between promise and reality gets too wide.',
       date: '2026-05-14',
@@ -147,13 +156,15 @@ const Articles = () => {
                     </span>
                   </div>
 
-                  <h3 className="font-sans text-sm font-medium text-stone-900 dark:text-stone-100 leading-snug group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors flex-1">
-                    {article.title}
-                  </h3>
+                  <div className="flex-1 flex flex-col gap-2">
+                    <h3 className="font-sans text-sm font-medium text-stone-900 dark:text-stone-100 leading-snug group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                      {article.title}
+                    </h3>
 
-                  <p className="text-xs text-stone-500 dark:text-stone-400 leading-relaxed line-clamp-3">
-                    {article.description}
-                  </p>
+                    <p className="text-xs text-stone-500 dark:text-stone-400 leading-relaxed line-clamp-3">
+                      {article.description}
+                    </p>
+                  </div>
 
                   <div className="flex flex-wrap gap-1.5 pt-1">
                     {article.tags.map((tag, tagIndex) => (
