@@ -94,7 +94,7 @@ export default function EmotionalAmplitudeArticle() {
         >
           <motion.div variants={fadeInUp} className="mb-12">
             <p className="text-xl md:text-2xl text-stone-700 dark:text-stone-300 leading-relaxed font-light">
-              The most important way to read both social science and psychology is the same: happiness and sadness are not independent targets. They are trends tied together by amplitude. When cultures promise a high ceiling of joy while leaving the sadness floor low and unmanaged, the result is not prosperity — it is instability.
+              The most important way to read both social science and psychology is the same: happiness and sadness are not independent targets. They are trends tied together by amplitude. When cultures promise a high ceiling of joy while leaving the sadness floor low and unmanaged, the result is not prosperity it is instability.
             </p>
           </motion.div>
 

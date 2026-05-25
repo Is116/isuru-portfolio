@@ -584,7 +584,7 @@ prediction = clf.predict(features_test)`}
 
             <div className="space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
               <p>
-                The democratization of brain-machine interface technology represents one of the most exciting developments in modern neuroscience and human-computer interaction. What once required million-dollar laboratories is now accessible to students, hobbyists, and independent researchers for under $300 — or even under $30 for determined DIY enthusiasts.
+                The democratization of brain-machine interface technology represents one of the most exciting developments in modern neuroscience and human-computer interaction. What once required million-dollar laboratories is now accessible to students, hobbyists, and independent researchers for under $300 or even under $30 for determined DIY enthusiasts.
               </p>
 
               <div className="bg-accent-50 dark:bg-accent-900/20 border-l-4 border-accent-500 p-8 rounded-r-xl my-8 shadow-xl">
@@ -598,7 +598,7 @@ prediction = clf.predict(features_test)`}
               </p>
 
               <p>
-                As research cited throughout demonstrates, low-cost BMI systems are not mere toys — they represent legitimate tools for exploration, innovation, and practical applications. Whether you&apos;re a student curious about neuroscience, a maker pushing technological boundaries, an artist seeking new mediums, or someone interested in personal cognitive enhancement, affordable brain-machine interfaces offer an unprecedented opportunity to directly engage with your own neural activity.
+                As research cited throughout demonstrates, low-cost BMI systems are not mere toys they represent legitimate tools for exploration, innovation, and practical applications. Whether you&apos;re a student curious about neuroscience, a maker pushing technological boundaries, an artist seeking new mediums, or someone interested in personal cognitive enhancement, affordable brain-machine interfaces offer an unprecedented opportunity to directly engage with your own neural activity.
               </p>
 
               <div className="bg-gradient-to-r from-accent-50 to-blue-50 dark:from-accent-900/20 dark:to-blue-900/20 border-2 border-accent-500 rounded-2xl p-8 text-center my-8 shadow-xl">
@@ -606,7 +606,7 @@ prediction = clf.predict(features_test)`}
                   Join the Neurotechnology Revolution
                 </p>
                 <p className="text-stone-700 dark:text-stone-300">
-                  From $30 Arduino projects to $300 consumer headsets, the tools to read and interact with your brain are now in your hands. The future of human-computer interaction is being built today — by hobbyists, students, and independent researchers just like you.
+                  From $30 Arduino projects to $300 consumer headsets, the tools to read and interact with your brain are now in your hands. The future of human-computer interaction is being built today by hobbyists, students, and independent researchers just like you.
                 </p>
               </div>
             </div>

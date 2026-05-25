@@ -30,7 +30,7 @@ const Articles = () => {
     },
     {
       title: 'Why Social Media Will Fall Just Like Every Great Civilization Before It',
-      description: 'The inevitable collapse of social media follows the same pattern that destroyed Rome, the Mayans, and the Soviet Union — when the promise stops matching reality.',
+      description: 'The inevitable collapse of social media follows the same pattern that destroyed Rome, the Mayans, and the Soviet Union when the promise stops matching reality.',
       date: '2026-05-08',
       readTime: '12 min',
       link: '/articles/why-social-media-will-fall-like-civilizations',
@@ -66,7 +66,7 @@ const Articles = () => {
     },
     {
       title: 'From Coaxial to Fiber: The Evolution of Broadband Infrastructure',
-      description: 'Explore the evolution of broadband from coaxial cables to fiber optics — network architecture, signal processing, and the quest for better alternatives.',
+      description: 'Explore the evolution of broadband from coaxial cables to fiber optics network architecture, signal processing, and the quest for better alternatives.',
       date: '2026-01-06',
       readTime: '35 min',
       link: '/articles/from-coaxial-to-fiber',
@@ -75,7 +75,7 @@ const Articles = () => {
     },
     {
       title: "The Enduring Legacy of C: Why Half a Century Later, We Still Can't Live Without It",
-      description: 'From Bell Labs in 1972 to your smartphone today — how C became the invisible foundation of modern computing.',
+      description: 'From Bell Labs in 1972 to your smartphone today how C became the invisible foundation of modern computing.',
       date: '2025-12-25',
       readTime: '22 min',
       link: '/articles/c-language-enduring-legacy',
@@ -84,7 +84,7 @@ const Articles = () => {
     },
     {
       title: 'Why Your Tap-to-Pay Card Is Way Smarter Than You Think',
-      description: 'A deep dive into the cryptographic architecture protecting contactless payments — tokenization, secure elements, and multi-layer encryption.',
+      description: 'A deep dive into the cryptographic architecture protecting contactless payments tokenization, secure elements, and multi-layer encryption.',
       date: '2025-12-21',
       readTime: '18 min',
       link: '/articles/tap-to-pay-security',

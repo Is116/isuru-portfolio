@@ -39,12 +39,12 @@ npm install
 ```
 
 <!--
-  Regenerated README — consolidated portfolio documentation
+  Regenerated README consolidated portfolio documentation
   Includes projects, screenshots, AI integration notes and development instructions.
   Last updated: 2025-11-30
 -->
 
-# Isuru Pathirathna — Developer Portfolio
+# Isuru Pathirathna Developer Portfolio
 
 This repository contains the source for Isuru's portfolio website built with Next.js (App Router), TypeScript and Tailwind CSS. It highlights selected projects, experience, and contact options including a digital business card and AI-related projects.
 
@@ -90,7 +90,7 @@ Screenshot:
 
 ---
 
-### 3) AI Chat — Fin Stories
+### 3) AI Chat Fin Stories
 
 - Repo: https://github.com/Is116/ai-chat-fin-stories
 - Summary: AI-powered chat assistant for Finnish short stories and finance-oriented conversational examples. Demonstrates integrating a chat backend with LLM providers and a simple frontend UI.

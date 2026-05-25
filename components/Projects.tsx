@@ -12,7 +12,7 @@ const Projects = () => {
   const projects = [
     {
       title: 'Finnish Vehicle Market Analyser',
-      description: 'Full-stack Next.js app for exploring 5.2M registered vehicles from Finland\'s Traficom open registry. Features 7 interactive Recharts dashboards, Gemini 2.5 Flash AI-powered market analysis, natural-language chat, and CSV/JSON/Markdown export — all parsed client-side from a 930 MB CSV.',
+      description: 'Full-stack Next.js app for exploring 5.2M registered vehicles from Finland\'s Traficom open registry. Features 7 interactive Recharts dashboards, Gemini 2.5 Flash AI-powered market analysis, natural-language chat, and CSV/JSON/Markdown export all parsed client-side from a 930 MB CSV.',
       tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Gemini AI', 'Recharts', 'PapaParse'],
       github: 'https://github.com/Is116/vehicle-stats',
       demo: null,
@@ -20,7 +20,7 @@ const Projects = () => {
       images: ['/projects/vechicle_stat/dashboard.jpeg', '/projects/vechicle_stat/aichatand suggestions.jpeg'],
     },
     {
-      title: 'Literary Chat — AI Book Character Conversations',
+      title: 'Literary Chat AI Book Character Conversations',
       description: 'Full-stack AI web app for dynamic conversations with literary characters. Users upload PDF books; Gemini AI extracts characters and metadata, leveraging RAG for context-aware, multilingual chats.',
       tags: ['Gemini AI', 'React', 'Node.js', 'Express', 'SQLite', 'Tailwind CSS'],
       github: 'https://github.com/Is116/ai-chat-fin-stories',
@@ -29,7 +29,7 @@ const Projects = () => {
       images: ['/projects/ai_chat/ai_chat.jpeg'],
     },
     {
-      title: 'Gesture Works — Hand Gesture Control',
+      title: 'Gesture Works Hand Gesture Control',
       description: 'Real-time hand gesture recognition using machine learning to control a ball on screen. Train custom gestures with TensorFlow.js and MediaPipe.',
       tags: ['Next.js', 'TypeScript', 'TensorFlow.js', 'MediaPipe'],
       github: 'https://github.com/Is116/gesture-works',
@@ -72,7 +72,7 @@ const Projects = () => {
           transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
         >
           <h2 className="section-title">Projects</h2>
-          <p className="section-subtitle">Selected work — building in public, contributing to the community</p>
+          <p className="section-subtitle">Selected work building in public, contributing to the community</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -39,7 +39,7 @@ const Hero = () => {
           initial="hidden"
           animate="show"
         >
-          {/* Availability indicator — text only, no pulsing */}
+          {/* Availability indicator text only, no pulsing */}
           <motion.p
             variants={item}
             className="text-xs font-mono text-accent-600 dark:text-accent-400 tracking-widest uppercase"
@@ -47,13 +47,13 @@ const Hero = () => {
             Available for opportunities
           </motion.p>
 
-          {/* Name — serif, large */}
+          {/* Name serif, large */}
           <motion.div variants={item} className="space-y-4">
             <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl font-medium leading-tight text-stone-900 dark:text-stone-100 tracking-tight">
               Isuru Pathirathna
             </h1>
             <p className="text-base sm:text-lg text-stone-500 dark:text-stone-400 leading-relaxed max-w-xl font-sans font-normal">
-              Exploring why people do what they do — through data · <span className="text-stone-700 dark:text-stone-300 font-medium">AI & Behaviour</span> · <span className="text-stone-700 dark:text-stone-300 font-medium">Data Science &amp; Analytics</span> · <span className="text-stone-700 dark:text-stone-300 font-medium">Software Engineering</span> · <span className="text-accent-600 dark:text-accent-400 font-medium">Open to opportunities</span>
+              Exploring why people do what they do through data · <span className="text-stone-700 dark:text-stone-300 font-medium">AI & Behaviour</span> · <span className="text-stone-700 dark:text-stone-300 font-medium">Data Science &amp; Analytics</span> · <span className="text-stone-700 dark:text-stone-300 font-medium">Software Engineering</span> · <span className="text-accent-600 dark:text-accent-400 font-medium">Open to opportunities</span>
             </p>
           </motion.div>
 

@@ -39,7 +39,7 @@ export default function ArticlesPage() {
     {
       slug: 'democratizing-brain-machine-interfaces',
       title: 'Democratizing Brain-Machine Interfaces: What You Can Do With Affordable Devices',
-      description: "How consumer-grade BCIs are making neurotechnology accessible — from meditation apps to creative tools.",
+      description: "How consumer-grade BCIs are making neurotechnology accessible from meditation apps to creative tools.",
       date: 'January 2026',
       image: '/articles/human_brain.png',
       tags: ['Neurotechnology', 'BMI', 'EEG'],
@@ -47,7 +47,7 @@ export default function ArticlesPage() {
     {
       slug: 'from-coaxial-to-fiber',
       title: 'From Coaxial to Fiber: The Evolution of Broadband Infrastructure',
-      description: 'The evolution of broadband — network architecture, signal processing, and the quest for better alternatives.',
+      description: 'The evolution of broadband network architecture, signal processing, and the quest for better alternatives.',
       date: 'January 2026',
       image: '/articles/line_evolution.png',
       tags: ['Network Infrastructure', 'Broadband', 'Fiber Optics'],
@@ -55,7 +55,7 @@ export default function ArticlesPage() {
     {
       slug: 'c-language-enduring-legacy',
       title: "The Enduring Legacy of C: Why Half a Century Later, We Still Can't Live Without It",
-      description: 'From Bell Labs in 1972 to your smartphone today — how C became the invisible foundation of modern computing.',
+      description: 'From Bell Labs in 1972 to your smartphone today how C became the invisible foundation of modern computing.',
       date: 'December 2025',
       image: '/articles/c.png',
       tags: ['C', 'Systems Programming', 'History'],

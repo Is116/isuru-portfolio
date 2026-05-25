@@ -28,13 +28,13 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-stone-50/90 dark:bg-stone-950/90 backdrop-blur-md border-b border-stone-200/60 dark:border-stone-800/60'
+          ? 'bg-white/90 dark:bg-stone-950/90 backdrop-blur-md border-b border-stone-100/80 dark:border-stone-800/60 shadow-sm shadow-accent-50/50'
           : 'bg-transparent'
       }`}
     >
       <nav className="container-custom">
         <div className="flex items-center justify-between h-16">
-          {/* Logo — initials, serif */}
+          {/* Logo initials, serif */}
           <a
             href="#home"
             className="font-serif text-xl font-medium text-stone-900 dark:text-stone-100 tracking-wide hover:text-accent-600 dark:hover:text-accent-400 transition-colors"
@@ -68,7 +68,7 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Mobile Navigation — side drawer */}
+        {/* Mobile Navigation side drawer */}
         <AnimatePresence>
           {isMobileMenuOpen && (
             <>
@@ -84,14 +84,14 @@ const Header = () => {
 
               {/* Drawer */}
               <motion.div
-                className="fixed top-0 right-0 h-full w-64 z-50 bg-stone-50 dark:bg-stone-900 border-l border-stone-200 dark:border-stone-800 shadow-2xl md:hidden flex flex-col"
+                className="fixed top-0 right-0 h-full w-64 z-50 bg-white dark:bg-stone-900 border-l border-stone-100 dark:border-stone-800 shadow-2xl shadow-accent-50/20 md:hidden flex flex-col"
                 initial={{ x: '100%' }}
                 animate={{ x: 0 }}
                 exit={{ x: '100%' }}
                 transition={{ duration: 0.28, ease: [0.25, 0.1, 0.25, 1] }}
               >
                 {/* Drawer header */}
-                <div className="flex items-center justify-between px-6 h-16 border-b border-stone-200 dark:border-stone-800">
+                <div className="flex items-center justify-between px-6 h-16 border-b border-stone-100 dark:border-stone-800">
                   <span className="font-serif text-lg font-medium text-stone-900 dark:text-stone-100">IP</span>
                   <button
                     onClick={() => setIsMobileMenuOpen(false)}

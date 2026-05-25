@@ -6,6 +6,19 @@ import { motion } from 'framer-motion'
 const Experience = () => {
   const workExperience = [
     {
+      title: 'Work Trial',
+      company: 'Vaasan kaupunki – City of Vaasa',
+      companyUrl: 'https://www.vaasa.fi/',
+      period: 'May 2026 – Present',
+      type: 'Work Trial',
+      description: 'Conducting social media analytics using Power BI to explore how Vaasa can raise international awareness of the International House project, benchmarking approaches taken by comparable cities.',
+      achievements: [
+        'Analysing engagement data and channel performance to identify effective strategies for reaching internationally mobile residents and newcomers',
+        'Producing dashboards and reports to support decision-making on how to best promote International House Vaasa across digital platforms',
+        'Benchmarking social media strategies of comparable cities to surface best practices for the International House project',
+      ],
+    },
+    {
       title: 'Software Developer Trainee',
       company: 'CDB Bank',
       companyUrl: 'https://www.cdb.lk/',
@@ -30,7 +43,7 @@ const Experience = () => {
         'Developed CRM modules to streamline customer lifecycle management, sales pipelines, and client communication for service-based businesses',
         'Implemented POS systems integrated with ERP backends, enabling real-time stock updates, transaction processing, and sales analytics',
         'Integrated ERP functionalities into e-commerce platforms, connecting online storefronts with inventory, order management, and customer data systems',
-        'Delivered SITC campus management system using Laravel 8 and 9 — covering student records, administration, and reporting',
+        'Delivered SITC campus management system using Laravel 8 and 9 covering student records, administration, and reporting',
         'Worked across the full development lifecycle using Flutter, .NET, React, Next.js, and Laravel',
       ],
     },
