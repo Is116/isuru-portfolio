@@ -8,116 +8,31 @@ import {
 import { motion } from 'framer-motion'
 
 const floatingIcons = [
-  {
-    Icon: Brain,
-    label: 'AI & Behaviour',
-    style: { top: '10%', right: '14%' },
-    y: [0, -22, 8, -14, 0],
-    x: [0, 10, -8, 14, 0],
-    duration: 9,
-    delay: 0,
-    size: 28,
-    color: 'text-accent-400 dark:text-accent-300',
-  },
-  {
-    Icon: Users,
-    label: 'Behavioural Science',
-    style: { top: '28%', right: '6%' },
-    y: [0, 14, -10, 18, 0],
-    x: [0, -12, 8, -6, 0],
-    duration: 11,
-    delay: 1.4,
-    size: 24,
-    color: 'text-teal-400 dark:text-teal-300',
-  },
-  {
-    Icon: BarChart3,
-    label: 'Data Analytics',
-    style: { top: '18%', right: '32%' },
-    y: [0, -10, 16, -8, 0],
-    x: [0, 8, -14, 6, 0],
-    duration: 10,
-    delay: 0.6,
-    size: 22,
-    color: 'text-accent-300 dark:text-accent-400',
-  },
-  {
-    Icon: Code2,
-    label: 'Software Engineering',
-    style: { top: '52%', right: '10%' },
-    y: [0, -16, 10, -20, 0],
-    x: [0, 14, -6, 8, 0],
-    duration: 12,
-    delay: 0.9,
-    size: 26,
-    color: 'text-teal-300 dark:text-teal-400',
-  },
-  {
-    Icon: Database,
-    label: 'Data Science',
-    style: { top: '68%', right: '28%' },
-    y: [0, 12, -18, 8, 0],
-    x: [0, -8, 14, -10, 0],
-    duration: 13,
-    delay: 2.1,
-    size: 20,
-    color: 'text-accent-400 dark:text-accent-300',
-  },
-  {
-    Icon: Cpu,
-    label: 'Machine Learning',
-    style: { top: '6%', right: '28%' },
-    y: [0, 10, -12, 6, 0],
-    x: [0, -10, 6, -14, 0],
-    duration: 8,
-    delay: 1.8,
-    size: 20,
-    color: 'text-teal-400 dark:text-teal-300',
-  },
-  {
-    Icon: LineChart,
-    label: 'Analytics',
-    style: { top: '80%', right: '8%' },
-    y: [0, -14, 10, -8, 0],
-    x: [0, 10, -12, 8, 0],
-    duration: 10,
-    delay: 0.4,
-    size: 22,
-    color: 'text-accent-300 dark:text-accent-400',
-  },
-  {
-    Icon: Sparkles,
-    label: 'Generative AI',
-    style: { top: '40%', right: '22%' },
-    y: [0, -18, 12, -10, 0],
-    x: [0, 8, -16, 10, 0],
-    duration: 9,
-    delay: 1.1,
-    size: 22,
-    color: 'text-teal-300 dark:text-teal-200',
-  },
-  {
-    Icon: Terminal,
-    label: 'Engineering',
-    style: { top: '62%', right: '4%' },
-    y: [0, 16, -10, 14, 0],
-    x: [0, -8, 12, -6, 0],
-    duration: 11,
-    delay: 1.6,
-    size: 20,
-    color: 'text-accent-200 dark:text-accent-400',
-  },
-  {
-    Icon: FlaskConical,
-    label: 'Research',
-    style: { top: '88%', right: '18%' },
-    y: [0, -10, 14, -8, 0],
-    x: [0, 12, -8, 16, 0],
-    duration: 12,
-    delay: 2.4,
-    size: 20,
-    color: 'text-teal-400 dark:text-teal-300',
-  },
+  // top row
+  { Icon: Brain,       style: { top: '6%',  left: '5%'  }, y: [0,-20, 8,-14,0], x: [0, 10,-8, 12,0], duration: 9,  delay: 0,   size: 26, color: 'text-accent-400 dark:text-accent-300' },
+  { Icon: BarChart3,   style: { top: '4%',  left: '28%' }, y: [0,-12,16, -8,0], x: [0,  8,-12, 6,0], duration: 10, delay: 0.6, size: 20, color: 'text-teal-400 dark:text-teal-300'   },
+  { Icon: Sparkles,    style: { top: '7%',  left: '50%' }, y: [0,-18,10,-12,0], x: [0,-10, 14,-8,0], duration: 8,  delay: 1.2, size: 22, color: 'text-accent-300 dark:text-accent-400' },
+  { Icon: Cpu,         style: { top: '5%',  left: '72%' }, y: [0, 10,-12, 6,0], x: [0, -8,  6,-12,0], duration: 9,  delay: 1.8, size: 20, color: 'text-teal-300 dark:text-teal-400'   },
+  { Icon: Code2,       style: { top: '6%',  left: '90%' }, y: [0,-16,10,-18,0], x: [0, 12, -6,  8,0], duration: 11, delay: 0.9, size: 24, color: 'text-accent-400 dark:text-accent-300' },
+  // second row
+  { Icon: Database,    style: { top: '26%', left: '3%'  }, y: [0, 14,-10,18,0], x: [0,-10,  8, -6,0], duration: 12, delay: 1.4, size: 22, color: 'text-teal-400 dark:text-teal-300'   },
+  { Icon: Users,       style: { top: '28%', left: '38%' }, y: [0,-14, 10,-8,0], x: [0,  8,-14, 10,0], duration: 10, delay: 0.4, size: 22, color: 'text-accent-300 dark:text-accent-200' },
+  { Icon: LineChart,   style: { top: '24%', left: '62%' }, y: [0, 12,-8, 14,0], x: [0,-12, 10, -8,0], duration: 9,  delay: 2.0, size: 20, color: 'text-teal-300 dark:text-teal-200'   },
+  { Icon: Terminal,    style: { top: '27%', left: '85%' }, y: [0,-10,14, -6,0], x: [0,  6,-10,  8,0], duration: 11, delay: 1.1, size: 20, color: 'text-accent-400 dark:text-accent-300' },
+  // middle row
+  { Icon: FlaskConical,style: { top: '48%', left: '2%'  }, y: [0,-16,10,-12,0], x: [0,  8,-12,  6,0], duration: 10, delay: 1.6, size: 22, color: 'text-teal-400 dark:text-teal-300'   },
+  { Icon: Brain,       style: { top: '46%', left: '55%' }, y: [0, 18,-10,14,0], x: [0,-10, 12, -8,0], duration: 12, delay: 0.7, size: 24, color: 'text-accent-300 dark:text-accent-400' },
+  { Icon: Sparkles,    style: { top: '50%', left: '78%' }, y: [0,-12, 8,-18,0], x: [0, 10,-8,  14,0], duration: 9,  delay: 2.2, size: 20, color: 'text-teal-300 dark:text-teal-400'   },
+  // fourth row
+  { Icon: BarChart3,   style: { top: '68%', left: '8%'  }, y: [0, 10,-16, 8,0], x: [0, -8, 14,-10,0], duration: 11, delay: 0.5, size: 20, color: 'text-accent-400 dark:text-accent-300' },
+  { Icon: Cpu,         style: { top: '70%', left: '32%' }, y: [0,-14, 8,-10,0], x: [0, 12, -8,  6,0], duration: 10, delay: 1.3, size: 22, color: 'text-teal-400 dark:text-teal-300'   },
+  { Icon: Code2,       style: { top: '66%', left: '62%' }, y: [0, 16,-10,12,0], x: [0, -6, 10, -8,0], duration: 13, delay: 1.9, size: 20, color: 'text-accent-300 dark:text-accent-400' },
+  { Icon: Users,       style: { top: '72%', left: '88%' }, y: [0,-10, 14,-8,0], x: [0,  8,-12, 10,0], duration: 8,  delay: 0.3, size: 22, color: 'text-teal-300 dark:text-teal-200'   },
+  // bottom row
+  { Icon: Terminal,    style: { top: '88%', left: '5%'  }, y: [0,-12, 8,-16,0], x: [0, 10,-10, 12,0], duration: 10, delay: 2.3, size: 20, color: 'text-teal-400 dark:text-teal-300'   },
+  { Icon: FlaskConical,style: { top: '86%', left: '30%' }, y: [0, 14,-8, 10,0], x: [0, -8, 12, -6,0], duration: 11, delay: 0.8, size: 20, color: 'text-accent-300 dark:text-accent-400' },
+  { Icon: LineChart,   style: { top: '90%', left: '55%' }, y: [0,-10,16, -8,0], x: [0,  6,-14,  8,0], duration: 9,  delay: 1.5, size: 22, color: 'text-accent-400 dark:text-accent-300' },
+  { Icon: Database,    style: { top: '85%', left: '80%' }, y: [0, 12,-14, 8,0], x: [0,-10,  8,-12,0], duration: 12, delay: 2.1, size: 20, color: 'text-teal-300 dark:text-teal-400'   },
 ]
 
 const Hero = () => {
@@ -149,35 +64,24 @@ const Hero = () => {
       id="home"
       className="relative min-h-screen flex items-center px-4 sm:px-6 lg:px-8 pt-24 pb-20 bg-stone-50 dark:bg-stone-950 overflow-hidden"
     >
-      {/* Floating identity icons */}
+      {/* Floating identity icons — clipped above the bottom info bar */}
       <div className="absolute inset-0 pointer-events-none select-none" aria-hidden="true">
-        {floatingIcons.map(({ Icon, label, style, y, x, duration, delay, size, color }) => (
+        {floatingIcons.map(({ Icon, style, y, x, duration, delay, size, color }, i) => (
           <motion.div
-            key={label}
-            className="absolute group"
+            key={i}
+            className="absolute"
             style={style}
-            initial={{ opacity: 0, scale: 0.6 }}
+            initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: delay + 0.6, ease: 'easeOut' }}
           >
             <motion.div
               animate={{ y, x }}
-              transition={{
-                duration,
-                delay,
-                repeat: Infinity,
-                ease: 'easeInOut',
-              }}
-              className="relative flex flex-col items-center gap-1.5"
+              transition={{ duration, delay, repeat: Infinity, ease: 'easeInOut' }}
             >
-              {/* Icon container */}
-              <div className={`p-2.5 rounded-xl bg-white/60 dark:bg-stone-900/50 border border-stone-200/60 dark:border-stone-700/40 backdrop-blur-sm shadow-sm ${color} opacity-60 dark:opacity-50`}>
+              <div className={`p-2.5 rounded-xl bg-white/50 dark:bg-stone-900/40 border border-stone-200/50 dark:border-stone-700/30 backdrop-blur-sm shadow-sm ${color} opacity-50 dark:opacity-40`}>
                 <Icon size={size} strokeWidth={1.4} />
               </div>
-              {/* Label */}
-              <span className="text-[10px] font-mono text-stone-400 dark:text-stone-500 tracking-wide whitespace-nowrap opacity-70">
-                {label}
-              </span>
             </motion.div>
           </motion.div>
         ))}
