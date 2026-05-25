@@ -19,19 +19,6 @@ const Experience = () => {
       ],
     },
     {
-      title: 'Software Developer Trainee',
-      company: 'CDB Bank',
-      companyUrl: 'https://www.cdb.lk/',
-      period: '2022 – 2022',
-      type: 'Training',
-      description: 'Training at Citizens Development Business Finance PLC, focused on digital banking solutions. Working with the CDB Self mobile app and digital banking platforms.',
-      achievements: [
-        'Developing features for CDB Self digital banking app',
-        'Learning fintech solutions including payment processing and e-passbook',
-        'Working with secure financial transaction systems and APIs',
-      ],
-    },
-    {
       title: 'Full-Stack Developer',
       company: 'Codezela Technologies UK',
       companyUrl: 'https://codezela.com/',
@@ -45,6 +32,19 @@ const Experience = () => {
         'Integrated ERP functionalities into e-commerce platforms, connecting online storefronts with inventory, order management, and customer data systems',
         'Delivered SITC campus management system using Laravel 8 and 9 covering student records, administration, and reporting',
         'Worked across the full development lifecycle using Flutter, .NET, React, Next.js, and Laravel',
+      ],
+    },
+    {
+      title: 'Software Developer Trainee',
+      company: 'CDB Bank',
+      companyUrl: 'https://www.cdb.lk/',
+      period: '2022 – 2022',
+      type: 'Training',
+      description: 'Training at Citizens Development Business Finance PLC, focused on digital banking solutions. Working with the CDB Self mobile app and digital banking platforms.',
+      achievements: [
+        'Developing features for CDB Self digital banking app',
+        'Learning fintech solutions including payment processing and e-passbook',
+        'Working with secure financial transaction systems and APIs',
       ],
     },
   ]
