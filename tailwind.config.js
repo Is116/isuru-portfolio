@@ -10,17 +10,30 @@ module.exports = {
     extend: {
       colors: {
         accent: {
-          DEFAULT: '#14B8A6',
-          50: '#F0FDF9',
-          100: '#CCFBF1',
-          200: '#99F6E4',
-          300: '#5EEAD4',
-          400: '#2DD4BF',
-          500: '#14B8A6',
-          600: '#0D9488',
-          700: '#0F766E',
-          800: '#115E59',
-          900: '#134E4A',
+          DEFAULT: '#013792',
+          50: '#E5EBF5',
+          100: '#BACDE8',
+          200: '#8EADDA',
+          300: '#5A8ACA',
+          400: '#2D68BA',
+          500: '#013792',
+          600: '#012F81',
+          700: '#01256B',
+          800: '#011B56',
+          900: '#011342',
+        },
+        teal: {
+          DEFAULT: '#6EC8D2',
+          50: '#EEF9FA',
+          100: '#D3EFF2',
+          200: '#A8DDE5',
+          300: '#6EC8D2',
+          400: '#4BB8C5',
+          500: '#2FA8B5',
+          600: '#248A96',
+          700: '#1A6D77',
+          800: '#115059',
+          900: '#0B383E',
         },
         stone: {
           50: '#FAFAF8',
@@ -51,8 +64,8 @@ module.exports = {
         }
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        serif: ['Playfair Display', 'Georgia', 'serif'],
+        sans: ['DM Sans', 'system-ui', 'sans-serif'],
+        serif: ['DM Serif Display', 'Georgia', 'serif'],
         mono: ['JetBrains Mono', 'monospace'],
       },
       animation: {

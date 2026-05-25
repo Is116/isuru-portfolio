@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @layer base {
   * {
@@ -131,8 +131,8 @@
   }
 
   @keyframes glow-pulse {
-    0%, 100% { box-shadow: 0 0 20px rgba(20, 184, 166, 0.15); }
-    50%       { box-shadow: 0 0 30px rgba(20, 184, 166, 0.35); }
+    0%, 100% { box-shadow: 0 0 20px rgba(1, 55, 146, 0.15); }
+    50%       { box-shadow: 0 0 30px rgba(1, 55, 146, 0.35); }
   }
 
   @keyframes scale-in {
@@ -148,13 +148,13 @@
   .animate-scale-in    { animation: scale-in 0.4s ease-out forwards; }
 
   .gradient-bg-animate {
-    background: linear-gradient(135deg, #ffffff 0%, #F0FDF9 50%, #ffffff 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #EEF9FA 50%, #ffffff 100%);
     background-size: 200% 200%;
     animation: gradient-shift 15s ease infinite;
   }
 
   .dark .gradient-bg-animate {
-    background: linear-gradient(135deg, #0E0D0C 0%, #0F2622 50%, #0E0D0C 100%);
+    background: linear-gradient(135deg, #0E0D0C 0%, #011342 50%, #0E0D0C 100%);
     background-size: 200% 200%;
   }
 
