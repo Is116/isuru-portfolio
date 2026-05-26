@@ -5,6 +5,14 @@ import { Calendar } from 'lucide-react'
 export default function ArticlesPage() {
   const articles = [
     {
+      slug: 'dont-judge-by-actions',
+      title: "Don't Judge a Person by Their Actions Judge by Their Character",
+      description: "The psychology behind why a single action is one of the least reliable windows into who a person actually is and what a fairer, more accurate way of seeing people looks like.",
+      date: 'May 2026',
+      image: '/articles/judge.jpeg',
+      tags: ['Psychology', 'Behavior', 'Social Science'],
+    },
+    {
       slug: 'why-do-people-do-crazy-things',
       title: "Why Do People Do 'Crazy' Things?",
       description: "It's not just loose rules or moral failure. Behind every extreme act lies a web of unmet needs, broken self-worth, social inequality, and a future that feels impossible to plan for.",

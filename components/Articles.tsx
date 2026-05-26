@@ -11,6 +11,15 @@ const Articles = () => {
 
   const articles = [
     {
+      title: "Don't Judge a Person by Their Actions Judge by Their Character",
+      description: "The psychology behind why a single action is one of the least reliable windows into who a person actually is and what a fairer, more accurate way of seeing people looks like.",
+      date: '2026-05-26',
+      readTime: '14 min',
+      link: '/articles/dont-judge-by-actions',
+      tags: ['Psychology', 'Behavior', 'Social Science'],
+      image: '/articles/judge.jpeg',
+    },
+    {
       title: "Why Do People Do 'Crazy' Things?",
       description: "It's not just loose rules or moral failure. Behind every extreme act lies a web of unmet needs, broken self-worth, social inequality, and a future that feels impossible to plan for.",
       date: '2026-05-17',

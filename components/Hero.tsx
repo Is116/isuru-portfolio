@@ -64,7 +64,7 @@ const Hero = () => {
       id="home"
       className="relative min-h-screen flex items-center px-4 sm:px-6 lg:px-8 pt-24 pb-20 bg-stone-50 dark:bg-stone-950 overflow-hidden"
     >
-      {/* Floating identity icons — clipped above the bottom info bar */}
+      {/* Floating identity icons clipped above the bottom info bar */}
       <div className="absolute inset-0 pointer-events-none select-none" aria-hidden="true">
         {floatingIcons.map(({ Icon, style, y, x, duration, delay, size, color }, i) => (
           <motion.div
