@@ -11,6 +11,15 @@ const Projects = () => {
 
   const projects = [
     {
+      title: 'International House Vaasa Integration Data Hub',
+      description: 'Data-backed proposal for a one-stop integration hub in Vaasa, Finland. Collected and cleaned Finnish population, employment, and university statistics, stored in SQLite via Turso, and built 4 interactive Google Charts dashboards covering immigration growth (37% since 2019), a 12.1pp employment gap, and student retention making the case for replicating International House Helsinki.',
+      tags: ['Next.js', 'TypeScript', 'React Google Charts', 'SQLite', 'Tailwind CSS', 'Data Analysis'],
+      github: 'https://github.com/Is116/international_house_vaasa',
+      demo: 'https://international-house-vaasa.vercel.app/',
+      link: null,
+      images: ['/projects/vaasa_stat/vaasa_stat.jpeg'],
+    },
+    {
       title: 'Finnish Vehicle Market Analyser',
       description: 'Full-stack Next.js app for exploring 5.2M registered vehicles from Finland\'s Traficom open registry. Features 7 interactive Recharts dashboards, Gemini 2.5 Flash AI-powered market analysis, natural-language chat, and CSV/JSON/Markdown export all parsed client-side from a 930 MB CSV.',
       tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Gemini AI', 'Recharts', 'PapaParse'],
