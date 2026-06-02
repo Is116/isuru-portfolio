@@ -11,10 +11,10 @@ const Experience = () => {
       companyUrl: 'https://www.vaasa.fi/',
       period: 'May 2026 – Present',
       type: 'Work Trial',
-      description: 'Conducting social media analytics using Power BI to explore how Vaasa can raise international awareness of the International House project.',
+      description: 'Conducting social media analytics to explore how Vaasa can raise international awareness of the International House project.',
       achievements: [
         'Analysing engagement data and channel performance to identify effective strategies for reaching internationally mobile residents and newcomers',
-        'Producing dashboards and reports to support decision-making on how to best promote International House Vaasa across digital platforms',
+        'Exploring how to best promote International House Vaasa across digital platforms',
         'Benchmarking social media strategies of comparable cities to surface best practices for the International House project',
       ],
     },
