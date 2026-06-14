@@ -87,6 +87,16 @@ const Hero = () => {
         ))}
       </div>
 
+      {/* Badge images — right-center on desktop only */}
+      <div className="hidden md:flex absolute right-8 top-1/2 -translate-y-1/2 z-20 flex-col items-center gap-4">
+        <a href="https://www.credly.com/badges/3cd7611b-323a-4605-9428-bc0bb74292ab/public_url" target="_blank" rel="noopener noreferrer" className="transition-transform duration-200 hover:scale-110">
+          <img src="/badges/google_bi_badge.png" alt="Google BI badge" className="w-36 h-36 object-contain opacity-90" />
+        </a>
+        <a href="https://www.credly.com/badges/4172d6f8-2f34-4dcb-a18c-68f8b99e10a6" target="_blank" rel="noopener noreferrer" className="transition-transform duration-200 hover:scale-110">
+          <img src="/badges/google_data_badge.png" alt="Google Data Analytics badge" className="w-36 h-36 object-contain opacity-90" />
+        </a>
+      </div>
+
       {/* Main content */}
       <div className="container-custom w-full relative z-10">
         <motion.div
@@ -181,6 +191,15 @@ const Hero = () => {
               <div>
                 <div className="font-mono text-lg font-medium text-accent-600 dark:text-accent-400">40+</div>
                 <div className="text-xs text-stone-400 dark:text-stone-500">Projects</div>
+              </div>
+              <div className="w-px h-7 bg-stone-200 dark:bg-stone-800 md:hidden" />
+              <div className="flex md:hidden items-center gap-2">
+                <a href="https://www.credly.com/badges/3cd7611b-323a-4605-9428-bc0bb74292ab/public_url" target="_blank" rel="noopener noreferrer" className="transition-transform duration-200 hover:scale-110">
+                  <img src="/badges/google_bi_badge.png" alt="Google BI badge" className="w-14 h-14 object-contain opacity-90" />
+                </a>
+                <a href="https://www.credly.com/badges/4172d6f8-2f34-4dcb-a18c-68f8b99e10a6" target="_blank" rel="noopener noreferrer" className="transition-transform duration-200 hover:scale-110">
+                  <img src="/badges/google_data_badge.png" alt="Google Data Analytics badge" className="w-14 h-14 object-contain opacity-90" />
+                </a>
               </div>
             </div>
           </motion.div>
