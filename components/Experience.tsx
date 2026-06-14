@@ -78,6 +78,16 @@ const Experience = () => {
 
   const badges = [
     {
+      title: 'Google Business Intelligence Professional Certificate',
+      issuer: 'Google',
+      platform: 'Credly',
+      date: 'June 2026',
+      url: 'https://www.credly.com/badges/3cd7611b-323a-4605-9428-bc0bb74292ab/public_url',
+      image: '/badges/google_bi_badge.png',
+      description: 'Awarded after completing all 3 Coursera courses in the Google Business Intelligence Professional Certificate.',
+      skills: ['Business Intelligence', 'Data Pipelines', 'ETL', 'Dashboards', 'Looker Studio', 'BigQuery', 'Data Visualization', 'Reporting'],
+    },
+    {
       title: 'Google Data Analytics Professional Certificate (v.3)',
       issuer: 'Google',
       platform: 'Credly',
