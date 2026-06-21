@@ -18,7 +18,7 @@ const About = () => {
           >
             <div className="relative w-72 lg:w-full aspect-[3/4] rounded-2xl overflow-hidden">
               <img
-                src="/priofile_img.png"
+                src="/projects/profile_img.png"
                 alt="Isuru Pathirathna"
                 className="w-full h-full object-cover object-top"
               />
