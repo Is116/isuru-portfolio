@@ -51,6 +51,14 @@ const Experience = () => {
 
   const certifications = [
     {
+      title: 'Research Proposal: Initiating Research',
+      issuer: 'University of California, Davis',
+      platform: 'Coursera',
+      date: 'August 2026',
+      url: 'https://coursera.org/share/467d72a31ca31ac0641021bf6a594a11',
+      skills: ['Research Proposal', 'Academic Writing', 'Research Methods', 'Literature Review', 'Critical Thinking'],
+    },
+    {
       title: 'Innovations in Investment Technology: Artificial Intelligence',
       issuer: 'University of Michigan',
       platform: 'Coursera',
