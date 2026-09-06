@@ -49,32 +49,14 @@ const Experience = () => {
     },
   ]
 
-  const certifications = [
-    {
-      title: 'Research Proposal: Initiating Research',
-      issuer: 'University of California, Davis',
-      platform: 'Coursera',
-      date: 'August 2026',
-      url: 'https://coursera.org/share/467d72a31ca31ac0641021bf6a594a11',
-      skills: ['Research Proposal', 'Academic Writing', 'Research Methods', 'Literature Review', 'Critical Thinking'],
-    },
-    {
-      title: 'Innovations in Investment Technology: Artificial Intelligence',
-      issuer: 'University of Michigan',
-      platform: 'Coursera',
-      date: 'March 2026',
-      url: 'https://www.coursera.org/account/accomplishments/verify/NLSSSEXY1N3I',
-      skills: ['AI', 'FinTech', 'Portfolio Management', 'Machine Learning', 'Investment Management'],
-    },
-    {
-      title: 'Raising Capital: Credit Tech, Coin Offerings, and Crowdfunding',
-      issuer: 'University of Michigan',
-      platform: 'Coursera',
-      date: 'March 2026',
-      url: 'https://coursera.org/share/c2ec9ff0a1eed5b75809de072751620c',
-      skills: ['FinTech', 'Credit Risk', 'Blockchain', 'Fundraising', 'Capital Markets'],
-    },
-  ]
+  const certifications: {
+    title: string;
+    issuer: string;
+    platform: string;
+    date: string;
+    url: string;
+    skills: string[];
+  }[] = []
 
   const badges = [
     {
@@ -204,48 +186,52 @@ const Experience = () => {
               ))}
             </div>
 
-            <div className="flex items-center gap-2.5 mb-6">
-              <Award size={16} className="text-accent-500" />
-              <h3 className="font-sans text-xs font-medium text-stone-400 dark:text-stone-500 uppercase tracking-widest">Certifications</h3>
-            </div>
-
-            <div className="space-y-6">
-              {Object.entries(
-                certifications.reduce<Record<string, typeof certifications>>((groups, cert) => {
-                  ;(groups[cert.issuer] ??= []).push(cert)
-                  return groups
-                }, {})
-              ).map(([issuer, certs]) => (
-                <div key={issuer}>
-                  <p className="text-xs font-medium text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-3 font-sans">
-                    {issuer}
-                  </p>
-                  <div className="space-y-3">
-                    {certs.map((cert, idx) => (
-                      <a
-                        key={idx}
-                        href={cert.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="card block group"
-                      >
-                        <h4 className="font-sans text-sm font-medium text-stone-900 dark:text-stone-100 mb-1 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors leading-snug">
-                          {cert.title}
-                        </h4>
-                        <p className="text-xs text-stone-400 dark:text-stone-500 font-mono mb-3">
-                          {cert.platform} · {cert.date}
-                        </p>
-                        <div className="flex flex-wrap gap-1.5">
-                          {cert.skills.map((skill, sidx) => (
-                            <span key={sidx} className="badge">{skill}</span>
-                          ))}
-                        </div>
-                      </a>
-                    ))}
-                  </div>
+            {certifications.length > 0 && (
+              <>
+                <div className="flex items-center gap-2.5 mb-6">
+                  <Award size={16} className="text-accent-500" />
+                  <h3 className="font-sans text-xs font-medium text-stone-400 dark:text-stone-500 uppercase tracking-widest">Certifications</h3>
                 </div>
-              ))}
-            </div>
+
+                <div className="space-y-6">
+                  {Object.entries(
+                    certifications.reduce<Record<string, typeof certifications>>((groups, cert) => {
+                      ;(groups[cert.issuer] ??= []).push(cert)
+                      return groups
+                    }, {})
+                  ).map(([issuer, certs]) => (
+                    <div key={issuer}>
+                      <p className="text-xs font-medium text-stone-400 dark:text-stone-500 uppercase tracking-widest mb-3 font-sans">
+                        {issuer}
+                      </p>
+                      <div className="space-y-3">
+                        {certs.map((cert, idx) => (
+                          <a
+                            key={idx}
+                            href={cert.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="card block group"
+                          >
+                            <h4 className="font-sans text-sm font-medium text-stone-900 dark:text-stone-100 mb-1 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors leading-snug">
+                              {cert.title}
+                            </h4>
+                            <p className="text-xs text-stone-400 dark:text-stone-500 font-mono mb-3">
+                              {cert.platform} · {cert.date}
+                            </p>
+                            <div className="flex flex-wrap gap-1.5">
+                              {cert.skills.map((skill, sidx) => (
+                                <span key={sidx} className="badge">{skill}</span>
+                              ))}
+                            </div>
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
 
             <div className="mt-10">
               <div className="flex items-center gap-2.5 mb-6">
