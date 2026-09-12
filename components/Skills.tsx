@@ -6,23 +6,27 @@ const Skills = () => {
   const skillCategories = [
     {
       category: 'Web Development',
-      skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Node.js'],
+      skills: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Redux'],
     },
     {
       category: 'Mobile Development',
-      skills: ['React Native', 'Expo', 'Firebase', 'Redux', 'Native APIs'],
+      skills: ['React Native', 'Firebase', 'Redux', 'Expo'],
     },
     {
       category: 'Backend & AI',
-      skills: ['Laravel', 'Express', 'PostgreSQL', 'MongoDB', 'Gemini AI', 'Grok AI'],
+      skills: ['Laravel', 'PostgreSQL', 'MongoDB', 'Gemini AI'],
+    },
+    {
+      category: 'Systems & IoT',
+      skills: ['C', 'C++', 'IoT Applications', 'Embedded Systems'],
     },
   ]
 
   const technologies = [
-    'React', 'React Native', 'Next.js', 'TypeScript', 'JavaScript', 'Node.js',
-    'Express', 'Laravel', 'PHP', 'MongoDB', 'PostgreSQL', 'Firebase', 'Tailwind CSS', 'Redux',
-    'Git', 'GitHub', 'Docker', 'REST API', 'GraphQL', 'Socket.io',
-    'Jest', 'Vercel', 'Expo', 'Zustand', 'Gemini AI', 'Grok AI',
+    'Next.js', 'React', 'React Native', 'TypeScript', 'JavaScript', 'Redux',
+    'Laravel', 'PHP', 'PostgreSQL', 'MongoDB', 'Firebase', 'Gemini AI',
+    'C', 'C++', 'IoT', 'Embedded Systems',
+    'Tailwind CSS', 'Node.js', 'Express', 'REST API', 'Git', 'GitHub', 'Docker', 'Vercel', 'Expo',
   ]
 
   return (
@@ -36,11 +40,11 @@ const Skills = () => {
           transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
         >
           <h2 className="section-title">Skills & Technologies</h2>
-          <p className="section-subtitle">Tools and frameworks I use to explore data and build meaningful software</p>
+          <p className="section-subtitle">Technologies I use to build web, mobile, backend, and IoT applications</p>
         </motion.div>
 
         {/* Skill Categories */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
           {skillCategories.map((category, idx) => (
             <motion.div
               key={idx}

@@ -44,15 +44,15 @@ const About = () => {
             </p>
 
             <p className="text-stone-600 dark:text-stone-400 leading-relaxed text-base">
-              My work sits at the intersection of{' '}
-              <span className="text-accent-600 dark:text-accent-400 font-medium">AI & Behaviour, Data Science &amp; Analytics, and Software Engineering</span>.
-              I build tools, analyse data, and explore patterns to understand human behaviour how people think, decide, and act in the digital world. I’m currently open to new opportunities in these spaces.
+              My work spans{' '}
+              <span className="text-accent-600 dark:text-accent-400 font-medium">full-stack web development, mobile applications, and IoT systems</span>.
+              I build end-to-end products using Next.js and Laravel on the web, React Native with Firebase for mobile, and C/C++ for embedded and IoT applications. I'm currently open to new opportunities in these spaces.
             </p>
 
             <p className="text-stone-600 dark:text-stone-400 leading-relaxed text-base">
-              Whether it's analysing patterns in data, building products, or writing about cognition and behaviour, I approach
-              every problem through the same lens:{' '}
-              <span className="text-accent-600 dark:text-accent-400 font-medium">the human behind the data</span>.
+              Whether it's designing a PostgreSQL-backed API, wiring up a Gemini AI integration, or deploying a Redux-powered mobile app, I approach
+              every problem with the same focus:{' '}
+              <span className="text-accent-600 dark:text-accent-400 font-medium">clean architecture and real-world impact</span>.
             </p>
           </motion.div>
         </div>
