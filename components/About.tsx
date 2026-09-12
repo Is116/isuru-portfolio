@@ -52,7 +52,8 @@ const About = () => {
             <p className="text-stone-600 dark:text-stone-400 leading-relaxed text-base">
               Whether it's designing a PostgreSQL-backed API, wiring up a Gemini AI integration, or deploying a Redux-powered mobile app, I approach
               every problem with the same focus:{' '}
-              <span className="text-accent-600 dark:text-accent-400 font-medium">clean architecture and real-world impact</span>.
+              <span className="text-accent-600 dark:text-accent-400 font-medium">lightweight, clean architecture and real-world impact</span>.
+              I prioritise lean, efficient solutions minimal overhead, maximum reliability especially for resource-constrained IoT and embedded systems.
             </p>
           </motion.div>
         </div>

@@ -18,14 +18,14 @@ const Skills = () => {
     },
     {
       category: 'Systems & IoT',
-      skills: ['C', 'C++', 'IoT Applications', 'Embedded Systems'],
+      skills: ['C', 'C++', 'Linux', 'IoT Applications', 'Embedded Systems'],
     },
   ]
 
   const technologies = [
     'Next.js', 'React', 'React Native', 'TypeScript', 'JavaScript', 'Redux',
     'Laravel', 'PHP', 'PostgreSQL', 'MongoDB', 'Firebase', 'Gemini AI',
-    'C', 'C++', 'IoT', 'Embedded Systems',
+    'C', 'C++', 'Linux', 'IoT', 'Embedded Systems',
     'Tailwind CSS', 'Node.js', 'Express', 'REST API', 'Git', 'GitHub', 'Docker', 'Vercel', 'Expo',
   ]
 

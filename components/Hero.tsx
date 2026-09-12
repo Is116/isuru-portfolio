@@ -87,7 +87,7 @@ const Hero = () => {
         ))}
       </div>
 
-      {/* Badge images — right-center on desktop only */}
+      {/* Badge images right-center on desktop only */}
       <div className="hidden md:flex absolute right-8 top-1/2 -translate-y-1/2 z-20 flex-col items-center gap-4">
         <a href="https://www.credly.com/badges/3cd7611b-323a-4605-9428-bc0bb74292ab/public_url" target="_blank" rel="noopener noreferrer" className="transition-transform duration-200 hover:scale-110">
           <img src="/badges/google_bi_badge.png" alt="Google BI badge" className="w-36 h-36 object-contain opacity-90" />
@@ -121,6 +121,7 @@ const Hero = () => {
               <span className="text-stone-700 dark:text-stone-300 font-medium">Next.js & Laravel</span> ·{' '}
               <span className="text-stone-700 dark:text-stone-300 font-medium">React Native & Firebase</span> ·{' '}
               <span className="text-stone-700 dark:text-stone-300 font-medium">C/C++ & IoT</span> ·{' '}
+              <span className="text-stone-700 dark:text-stone-300 font-medium">Lightweight Focused</span> ·{' '}
               <span className="text-accent-600 dark:text-accent-400 font-medium">Open to opportunities</span>
             </p>
           </motion.div>
